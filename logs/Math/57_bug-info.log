@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Math
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Math
+       Program: commons-math
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Math/Math.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-math.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Math/active-bugs.csv
+Number of bugs: 106
+--------------------------------------------------------------------------------
+
+Summary for Bug: Math-57
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+00fea9d8078d487e31cec8292dbd9bd69bc9c216
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2011-03-15 12:15:02 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+MATH-546
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/MATH-546
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.math.stat.clustering.KMeansPlusPlusClustererTest::testSmallDistances
+   --> junit.framework.AssertionFailedError
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.math.stat.clustering.KMeansPlusPlusClusterer
+--------------------------------------------------------------------------------

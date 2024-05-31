@@ -1,0 +1,6 @@
+Compiling /home/tyd/defects4j/tmp/Jsoup/24_buggy...
+
+Testing /home/tyd/defects4j/tmp/Jsoup/24_buggy...
+Failing tests: 1
+  - org.jsoup.parser.HtmlParserTest::handlesQuotesInCommentsInScripts
+

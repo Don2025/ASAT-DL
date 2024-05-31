@@ -1,0 +1,43 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Time
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Time
+       Program: joda-time
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Time/Time.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/joda-time.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Time/active-bugs.csv
+Number of bugs: 26
+--------------------------------------------------------------------------------
+
+Summary for Bug: Time-25
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+552be4b677ec30a34d04d234395ba1a8c7beaacf
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2010-12-05 23:43:18 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+90
+--------------------------------------------------------------------------------
+Bug report url:
+https://sourceforge.net/p/joda-time/bugs/90
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.joda.time.TestDateTimeZoneCutover::test_DateTime_constructor_Moscow_Autumn
+   --> junit.framework.ComparisonFailure: expected:<...10-28T02:30:00.000+0[4]:00> but was:<...10-28T02:30:00.000+0[3]:00>
+ - org.joda.time.TestDateTimeZoneCutover::test_getOffsetFromLocal_Moscow_Autumn_overlap_mins
+   --> junit.framework.ComparisonFailure: 2007-10-28T02:00:00.000+03:00 expected:<...10-28T02:00:00.000+0[4]:00> but was:<...10-28T02:00:00.000+0[3]:00>
+ - org.joda.time.TestDateTimeZoneCutover::test_getOffsetFromLocal_Moscow_Autumn
+   --> junit.framework.ComparisonFailure: 2007-10-28T02:00:00.000+03:00 expected:<...10-28T02:00:00.000+0[4]:00> but was:<...10-28T02:00:00.000+0[3]:00>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.joda.time.DateTimeZone
+--------------------------------------------------------------------------------

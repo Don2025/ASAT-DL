@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JacksonDatabind
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JacksonDatabind
+       Program: jackson-databind
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/JacksonDatabind.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jackson-databind.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/active-bugs.csv
+Number of bugs: 112
+--------------------------------------------------------------------------------
+
+Summary for Bug: JacksonDatabind-12
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+1d57c20dfd79c64837cf1ec357ab402f2158227e
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2015-03-26 12:49:58 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+735
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/FasterXML/jackson-databind/issues/735
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.fasterxml.jackson.databind.deser.TestCustomDeserializers::testCustomMapValueDeser735
+   --> junit.framework.AssertionFailedError: expected:<1> but was:<100>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.fasterxml.jackson.databind.deser.std.MapDeserializer
+--------------------------------------------------------------------------------

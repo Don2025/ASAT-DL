@@ -1,0 +1,46 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Closure
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Closure
+       Program: closure-compiler
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Closure/Closure.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/closure-compiler.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Closure/active-bugs.csv
+Number of bugs: 174
+--------------------------------------------------------------------------------
+
+Summary for Bug: Closure-136
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+938f48a60c544f6b7bdb5d49006f654a51ca9a22
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2010-03-16 22:53:04 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+103
+--------------------------------------------------------------------------------
+Bug report url:
+https://storage.googleapis.com/google-code-archive/v2/code.google.com/closure-compiler/issues/issue-103.json
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.google.javascript.jscomp.InlineGettersTest::testIssue2508576_1
+   --> junit.framework.ComparisonFailure: expected:<[({a:alert,b:alert}).a("a")]> but was:<[]>
+ - com.google.javascript.jscomp.InlineGettersTest::testIssue2508576_3
+   --> java.lang.RuntimeException: INTERNAL COMPILER ERROR.
+ - com.google.javascript.jscomp.MethodCheckTest::testSeparateMethods
+   --> junit.framework.AssertionFailedError: Unexpected error(s): JSC_WRONG_ARGUMENT_COUNT. Function oneOrTwoArg2: called with 3 argument(s). All definitions of this function require at least 1 argument(s) and no more than 2 argument(s). at testcode line 1 expected:<0> but was:<1>
+ - com.google.javascript.jscomp.RenameVarsTest::testDollarSignSuperExport2
+   --> junit.framework.AssertionFailedError: 
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.google.javascript.jscomp.MethodCompilerPass
+ - com.google.javascript.jscomp.RenameVars
+--------------------------------------------------------------------------------

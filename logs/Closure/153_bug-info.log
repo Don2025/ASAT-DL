@@ -1,0 +1,42 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Closure
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Closure
+       Program: closure-compiler
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Closure/Closure.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/closure-compiler.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Closure/active-bugs.csv
+Number of bugs: 174
+--------------------------------------------------------------------------------
+
+Summary for Bug: Closure-153
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+86caf52b53f53d8b83e9c1092f4b15ddeb6ca5bb
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2010-12-09 20:58:52 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+290
+--------------------------------------------------------------------------------
+Bug report url:
+https://storage.googleapis.com/google-code-archive/v2/code.google.com/closure-compiler/issues/issue-290.json
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.google.javascript.jscomp.NormalizeTest::testDuplicateVarInExterns
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.NormalizeTest::testMakeLocalNamesUnique
+   --> junit.framework.AssertionFailedError: 
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.google.javascript.jscomp.Normalize
+ - com.google.javascript.jscomp.SyntacticScopeCreator
+--------------------------------------------------------------------------------

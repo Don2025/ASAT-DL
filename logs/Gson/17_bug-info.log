@@ -1,0 +1,41 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Gson
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Gson
+       Program: gson
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Gson/Gson.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/gson.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Gson/active-bugs.csv
+Number of bugs: 18
+--------------------------------------------------------------------------------
+
+Summary for Bug: Gson-17
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+7a9fd5962dce7f277efa15fcc996606be0733bac
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2017-09-17 23:49:13 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+1100
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/google/gson/pull/1100
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.google.gson.DefaultDateTypeAdapterTest::testUnexpectedToken
+   --> com.google.gson.JsonParseException: The date should be a string value
+ - com.google.gson.DefaultDateTypeAdapterTest::testNullValue
+   --> com.google.gson.JsonParseException: The date should be a string value
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.google.gson.DefaultDateTypeAdapter
+--------------------------------------------------------------------------------

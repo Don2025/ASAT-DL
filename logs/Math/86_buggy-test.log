@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Math/86_buggy...
+
+Testing /home/tyd/defects4j/tmp/Math/86_buggy...
+Failing tests: 2
+  - org.apache.commons.math.linear.CholeskyDecompositionImplTest::testMath274
+  - org.apache.commons.math.linear.CholeskyDecompositionImplTest::testNotPositiveDefinite
+

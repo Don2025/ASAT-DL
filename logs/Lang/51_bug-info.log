@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Lang
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Lang
+       Program: commons-lang
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Lang/Lang.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-lang.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Lang/active-bugs.csv
+Number of bugs: 64
+--------------------------------------------------------------------------------
+
+Summary for Bug: Lang-51
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+a5589b39e985e64861bd920aa7b13ab32c215b06
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2007-10-27 05:07:45 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+LANG-365
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/LANG-365
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.lang.BooleanUtilsTest::test_toBoolean_String
+   --> java.lang.StringIndexOutOfBoundsException: String index out of range: 3
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.lang.BooleanUtils
+--------------------------------------------------------------------------------

@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/JacksonDatabind/41_buggy...
+
+Testing /home/tyd/defects4j/tmp/JacksonDatabind/41_buggy...
+Failing tests: 2
+  - com.fasterxml.jackson.databind.interop.DeprecatedTypeHandling1102Test::testDeprecatedTypeResolution
+  - com.fasterxml.jackson.databind.introspect.TestScalaLikeImplicitProperties::testGetterSetterProperty
+

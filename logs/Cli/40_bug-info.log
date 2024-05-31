@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Cli
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Cli
+       Program: commons-cli
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Cli/Cli.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-cli.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Cli/active-bugs.csv
+Number of bugs: 39
+--------------------------------------------------------------------------------
+
+Summary for Bug: Cli-40
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+b0024d482050a08efc36c3cabee37c0af0e57a10
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2018-02-26 10:23:40 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+CLI-282
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/CLI-282
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.cli.TypeHandlerTest::testCreateValueInteger_failure
+   --> junit.framework.AssertionFailedError: Expected exception: org.apache.commons.cli.ParseException
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.cli.TypeHandler
+--------------------------------------------------------------------------------

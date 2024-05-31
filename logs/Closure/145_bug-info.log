@@ -1,0 +1,41 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Closure
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Closure
+       Program: closure-compiler
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Closure/Closure.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/closure-compiler.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Closure/active-bugs.csv
+Number of bugs: 174
+--------------------------------------------------------------------------------
+
+Summary for Bug: Closure-145
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+dff6e0114f19c20aeb63393d67aa0880ff5745b5
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2010-06-25 23:56:52 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+190
+--------------------------------------------------------------------------------
+Bug report url:
+https://storage.googleapis.com/google-code-archive/v2/code.google.com/closure-compiler/issues/issue-190.json
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.google.javascript.jscomp.CodePrinterTest::testFunctionSafariCompatiblity
+   --> junit.framework.ComparisonFailure: expected:<if(e1)[{A:function goo(){return true}]}> but was:<if(e1)[A:function goo(){return true]}>
+ - com.google.javascript.jscomp.CodePrinterTest::testDoLoopIECompatiblity
+   --> junit.framework.ComparisonFailure: expected:<if(x)[{A:do foo();while(y)}]> but was:<if(x)[A:do foo();while(y)]>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.google.javascript.jscomp.CodeGenerator
+--------------------------------------------------------------------------------

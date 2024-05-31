@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Mockito/36_buggy...
+
+Testing /home/tyd/defects4j/tmp/Mockito/36_buggy...
+Failing tests: 2
+  - org.mockito.internal.invocation.InvocationTest::shouldScreamWhenCallingRealMethodOnInterface
+  - org.mockitousage.spies.SpyingOnInterfacesTest::shouldFailInRuntimeWhenCallingRealMethodOnInterface
+

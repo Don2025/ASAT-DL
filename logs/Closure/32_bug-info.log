@@ -1,0 +1,45 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Closure
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Closure
+       Program: closure-compiler
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Closure/Closure.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/closure-compiler.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Closure/active-bugs.csv
+Number of bugs: 174
+--------------------------------------------------------------------------------
+
+Summary for Bug: Closure-32
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+66c8c695fd8130e3ede6f77c6e5cc1ec96a0e9b3
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2012-04-05 18:10:13 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+701
+--------------------------------------------------------------------------------
+Bug report url:
+https://storage.googleapis.com/google-code-archive/v2/code.google.com/closure-compiler/issues/issue-701.json
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.google.javascript.jscomp.IntegrationTest::testIssue701
+   --> junit.framework.ComparisonFailure: expected:</*
+ - com.google.javascript.jscomp.parsing.JsDocInfoParserTest::testParseLicense
+   --> junit.framework.ComparisonFailure: expected:< Foo
+ - com.google.javascript.jscomp.parsing.JsDocInfoParserTest::testParsePreserve
+   --> junit.framework.ComparisonFailure: expected:< Foo
+ - com.google.javascript.jscomp.parsing.JsDocInfoParserTest::testParseLicenseAscii
+   --> junit.framework.ComparisonFailure: expected:< Foo
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.google.javascript.jscomp.parsing.JsDocInfoParser
+--------------------------------------------------------------------------------

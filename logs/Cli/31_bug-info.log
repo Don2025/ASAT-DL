@@ -1,0 +1,41 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Cli
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Cli
+       Program: commons-cli
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Cli/Cli.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-cli.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Cli/active-bugs.csv
+Number of bugs: 39
+--------------------------------------------------------------------------------
+
+Summary for Bug: Cli-31
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+4d2c8a22d1e1831858029b8ef225a07f4445a221
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2010-06-19 22:06:00 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+CLI-205
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/CLI-205
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.cli.HelpFormatterTest::testDefaultArgName
+   --> junit.framework.ComparisonFailure: expected:<usage: app -f <arg[ument]>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.cli.HelpFormatter
+ - org.apache.commons.cli.Option
+ - org.apache.commons.cli.OptionBuilder
+--------------------------------------------------------------------------------

@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Jsoup
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Jsoup
+       Program: jsoup
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/Jsoup.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jsoup.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/active-bugs.csv
+Number of bugs: 93
+--------------------------------------------------------------------------------
+
+Summary for Bug: Jsoup-84
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+a810d2e3615da9a37ad74a7db2ca8bc6945ab9a8
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2018-04-29 16:16:12 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+848
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/jhy/jsoup/issues/848
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jsoup.helper.W3CDomTest::treatsUndeclaredNamespaceAsLocalName
+   --> org.w3c.dom.DOMException: NAMESPACE_ERR: An attempt is made to create or change an object in a way which is incorrect with regard to namespaces.
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jsoup.helper.W3CDom
+--------------------------------------------------------------------------------

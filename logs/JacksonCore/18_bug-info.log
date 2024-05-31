@@ -1,0 +1,41 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JacksonCore
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JacksonCore
+       Program: jackson-core
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JacksonCore/JacksonCore.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jackson-core.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JacksonCore/active-bugs.csv
+Number of bugs: 26
+--------------------------------------------------------------------------------
+
+Summary for Bug: JacksonCore-18
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+96642978dcf1b69cba68ec72cb2f652d59a8b5be
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2016-08-24 22:53:20 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+315
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/FasterXML/jackson-core/issues/315
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.fasterxml.jackson.core.json.TestJsonGeneratorFeatures::testTooBigBigDecimal
+   --> junit.framework.AssertionFailedError: Should not have written without exception: 1E+10000
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.fasterxml.jackson.core.base.GeneratorBase
+ - com.fasterxml.jackson.core.json.UTF8JsonGenerator
+ - com.fasterxml.jackson.core.json.WriterBasedJsonGenerator
+--------------------------------------------------------------------------------

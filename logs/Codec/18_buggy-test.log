@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Codec/18_buggy...
+
+Testing /home/tyd/defects4j/tmp/Codec/18_buggy...
+Failing tests: 2
+  - org.apache.commons.codec.binary.StringUtilsTest::testEqualsCS1
+  - org.apache.commons.codec.binary.StringUtilsTest::testEqualsCS2
+

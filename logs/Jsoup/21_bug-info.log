@@ -1,0 +1,42 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Jsoup
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Jsoup
+       Program: jsoup
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/Jsoup.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jsoup.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/active-bugs.csv
+Number of bugs: 93
+--------------------------------------------------------------------------------
+
+Summary for Bug: Jsoup-21
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+249e5a8aae9324cc6c8caf5303a607056b15a9da
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2012-04-02 19:40:56 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+179
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/jhy/jsoup/issues/179
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jsoup.select.SelectorTest::handlesCommasInSelector
+   --> java.util.regex.PatternSyntaxException: Unclosed character class near index 3
+ - org.jsoup.select.SelectorTest::mixCombinatorGroup
+   --> junit.framework.AssertionFailedError: expected:<2> but was:<3>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jsoup.select.CombiningEvaluator
+ - org.jsoup.select.QueryParser
+--------------------------------------------------------------------------------

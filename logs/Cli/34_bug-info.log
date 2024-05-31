@@ -1,0 +1,42 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Cli
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Cli
+       Program: commons-cli
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Cli/Cli.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-cli.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Cli/active-bugs.csv
+Number of bugs: 39
+--------------------------------------------------------------------------------
+
+Summary for Bug: Cli-34
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+62a3b36efc78e53c233c2fb49cc8199c5eabec1d
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2011-04-12 15:55:03 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+CLI-215
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/CLI-215
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.cli.CommandLineTest::testGetParsedOptionValue
+   --> junit.framework.AssertionFailedError: expected:<foo> but was:<null>
+ - org.apache.commons.cli.OptionBuilderTest::testTwoCompleteOptions
+   --> junit.framework.AssertionFailedError: expected:<class java.lang.String> but was:<null>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.cli.Option
+ - org.apache.commons.cli.OptionBuilder
+--------------------------------------------------------------------------------

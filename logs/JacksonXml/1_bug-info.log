@@ -1,0 +1,43 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JacksonXml
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JacksonXml
+       Program: jackson-dataformat-xml
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JacksonXml/JacksonXml.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jackson-dataformat-xml.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JacksonXml/active-bugs.csv
+Number of bugs: 6
+--------------------------------------------------------------------------------
+
+Summary for Bug: JacksonXml-1
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+2d7683ed820116b77cba9b4b290cd7ce7dfa5cf4
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2016-01-06 19:35:47 -0800
+--------------------------------------------------------------------------------
+Bug report id:
+180
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/FasterXML/jackson-dataformat-xml/issues/180
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.fasterxml.jackson.dataformat.xml.lists.NestedUnwrappedLists180Test::testNestedUnwrappedLists180
+   --> junit.framework.AssertionFailedError
+ - com.fasterxml.jackson.dataformat.xml.lists.NestedUnwrappedListsTest::testNestedWithEmpty2
+   --> junit.framework.AssertionFailedError: expected:<1> but was:<0>
+ - com.fasterxml.jackson.dataformat.xml.lists.NestedUnwrappedListsTest::testNestedWithEmpty
+   --> junit.framework.AssertionFailedError: expected:<1> but was:<0>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser
+--------------------------------------------------------------------------------

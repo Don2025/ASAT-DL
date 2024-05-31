@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Cli/9_buggy...
+
+Testing /home/tyd/defects4j/tmp/Cli/9_buggy...
+Failing tests: 2
+  - org.apache.commons.cli.OptionsTest::testMissingOptionsException
+  - org.apache.commons.cli.ParseRequiredTest::testMissingRequiredOptions
+

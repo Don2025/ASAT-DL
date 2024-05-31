@@ -1,0 +1,43 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Jsoup
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Jsoup
+       Program: jsoup
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/Jsoup.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jsoup.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/active-bugs.csv
+Number of bugs: 93
+--------------------------------------------------------------------------------
+
+Summary for Bug: Jsoup-18
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+128b3f8212e357468cb608546a52da3826903fad
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2011-07-02 21:12:11 +1000
+--------------------------------------------------------------------------------
+Bug report id:
+110
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/jhy/jsoup/issues/110
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jsoup.parser.CharacterReaderTest::handleCarriageReturnAsLineFeed
+   --> junit.framework.AssertionFailedError: expected:<one []> but was:<one [ two ]>
+ - org.jsoup.parser.CharacterReaderTest::consumeToEnd
+   --> junit.framework.AssertionFailedError: expected:<one two thre[e]> but was:<one two thre[]>
+ - org.jsoup.parser.ParserTest::handlesNewlinesAndWhitespaceInTag
+   --> junit.framework.AssertionFailedError: expected:<<a href="one" []id="two"></a>> but was:<<a href="one" [="" ]id="two"></a>>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jsoup.parser.CharacterReader
+--------------------------------------------------------------------------------

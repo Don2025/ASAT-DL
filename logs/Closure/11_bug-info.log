@@ -1,0 +1,41 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Closure
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Closure
+       Program: closure-compiler
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Closure/Closure.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/closure-compiler.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Closure/active-bugs.csv
+Number of bugs: 174
+--------------------------------------------------------------------------------
+
+Summary for Bug: Closure-11
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+482b767639e6eec7c30d8898851560c41b66d885
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2012-09-12 22:16:03 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+810
+--------------------------------------------------------------------------------
+Bug report url:
+https://storage.googleapis.com/google-code-archive/v2/code.google.com/closure-compiler/issues/issue-810.json
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.google.javascript.jscomp.TypeCheckTest::testGetprop4
+   --> junit.framework.AssertionFailedError: expected a warning
+ - com.google.javascript.jscomp.TypeCheckTest::testIssue810
+   --> junit.framework.AssertionFailedError: expected a warning
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.google.javascript.jscomp.TypeCheck
+--------------------------------------------------------------------------------

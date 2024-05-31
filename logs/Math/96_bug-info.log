@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Math
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Math
+       Program: commons-math
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Math/Math.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-math.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Math/active-bugs.csv
+Number of bugs: 106
+--------------------------------------------------------------------------------
+
+Summary for Bug: Math-96
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+e6449cccdeaba96ffba4c27db322c5c3d5c18662
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2008-08-29 15:46:22 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+MATH-221
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/MATH-221
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.math.complex.ComplexTest::testMath221
+   --> junit.framework.AssertionFailedError: expected:<org.apache.commons.math.complex.Complex@98b00000> but was:<org.apache.commons.math.complex.Complex@18b00000>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.math.complex.Complex
+--------------------------------------------------------------------------------

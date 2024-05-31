@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Chart
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Chart
+       Program: jfreechart
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Chart/Chart.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Svn
+    Repository: file:///home/tyd/study/dataset/defects4j/project_repos/jfreechart/trunk
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Chart/active-bugs.csv
+Number of bugs: 26
+--------------------------------------------------------------------------------
+
+Summary for Bug: Chart-1
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+2266
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2010-02-09 13:23:49 -0800 
+--------------------------------------------------------------------------------
+Bug report id:
+983
+--------------------------------------------------------------------------------
+Bug report url:
+https://sourceforge.net/p/jfreechart/bugs/983
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jfree.chart.renderer.category.junit.AbstractCategoryItemRendererTests::test2947660
+   --> junit.framework.AssertionFailedError: expected:<1> but was:<0>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jfree.chart.renderer.category.AbstractCategoryItemRenderer
+--------------------------------------------------------------------------------

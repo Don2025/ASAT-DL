@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Chart/19_buggy...
+
+Testing /home/tyd/defects4j/tmp/Chart/19_buggy...
+Failing tests: 2
+  - org.jfree.chart.plot.junit.CategoryPlotTests::testGetRangeAxisIndex
+  - org.jfree.chart.plot.junit.CategoryPlotTests::testGetDomainAxisIndex
+

@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Gson
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Gson
+       Program: gson
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Gson/Gson.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/gson.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Gson/active-bugs.csv
+Number of bugs: 18
+--------------------------------------------------------------------------------
+
+Summary for Bug: Gson-5
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+8383f5c7fa34ae68323fe2816ef8c1307b5d0f84
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2016-02-02 20:23:52 -0800
+--------------------------------------------------------------------------------
+Bug report id:
+768
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/google/gson/issues/768
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.google.gson.DefaultDateTypeAdapterTest::testDateDeserializationISO8601
+   --> com.google.gson.JsonSyntaxException: 1970-01-01T01:00:00+01
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.google.gson.internal.bind.util.ISO8601Utils
+--------------------------------------------------------------------------------

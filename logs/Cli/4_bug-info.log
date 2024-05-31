@@ -1,0 +1,41 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Cli
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Cli
+       Program: commons-cli
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Cli/Cli.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-cli.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Cli/active-bugs.csv
+Number of bugs: 39
+--------------------------------------------------------------------------------
+
+Summary for Bug: Cli-4
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+f78959477b207bf710049aa35730ef7659f0a1b9
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2007-06-05 04:01:08 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+cli-1
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/CLI-1
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.cli.OptionsTest::testMissingOptionsException
+   --> junit.framework.ComparisonFailure: expected:<[Missing required options: ]fx> but was:<[]fx>
+ - org.apache.commons.cli.OptionsTest::testMissingOptionException
+   --> junit.framework.ComparisonFailure: expected:<[Missing required option: ]f> but was:<[]f>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.cli.Parser
+--------------------------------------------------------------------------------

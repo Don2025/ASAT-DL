@@ -1,0 +1,8 @@
+Compiling /home/tyd/defects4j/tmp/Compress/47_buggy...
+
+Testing /home/tyd/defects4j/tmp/Compress/47_buggy...
+Failing tests: 3
+  - org.apache.commons.compress.archivers.zip.UTF8ZipFilesTest::testReadWinZipArchiveForStream
+  - org.apache.commons.compress.archivers.zip.UTF8ZipFilesTest::testReadWinZipArchive
+  - org.apache.commons.compress.archivers.zip.ZipArchiveInputStreamTest::properlyMarksEntriesAsUnreadableIfUncompressedSizeIsUnknown
+

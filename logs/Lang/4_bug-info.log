@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Lang
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Lang
+       Program: commons-lang
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Lang/Lang.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-lang.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Lang/active-bugs.csv
+Number of bugs: 64
+--------------------------------------------------------------------------------
+
+Summary for Bug: Lang-4
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+fb47b96ab635d7cc6e9edefdddc46f1baf63b117
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2013-04-23 06:00:41 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+LANG-882
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/LANG-882
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.lang3.text.translate.LookupTranslatorTest::testLang882
+   --> junit.framework.AssertionFailedError: Incorrect codepoint consumption expected:<3> but was:<0>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.lang3.text.translate.LookupTranslator
+--------------------------------------------------------------------------------

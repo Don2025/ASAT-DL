@@ -1,0 +1,16 @@
+Summary of configuration for Project: Gson
+--------------------------------------------------------------------------------
+    Script dir: /home/artifact/defects4j/framework
+      Base dir: /home/artifact/defects4j
+    Major root: /home/artifact/defects4j/major
+      Repo dir: /home/artifact/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Gson
+       Program: gson
+    Build file: /home/artifact/defects4j/framework/projects/Gson/Gson.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/artifact/defects4j/project_repos/gson.git
+     Commit db: /home/artifact/defects4j/framework/projects/Gson/active-bugs.csv
+Number of bugs: 18
+--------------------------------------------------------------------------------

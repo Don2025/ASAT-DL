@@ -1,0 +1,6 @@
+Compiling /home/tyd/defects4j/tmp/JacksonXml/4_buggy...
+
+Testing /home/tyd/defects4j/tmp/JacksonXml/4_buggy...
+Failing tests: 1
+  - com.fasterxml.jackson.dataformat.xml.misc.RootNameTest::testDynamicRootName
+

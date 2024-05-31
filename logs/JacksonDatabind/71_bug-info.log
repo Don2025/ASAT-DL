@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JacksonDatabind
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JacksonDatabind
+       Program: jackson-databind
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/JacksonDatabind.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jackson-databind.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/active-bugs.csv
+Number of bugs: 112
+--------------------------------------------------------------------------------
+
+Summary for Bug: JacksonDatabind-71
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+23a733207bc88a06ee486a5896b7b0c4ebbbfef4
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2017-01-24 18:58:19 -0800
+--------------------------------------------------------------------------------
+Bug report id:
+1506
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/FasterXML/jackson-databind/issues/1506
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.fasterxml.jackson.databind.deser.TestMapDeserialization::testcharSequenceKeyMap
+   --> com.fasterxml.jackson.databind.JsonMappingException: Can not find a (Map) Key deserializer for type [simple type, class java.lang.CharSequence]
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer
+--------------------------------------------------------------------------------

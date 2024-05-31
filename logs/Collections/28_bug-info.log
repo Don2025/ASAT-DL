@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Collections
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Collections
+       Program: commons-collections
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Collections/Collections.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-collections.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Collections/active-bugs.csv
+Number of bugs: 4
+--------------------------------------------------------------------------------
+
+Summary for Bug: Collections-28
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+a270ff62852e62b5ac0f943a7e57292a72b77271
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2016-08-04 17:32:17 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+COLLECTIONS-586
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/COLLECTIONS-586
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.collections4.trie.PatriciaTrieTest::testPrefixMapClear
+   --> java.lang.NullPointerException
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.collections4.trie.AbstractPatriciaTrie
+--------------------------------------------------------------------------------

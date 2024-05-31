@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Lang
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Lang
+       Program: commons-lang
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Lang/Lang.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-lang.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Lang/active-bugs.csv
+Number of bugs: 64
+--------------------------------------------------------------------------------
+
+Summary for Bug: Lang-24
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+81903abbb25ff92597d5f1e3acc648d12bdee444
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2011-01-01 06:56:59 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+LANG-664
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/LANG-664
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.lang3.math.NumberUtilsTest::testIsNumber
+   --> junit.framework.AssertionFailedError: isNumber(String) LANG-664 failed
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.lang3.math.NumberUtils
+--------------------------------------------------------------------------------

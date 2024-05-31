@@ -1,0 +1,6 @@
+Compiling /home/tyd/defects4j/tmp/Codec/17_buggy...
+
+Testing /home/tyd/defects4j/tmp/Codec/17_buggy...
+Failing tests: 1
+  - org.apache.commons.codec.binary.StringUtilsTest::testNewStringNullInput_CODEC229
+

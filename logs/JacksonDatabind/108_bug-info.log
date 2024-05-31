@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JacksonDatabind
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JacksonDatabind
+       Program: jackson-databind
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/JacksonDatabind.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jackson-databind.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/active-bugs.csv
+Number of bugs: 112
+--------------------------------------------------------------------------------
+
+Summary for Bug: JacksonDatabind-108
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+e797b2271ab9a00b99694a963728f3835f31d1cf
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2019-01-23 22:46:03 -0800
+--------------------------------------------------------------------------------
+Bug report id:
+2211
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/FasterXML/jackson-databind/issues/2211
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.fasterxml.jackson.databind.node.EmptyContentAsTreeTest::testNullFromEOFWithParserAndReader
+   --> junit.framework.AssertionFailedError: Should get `null` for reads with `JsonParser`, instead got: com.fasterxml.jackson.databind.node.MissingNode
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.fasterxml.jackson.databind.ObjectReader
+--------------------------------------------------------------------------------

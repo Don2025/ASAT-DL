@@ -1,0 +1,44 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Closure
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Closure
+       Program: closure-compiler
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Closure/Closure.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/closure-compiler.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Closure/active-bugs.csv
+Number of bugs: 174
+--------------------------------------------------------------------------------
+
+Summary for Bug: Closure-173
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+e96ce395944edfe9ba8e9de6b475cb64a7f8d626
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2013-08-20 11:55:56 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+1062
+--------------------------------------------------------------------------------
+Bug report url:
+https://storage.googleapis.com/google-code-archive/v2/code.google.com/closure-compiler/issues/issue-1062.json
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.google.javascript.jscomp.CodePrinterTest::testPrint
+   --> junit.framework.ComparisonFailure: expected:<var a,b,c;a||[(b||c);a*(b*c);a|(b|c)]> but was:<var a,b,c;a||[b||c;a*b*c;a|b|c]>
+ - com.google.javascript.jscomp.CodePrinterTest::testIssue1062
+   --> junit.framework.ComparisonFailure: expected:<3*[(4%3*5)]> but was:<3*[4%3*5]>
+ - com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntaxTest::testAssocitivity
+   --> junit.framework.AssertionFailedError: 
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.google.javascript.jscomp.CodeGenerator
+ - com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax
+--------------------------------------------------------------------------------

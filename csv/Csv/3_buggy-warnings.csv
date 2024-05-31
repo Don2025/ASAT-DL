@@ -1,0 +1,4 @@
+"Warning Type","Code","Warning"
+"Dodgy code Warning","Bx","Boxed value is unboxed and then immediately reboxed in org.apache.commons.csv.CSVRecord.get(String)"
+"Performance Warning","NP","Immediate dereference of the result of readLine() in org.apache.commons.csv.CSVLexer.nextToken(Token)"
+"Performance Warning","SF","Switch statement found in org.apache.commons.csv.CSVPrinter.printComment(String) where one case falls through to the next case"

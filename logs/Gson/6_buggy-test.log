@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Gson/6_buggy...
+
+Testing /home/tyd/defects4j/tmp/Gson/6_buggy...
+Failing tests: 2
+  - com.google.gson.regression.JsonAdapterNullSafeTest::testNullSafeBugDeserialize
+  - com.google.gson.regression.JsonAdapterNullSafeTest::testNullSafeBugSerialize
+

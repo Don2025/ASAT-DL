@@ -1,0 +1,11 @@
+Checking out bcfef890 to /home/tyd/defects4j/tmp/Codec/4_fixed............. OK
+Init local repository...................................................... OK
+Tag post-fix revision...................................................... OK
+Run post-checkout hook..................................................... OK
+Initialize fixed program version........................................... OK
+Apply patch................................................................ OK
+Initialize buggy program version........................................... OK
+Diff bcfef890:38ba1323..................................................... OK
+Apply patch................................................................ OK
+Tag pre-fix revision....................................................... OK
+Check out program version: Codec-4f........................................ OK

@@ -1,0 +1,51 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Closure
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Closure
+       Program: closure-compiler
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Closure/Closure.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/closure-compiler.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Closure/active-bugs.csv
+Number of bugs: 174
+--------------------------------------------------------------------------------
+
+Summary for Bug: Closure-86
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+0907b6618a60b2de23c8f7ec2217a37dc5e9a091
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2010-12-18 00:47:28 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+303
+--------------------------------------------------------------------------------
+Bug report url:
+https://storage.googleapis.com/google-code-archive/v2/code.google.com/closure-compiler/issues/issue-303.json
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.google.javascript.jscomp.NodeUtilTest::testLocalValue1
+   --> junit.framework.AssertionFailedError
+ - com.google.javascript.jscomp.PureFunctionIdentifierTest::testLocalizedSideEffects8
+   --> junit.framework.AssertionFailedError: expected:<[A]> but was:<[A, f]>
+ - com.google.javascript.jscomp.PureFunctionIdentifierTest::testLocalizedSideEffects9
+   --> junit.framework.AssertionFailedError: expected:<[A]> but was:<[A, f]>
+ - com.google.javascript.jscomp.PureFunctionIdentifierTest::testAnnotationInExterns_new4
+   --> junit.framework.AssertionFailedError: expected:<[externObjSEThis]> but was:<[externObjSEThis, NEW STRING externObjSEThisMethod]>
+ - com.google.javascript.jscomp.PureFunctionIdentifierTest::testAnnotationInExterns_new6
+   --> junit.framework.AssertionFailedError: expected:<[externObjSEThis]> but was:<[externObjSEThis, NEW STRING externObjSEThisMethod, f]>
+ - com.google.javascript.jscomp.PureFunctionIdentifierTest::testIssue303b
+   --> junit.framework.AssertionFailedError: expected:<[]> but was:<[NEW STRING setLocation]>
+ - com.google.javascript.jscomp.PureFunctionIdentifierTest::testIssue303
+   --> junit.framework.AssertionFailedError: expected:<[]> but was:<[NEW STRING setLocation]>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.google.javascript.jscomp.NodeUtil
+--------------------------------------------------------------------------------

@@ -1,0 +1,41 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JacksonDatabind
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JacksonDatabind
+       Program: jackson-databind
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/JacksonDatabind.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jackson-databind.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/active-bugs.csv
+Number of bugs: 112
+--------------------------------------------------------------------------------
+
+Summary for Bug: JacksonDatabind-104
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+83c7c4347055c3a70a3115fa106aa69c9cb56456
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2018-11-22 17:43:25 -0800
+--------------------------------------------------------------------------------
+Bug report id:
+2167
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/FasterXML/jackson-databind/issues/2167
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.fasterxml.jackson.databind.ser.jdk.DateSerializationTest::testDateISO8601_10k
+   --> org.junit.ComparisonFailure: expected:<"[+10]204-01-01T00:00:00.0...> but was:<"[:]204-01-01T00:00:00.0...>
+ - com.fasterxml.jackson.databind.ser.jdk.DateSerializationTest::testDateISO8601_BCE
+   --> org.junit.ComparisonFailure: expected:<"[+0000]-01-01T00:00:00.000+...> but was:<"[0001]-01-01T00:00:00.000+...>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.fasterxml.jackson.databind.util.StdDateFormat
+--------------------------------------------------------------------------------

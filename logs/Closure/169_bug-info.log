@@ -1,0 +1,46 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Closure
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Closure
+       Program: closure-compiler
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Closure/Closure.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/closure-compiler.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Closure/active-bugs.csv
+Number of bugs: 174
+--------------------------------------------------------------------------------
+
+Summary for Bug: Closure-169
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+ac239c7c53aa4d6c3105f600dec8af69da530883
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2012-10-19 16:41:16 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+791
+--------------------------------------------------------------------------------
+Bug report url:
+https://storage.googleapis.com/google-code-archive/v2/code.google.com/closure-compiler/issues/issue-791.json
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.google.javascript.jscomp.TypeCheckTest::testIssue791
+   --> junit.framework.AssertionFailedError: unexpected warnings(s):
+ - com.google.javascript.rhino.jstype.RecordTypeTest::testSubtypeWithUnknowns2
+   --> junit.framework.AssertionFailedError
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.google.javascript.rhino.jstype.ArrowType
+ - com.google.javascript.rhino.jstype.EquivalenceMethod
+ - com.google.javascript.rhino.jstype.FunctionType
+ - com.google.javascript.rhino.jstype.JSType
+ - com.google.javascript.rhino.jstype.RecordType
+ - com.google.javascript.rhino.jstype.UnionType
+--------------------------------------------------------------------------------

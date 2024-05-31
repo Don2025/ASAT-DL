@@ -1,0 +1,16 @@
+Summary of configuration for Project: Lang
+--------------------------------------------------------------------------------
+    Script dir: /home/artifact/defects4j/framework
+      Base dir: /home/artifact/defects4j
+    Major root: /home/artifact/defects4j/major
+      Repo dir: /home/artifact/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Lang
+       Program: commons-lang
+    Build file: /home/artifact/defects4j/framework/projects/Lang/Lang.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/artifact/defects4j/project_repos/commons-lang.git
+     Commit db: /home/artifact/defects4j/framework/projects/Lang/active-bugs.csv
+Number of bugs: 64
+--------------------------------------------------------------------------------

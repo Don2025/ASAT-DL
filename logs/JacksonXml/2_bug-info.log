@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JacksonXml
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JacksonXml
+       Program: jackson-dataformat-xml
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JacksonXml/JacksonXml.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jackson-dataformat-xml.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JacksonXml/active-bugs.csv
+Number of bugs: 6
+--------------------------------------------------------------------------------
+
+Summary for Bug: JacksonXml-2
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+37eb331acce08142ad027f127c355f9b462fe9e0
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2016-06-09 21:09:39 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+196
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/FasterXML/jackson-dataformat-xml/issues/196
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.fasterxml.jackson.dataformat.xml.misc.XmlTextTest::testMixedContent
+   --> junit.framework.AssertionFailedError: expected:<27> but was:<0>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.fasterxml.jackson.dataformat.xml.deser.XmlTokenStream
+--------------------------------------------------------------------------------

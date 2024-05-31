@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Gson
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Gson
+       Program: gson
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Gson/Gson.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/gson.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Gson/active-bugs.csv
+Number of bugs: 18
+--------------------------------------------------------------------------------
+
+Summary for Bug: Gson-10
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+bb451eac43313ae08b30ac0916718ca00c39656d
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2016-05-17 17:26:52 -0400
+--------------------------------------------------------------------------------
+Bug report id:
+831
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/google/gson/issues/831
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.google.gson.functional.JsonAdapterAnnotationOnFieldsTest::testPrimitiveFieldAnnotationTakesPrecedenceOverDefault
+   --> junit.framework.ComparisonFailure: expected:<{"part":["42"]}> but was:<{"part":[42]}>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.google.gson.internal.bind.ReflectiveTypeAdapterFactory
+--------------------------------------------------------------------------------

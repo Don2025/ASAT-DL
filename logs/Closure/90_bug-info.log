@@ -1,0 +1,42 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Closure
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Closure
+       Program: closure-compiler
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Closure/Closure.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/closure-compiler.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Closure/active-bugs.csv
+Number of bugs: 174
+--------------------------------------------------------------------------------
+
+Summary for Bug: Closure-90
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+c5e143f7df0c3d73f6634488cac8ad8e7054fe05
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2010-11-01 16:00:27 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+274
+--------------------------------------------------------------------------------
+Bug report url:
+https://storage.googleapis.com/google-code-archive/v2/code.google.com/closure-compiler/issues/issue-274.json
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.google.javascript.jscomp.TypeCheckTest::testBackwardsTypedefUse8
+   --> junit.framework.AssertionFailedError: unexpected warnings(s):
+ - com.google.javascript.jscomp.TypeCheckTest::testBackwardsTypedefUse9
+   --> junit.framework.ComparisonFailure: expected:<[actual parameter 1 of g does not match formal parameter
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.google.javascript.jscomp.FunctionTypeBuilder
+ - com.google.javascript.rhino.jstype.FunctionType
+--------------------------------------------------------------------------------

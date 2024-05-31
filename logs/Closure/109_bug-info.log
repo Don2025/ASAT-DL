@@ -1,0 +1,41 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Closure
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Closure
+       Program: closure-compiler
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Closure/Closure.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/closure-compiler.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Closure/active-bugs.csv
+Number of bugs: 174
+--------------------------------------------------------------------------------
+
+Summary for Bug: Closure-109
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+7d26b7bcae8311f3c032bae3f1df27b590a4c174
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2013-11-08 00:06:42 -0500
+--------------------------------------------------------------------------------
+Bug report id:
+1105
+--------------------------------------------------------------------------------
+Bug report url:
+https://storage.googleapis.com/google-code-archive/v2/code.google.com/closure-compiler/issues/issue-1105.json
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.google.javascript.jscomp.parsing.JsDocInfoParserTest::testStructuralConstructor2
+   --> junit.framework.AssertionFailedError: extra warning: Bad type annotation. type not recognized due to syntax error
+ - com.google.javascript.jscomp.parsing.JsDocInfoParserTest::testStructuralConstructor3
+   --> junit.framework.AssertionFailedError: extra warning: Bad type annotation. type not recognized due to syntax error
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.google.javascript.jscomp.parsing.JsDocInfoParser
+--------------------------------------------------------------------------------

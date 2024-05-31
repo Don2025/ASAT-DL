@@ -1,0 +1,8 @@
+Compiling /home/tyd/defects4j/tmp/Closure/3_buggy...
+
+Testing /home/tyd/defects4j/tmp/Closure/3_buggy...
+Failing tests: 3
+  - com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest::testDoNotInlineCatchExpression1a
+  - com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest::testDoNotInlineCatchExpression1
+  - com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest::testDoNotInlineCatchExpression3
+

@@ -1,0 +1,41 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JacksonDatabind
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JacksonDatabind
+       Program: jackson-databind
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/JacksonDatabind.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jackson-databind.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/active-bugs.csv
+Number of bugs: 112
+--------------------------------------------------------------------------------
+
+Summary for Bug: JacksonDatabind-106
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+6ef86656aa504309ea3d89cf98ce45d11d6ea9c6
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2019-01-16 22:20:38 -0800
+--------------------------------------------------------------------------------
+Bug report id:
+2189
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/FasterXML/jackson-databind/issues/2189
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.fasterxml.jackson.databind.node.TestTreeTraversingParser::testNumberOverflowLong
+   --> junit.framework.AssertionFailedError: Expected failure for `long` overflow
+ - com.fasterxml.jackson.databind.node.TestTreeTraversingParser::testNumberOverflowInt
+   --> junit.framework.AssertionFailedError: Expected failure for `int` overflow
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.fasterxml.jackson.databind.node.TreeTraversingParser
+--------------------------------------------------------------------------------

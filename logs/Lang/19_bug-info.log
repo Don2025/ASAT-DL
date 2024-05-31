@@ -1,0 +1,41 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Lang
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Lang
+       Program: commons-lang
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Lang/Lang.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-lang.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Lang/active-bugs.csv
+Number of bugs: 64
+--------------------------------------------------------------------------------
+
+Summary for Bug: Lang-19
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+0b3a8a3128890f710700d04e38df48b883d11d91
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2011-07-03 07:55:33 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+LANG-710
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/LANG-710
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest::testUnfinishedEntity
+   --> java.lang.StringIndexOutOfBoundsException: String index out of range: 19
+ - org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest::testOutOfBounds
+   --> java.lang.StringIndexOutOfBoundsException: String index out of range: 7
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.lang3.text.translate.NumericEntityUnescaper
+--------------------------------------------------------------------------------

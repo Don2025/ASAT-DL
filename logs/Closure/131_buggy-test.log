@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Closure/131_buggy...
+
+Testing /home/tyd/defects4j/tmp/Closure/131_buggy...
+Failing tests: 2
+  - com.google.javascript.jscomp.ConvertToDottedPropertiesTest::testQuotedProps
+  - com.google.javascript.jscomp.ConvertToDottedPropertiesTest::testDoNotConvert
+

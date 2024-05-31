@@ -1,0 +1,16 @@
+Summary of configuration for Project: Mockito
+--------------------------------------------------------------------------------
+    Script dir: /home/artifact/defects4j/framework
+      Base dir: /home/artifact/defects4j
+    Major root: /home/artifact/defects4j/major
+      Repo dir: /home/artifact/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Mockito
+       Program: mockito
+    Build file: /home/artifact/defects4j/framework/projects/Mockito/Mockito.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/artifact/defects4j/project_repos/mockito.git
+     Commit db: /home/artifact/defects4j/framework/projects/Mockito/active-bugs.csv
+Number of bugs: 38
+--------------------------------------------------------------------------------

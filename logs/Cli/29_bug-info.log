@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Cli
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Cli
+       Program: commons-cli
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Cli/Cli.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-cli.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Cli/active-bugs.csv
+Number of bugs: 39
+--------------------------------------------------------------------------------
+
+Summary for Bug: Cli-29
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+20002f7f4e971349a1c95dd3b05846c5b824b65c
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2010-06-16 08:35:18 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+CLI-185
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/CLI-185
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.cli.UtilTest::testStripLeadingAndTrailingQuotes
+   --> junit.framework.ComparisonFailure: expected:<foo "bar["]> but was:<foo "bar[]>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.cli.Util
+--------------------------------------------------------------------------------

@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Collections
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Collections
+       Program: commons-collections
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Collections/Collections.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-collections.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Collections/active-bugs.csv
+Number of bugs: 4
+--------------------------------------------------------------------------------
+
+Summary for Bug: Collections-26
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+f8bd75d37ca12c5d49c1b628c33c0b45e2d082eb
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2015-09-28 08:53:44 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+COLLECTIONS-576
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/COLLECTIONS-576
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.collections4.keyvalue.MultiKeyTest::testEqualsAfterSerializationOfDerivedClass
+   --> junit.framework.AssertionFailedError: expected:<3> but was:<0>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.collections4.keyvalue.MultiKey
+--------------------------------------------------------------------------------

@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Mockito
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Mockito
+       Program: mockito
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Mockito/Mockito.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/mockito.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Mockito/active-bugs.csv
+Number of bugs: 38
+--------------------------------------------------------------------------------
+
+Summary for Bug: Mockito-5
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+42a24dde02923185db3f79ae57e7819f7d70af55
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2015-01-20 21:24:00 +0100
+--------------------------------------------------------------------------------
+Bug report id:
+152
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/mockito/mockito/issues/152
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.mockitointegration.NoJUnitDependenciesTest::pure_mockito_should_not_depend_JUnit
+   --> junit.framework.AssertionFailedError: 'org.mockito.internal.verification.VerificationOverTimeImpl' has some dependency to JUnit
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.mockito.internal.verification.VerificationOverTimeImpl
+--------------------------------------------------------------------------------

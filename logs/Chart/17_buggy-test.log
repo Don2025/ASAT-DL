@@ -1,0 +1,6 @@
+Compiling /home/tyd/defects4j/tmp/Chart/17_buggy...
+
+Testing /home/tyd/defects4j/tmp/Chart/17_buggy...
+Failing tests: 1
+  - org.jfree.data.time.junit.TimeSeriesTests::testBug1832432
+

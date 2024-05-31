@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Csv
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Csv
+       Program: commons-csv
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Csv/Csv.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-csv.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Csv/active-bugs.csv
+Number of bugs: 16
+--------------------------------------------------------------------------------
+
+Summary for Bug: Csv-16
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+f368f64fa7f9acdcc01084f676e8b9c2b86f946e
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2018-05-18 14:24:50 -0600
+--------------------------------------------------------------------------------
+Bug report id:
+CSV-224
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/CSV-224
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.csv.CSVParserTest::testIteratorSequenceBreaking
+   --> junit.framework.AssertionFailedError: expected:<[3]> but was:<[4]>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.csv.CSVParser
+--------------------------------------------------------------------------------

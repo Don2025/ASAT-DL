@@ -1,0 +1,8 @@
+Compiling /home/tyd/defects4j/tmp/Codec/10_buggy...
+
+Testing /home/tyd/defects4j/tmp/Codec/10_buggy...
+Failing tests: 3
+  - org.apache.commons.codec.language.CaverphoneTest::testEndMb
+  - org.apache.commons.codec.language.SoundexTest::testUsMappingEWithAcute
+  - org.apache.commons.codec.language.SoundexTest::testUsMappingOWithDiaeresis
+

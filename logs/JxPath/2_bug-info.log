@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JxPath
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JxPath
+       Program: commons-jxpath
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JxPath/JxPath.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-jxpath.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JxPath/active-bugs.csv
+Number of bugs: 22
+--------------------------------------------------------------------------------
+
+Summary for Bug: JxPath-2
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+716c03b3b12ec106974898451b149f6eb79c65da
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2007-01-10 22:37:24 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+JXPATH-50
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/JXPATH-50
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.jxpath.ri.compiler.ExtensionFunctionTest::testNodeSetReturn
+   --> junit.framework.AssertionFailedError: Evaluating value iterator <test:nodeSet()> expected:<[Nested: Name 1, Nested: Name 2]> but was:<[[/beans[1], /beans[2]]]>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.jxpath.ri.compiler.Expression
+--------------------------------------------------------------------------------

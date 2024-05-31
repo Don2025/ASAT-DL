@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/JacksonCore/7_buggy...
+
+Testing /home/tyd/defects4j/tmp/JacksonCore/7_buggy...
+Failing tests: 2
+  - com.fasterxml.jackson.core.json.GeneratorFailTest::testFailOnWritingStringNotFieldNameBytes
+  - com.fasterxml.jackson.core.json.GeneratorFailTest::testFailOnWritingStringNotFieldNameChars
+

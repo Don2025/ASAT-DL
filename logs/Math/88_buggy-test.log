@@ -1,0 +1,6 @@
+Compiling /home/tyd/defects4j/tmp/Math/88_buggy...
+
+Testing /home/tyd/defects4j/tmp/Math/88_buggy...
+Failing tests: 1
+  - org.apache.commons.math.optimization.linear.SimplexSolverTest::testMath272
+

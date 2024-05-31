@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Chart
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Chart
+       Program: jfreechart
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Chart/Chart.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Svn
+    Repository: file:///home/tyd/study/dataset/defects4j/project_repos/jfreechart/trunk
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Chart/active-bugs.csv
+Number of bugs: 26
+--------------------------------------------------------------------------------
+
+Summary for Bug: Chart-11
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+1025
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2008-06-02 00:27:30 -0700 
+--------------------------------------------------------------------------------
+Bug report id:
+868
+--------------------------------------------------------------------------------
+Bug report url:
+https://sourceforge.net/p/jfreechart/bugs/868
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jfree.chart.util.junit.ShapeUtilitiesTests::testEqualGeneralPaths
+   --> junit.framework.AssertionFailedError
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jfree.chart.util.ShapeUtilities
+--------------------------------------------------------------------------------

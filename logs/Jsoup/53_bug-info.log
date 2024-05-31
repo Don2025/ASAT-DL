@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Jsoup
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Jsoup
+       Program: jsoup
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/Jsoup.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jsoup.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/active-bugs.csv
+Number of bugs: 93
+--------------------------------------------------------------------------------
+
+Summary for Bug: Jsoup-53
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+a229d7354da5210a728ce5d43158d5cd780772db
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2016-05-07 17:18:58 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+611
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/jhy/jsoup/issues/611
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jsoup.select.SelectorTest::attributeWithBrackets
+   --> org.jsoup.select.Selector$SelectorParseException: Could not parse query 'div[data='End]'': unexpected token at '''
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jsoup.parser.TokenQueue
+--------------------------------------------------------------------------------

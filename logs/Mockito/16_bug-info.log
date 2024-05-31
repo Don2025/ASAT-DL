@@ -1,0 +1,40 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Mockito
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Mockito
+       Program: mockito
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Mockito/Mockito.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/mockito.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Mockito/active-bugs.csv
+Number of bugs: 38
+--------------------------------------------------------------------------------
+
+Summary for Bug: Mockito-16
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+620f8faed0ad132961aae3a8671120e0929ce828
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2009-11-22 14:35:32 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+151
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/mockito/mockito/issues/151
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.mockitousage.bugs.StubbingMocksThatAreConfiguredToReturnMocksTest::shouldAllowStubbingMocksConfiguredWithRETURNS_MOCKS
+   --> org.mockito.exceptions.misusing.MissingMethodInvocationException: 
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.mockito.internal.MockitoCore
+ - org.mockito.Mockito
+--------------------------------------------------------------------------------

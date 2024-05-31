@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Jsoup
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Jsoup
+       Program: jsoup
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/Jsoup.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jsoup.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/active-bugs.csv
+Number of bugs: 93
+--------------------------------------------------------------------------------
+
+Summary for Bug: Jsoup-88
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+8b837a43cbe2c12624ab2088dc4ff9a725af5f4d
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2018-12-23 22:02:59 -0800
+--------------------------------------------------------------------------------
+Bug report id:
+1065
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/jhy/jsoup/issues/1065
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jsoup.nodes.AttributeTest::booleanAttributesAreEmptyStringValues
+   --> junit.framework.AssertionFailedError: expected:<> but was:<null>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jsoup.nodes.Attribute
+--------------------------------------------------------------------------------

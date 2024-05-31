@@ -1,0 +1,6 @@
+Compiling /home/tyd/defects4j/tmp/Mockito/22_buggy...
+
+Testing /home/tyd/defects4j/tmp/Mockito/22_buggy...
+Failing tests: 1
+  - org.mockito.internal.matchers.EqualityTest::shouldKnowIfObjectsAreEqual
+

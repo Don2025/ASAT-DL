@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Lang/41_buggy...
+
+Testing /home/tyd/defects4j/tmp/Lang/41_buggy...
+Failing tests: 2
+  - org.apache.commons.lang.ClassUtilsTest::test_getShortClassName_Class
+  - org.apache.commons.lang.ClassUtilsTest::test_getPackageName_Class
+

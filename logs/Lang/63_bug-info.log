@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Lang
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Lang
+       Program: commons-lang
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Lang/Lang.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-lang.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Lang/active-bugs.csv
+Number of bugs: 64
+--------------------------------------------------------------------------------
+
+Summary for Bug: Lang-63
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+0695c3f71e3fc5abe29d8b9b33eed7faac7e73bf
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2006-10-07 00:22:42 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+LANG-281
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/LANG-281
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.lang.time.DurationFormatUtilsTest::testJiraLang281
+   --> junit.framework.ComparisonFailure: expected:<[09]> but was:<[-2]>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.lang.time.DurationFormatUtils
+--------------------------------------------------------------------------------

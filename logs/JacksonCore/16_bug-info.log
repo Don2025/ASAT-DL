@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JacksonCore
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JacksonCore
+       Program: jackson-core
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JacksonCore/JacksonCore.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jackson-core.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JacksonCore/active-bugs.csv
+Number of bugs: 26
+--------------------------------------------------------------------------------
+
+Summary for Bug: JacksonCore-16
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+e052c319eccd6086c28fa5371807d887ebe302cf
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2016-07-01 21:11:25 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+296
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/FasterXML/jackson-core/issues/296
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.fasterxml.jackson.core.json.ParserSequenceTest::testInitialized
+   --> junit.framework.AssertionFailedError: expected:<2> but was:<3>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.fasterxml.jackson.core.util.JsonParserSequence
+--------------------------------------------------------------------------------

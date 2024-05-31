@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Compress
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Compress
+       Program: commons-compress
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Compress/Compress.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-compress.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Compress/active-bugs.csv
+Number of bugs: 47
+--------------------------------------------------------------------------------
+
+Summary for Bug: Compress-39
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+11840dfde044fec90b0cb4a715ce9d213acea3ca
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2016-06-07 18:23:48 +0200
+--------------------------------------------------------------------------------
+Bug report id:
+COMPRESS-351
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/COMPRESS-351
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.compress.ArchiveUtilsTest::sanitizeShortensString
+   --> junit.framework.AssertionFailedError: expected:<...23456789012345678901[...]> but was:<...23456789012345678901[234567890123456789012345678901234567890123456789]>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.compress.utils.ArchiveUtils
+--------------------------------------------------------------------------------

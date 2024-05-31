@@ -1,0 +1,42 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JacksonDatabind
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JacksonDatabind
+       Program: jackson-databind
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/JacksonDatabind.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jackson-databind.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/active-bugs.csv
+Number of bugs: 112
+--------------------------------------------------------------------------------
+
+Summary for Bug: JacksonDatabind-73
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+4d34006e4d8a566c6c64a3a0e04c17e50d63bb82
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2017-01-26 19:12:29 -0800
+--------------------------------------------------------------------------------
+Bug report id:
+935
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/FasterXML/jackson-databind/issues/935
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.fasterxml.jackson.databind.deser.ReadOrWriteOnlyTest::testReadOnlyAndWriteOnly
+   --> com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "x" (class com.fasterxml.jackson.databind.deser.ReadOrWriteOnlyTest$ReadXWriteY), not marked as ignorable (one known property: "y"])
+ - com.fasterxml.jackson.databind.deser.ReadOrWriteOnlyTest::testReadOnly935
+   --> com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "fullName" (class com.fasterxml.jackson.databind.deser.ReadOrWriteOnlyTest$Pojo935), not marked as ignorable (2 known properties: "lastName", "firstName"])
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.fasterxml.jackson.databind.introspect.POJOPropertiesCollector
+ - com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder
+--------------------------------------------------------------------------------

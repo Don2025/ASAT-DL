@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Math
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Math
+       Program: commons-math
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Math/Math.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-math.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Math/active-bugs.csv
+Number of bugs: 106
+--------------------------------------------------------------------------------
+
+Summary for Bug: Math-60
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+9054aac4b948117b838d6a5b15be1f50965d805a
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2010-11-30 11:55:22 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+MATH-414
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/MATH-414
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.math.distribution.NormalDistributionTest::testExtremeValues
+   --> org.apache.commons.math.ConvergenceException: Continued fraction diverged to NaN for value ∞
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.math.distribution.NormalDistributionImpl
+--------------------------------------------------------------------------------

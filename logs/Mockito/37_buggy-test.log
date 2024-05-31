@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Mockito/37_buggy...
+
+Testing /home/tyd/defects4j/tmp/Mockito/37_buggy...
+Failing tests: 2
+  - org.mockito.internal.stubbing.answers.AnswersValidatorTest::shouldFailWhenCallingRealMethodOnIterface
+  - org.mockitousage.spies.SpyingOnInterfacesTest::shouldFailFastWhenCallingRealMethodOnInterface
+

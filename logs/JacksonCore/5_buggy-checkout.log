@@ -1,0 +1,13 @@
+Checking out 0d9cd9fa to /home/tyd/defects4j/tmp/JacksonCore/5_buggy....... OK
+Init local repository...................................................... OK
+Tag post-fix revision...................................................... OK
+Copy generated Ant build file.............................................. OK
+Run post-checkout hook..................................................... OK
+Excluding broken/flaky tests............................................... OK
+Initialize fixed program version........................................... OK
+Apply patch................................................................ OK
+Initialize buggy program version........................................... OK
+Diff 0d9cd9fa:bfdc2852..................................................... OK
+Apply patch................................................................ OK
+Tag pre-fix revision....................................................... OK
+Check out program version: JacksonCore-5b.................................. OK

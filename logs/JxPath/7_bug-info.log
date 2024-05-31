@@ -1,0 +1,43 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JxPath
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JxPath
+       Program: commons-jxpath
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JxPath/JxPath.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-jxpath.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JxPath/active-bugs.csv
+Number of bugs: 22
+--------------------------------------------------------------------------------
+
+Summary for Bug: JxPath-7
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+58fac658aba985ba77f8bd0156c6d01bec8d991b
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2007-07-10 21:59:45 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+JXPATH-93
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/JXPATH-93
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.jxpath.ri.compiler.CoreOperationTest::testNodeSetOperations
+   --> junit.framework.AssertionFailedError: Evaluating <$array > 0> expected:<true> but was:<false>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.jxpath.ri.compiler.CoreOperationGreaterThan
+ - org.apache.commons.jxpath.ri.compiler.CoreOperationGreaterThanOrEqual
+ - org.apache.commons.jxpath.ri.compiler.CoreOperationLessThan
+ - org.apache.commons.jxpath.ri.compiler.CoreOperationLessThanOrEqual
+ - org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression
+--------------------------------------------------------------------------------

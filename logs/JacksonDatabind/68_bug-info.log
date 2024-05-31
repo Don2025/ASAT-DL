@@ -1,0 +1,41 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JacksonDatabind
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JacksonDatabind
+       Program: jackson-databind
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/JacksonDatabind.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jackson-databind.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/active-bugs.csv
+Number of bugs: 112
+--------------------------------------------------------------------------------
+
+Summary for Bug: JacksonDatabind-68
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+d0cfb645350fab16bf61fac140b69ef55f8cba2e
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2016-11-11 19:28:53 -0800
+--------------------------------------------------------------------------------
+Bug report id:
+1421
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/FasterXML/jackson-databind/issues/1421
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.fasterxml.jackson.databind.struct.SingleValueAsArrayTest::testSuccessfulDeserializationOfObjectWithChainedArrayCreators
+   --> com.fasterxml.jackson.databind.JsonMappingException: Can not construct instance of com.fasterxml.jackson.databind.struct.SingleValueAsArrayTest$Messages: no suitable constructor found, can not deserialize from Object value (missing default constructor or creator, or perhaps need to add/enable type information?)
+ - com.fasterxml.jackson.databind.struct.SingleValueAsArrayTest::testWithSingleString
+   --> com.fasterxml.jackson.databind.JsonMappingException: Can not construct instance of com.fasterxml.jackson.databind.struct.SingleValueAsArrayTest$Bean1421B: no String-argument constructor/factory method to deserialize from String value ('test2')
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.fasterxml.jackson.databind.deser.BeanDeserializerBase
+--------------------------------------------------------------------------------

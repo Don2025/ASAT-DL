@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Compress
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Compress
+       Program: commons-compress
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Compress/Compress.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-compress.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Compress/active-bugs.csv
+Number of bugs: 47
+--------------------------------------------------------------------------------
+
+Summary for Bug: Compress-34
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+e6e24766377e705e89358fb9cf6253e2e9e645db
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2015-08-22 19:01:32 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+COMPRESS-321
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/COMPRESS-321
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.compress.archivers.zip.X7875_NewUnixTest::testParseReparse
+   --> junit.framework.AssertionFailedError: expected:<0> but was:<5>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.compress.archivers.zip.X7875_NewUnix
+--------------------------------------------------------------------------------

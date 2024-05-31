@@ -1,0 +1,16 @@
+Summary of configuration for Project: Compress
+--------------------------------------------------------------------------------
+    Script dir: /home/artifact/defects4j/framework
+      Base dir: /home/artifact/defects4j
+    Major root: /home/artifact/defects4j/major
+      Repo dir: /home/artifact/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Compress
+       Program: commons-compress
+    Build file: /home/artifact/defects4j/framework/projects/Compress/Compress.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/artifact/defects4j/project_repos/commons-compress.git
+     Commit db: /home/artifact/defects4j/framework/projects/Compress/active-bugs.csv
+Number of bugs: 47
+--------------------------------------------------------------------------------

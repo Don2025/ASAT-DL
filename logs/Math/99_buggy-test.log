@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Math/99_buggy...
+
+Testing /home/tyd/defects4j/tmp/Math/99_buggy...
+Failing tests: 2
+  - org.apache.commons.math.util.MathUtilsTest::testGcd
+  - org.apache.commons.math.util.MathUtilsTest::testLcm
+

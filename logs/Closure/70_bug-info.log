@@ -1,0 +1,47 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Closure
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Closure
+       Program: closure-compiler
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Closure/Closure.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/closure-compiler.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Closure/active-bugs.csv
+Number of bugs: 174
+--------------------------------------------------------------------------------
+
+Summary for Bug: Closure-70
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+ec4a34c2bd87ba54fa8770affdeeea4f3c42089b
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2011-05-20 19:48:47 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+433
+--------------------------------------------------------------------------------
+Bug report url:
+https://storage.googleapis.com/google-code-archive/v2/code.google.com/closure-compiler/issues/issue-433.json
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.google.javascript.jscomp.LooseTypeCheckTest::testDuplicateLocalVarDecl
+   --> junit.framework.AssertionFailedError: expected:<2> but was:<1>
+ - com.google.javascript.jscomp.LooseTypeCheckTest::testFunctionArguments13
+   --> junit.framework.AssertionFailedError: expected a warning
+ - com.google.javascript.jscomp.TypeCheckTest::testScoping12
+   --> junit.framework.AssertionFailedError: expected a warning
+ - com.google.javascript.jscomp.TypeCheckTest::testDuplicateLocalVarDecl
+   --> junit.framework.AssertionFailedError: unexpected warning(s) : JSC_DUP_VAR_DECLARATION. variable x redefined with type string, original definition at  [testcode] :2 with type number at  [testcode]  line 2 : 42 expected:<2> but was:<1>
+ - com.google.javascript.jscomp.TypeCheckTest::testFunctionArguments13
+   --> junit.framework.AssertionFailedError: expected a warning
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.google.javascript.jscomp.TypedScopeCreator
+--------------------------------------------------------------------------------

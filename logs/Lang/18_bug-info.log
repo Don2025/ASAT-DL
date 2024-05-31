@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Lang
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Lang
+       Program: commons-lang
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Lang/Lang.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-lang.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Lang/active-bugs.csv
+Number of bugs: 64
+--------------------------------------------------------------------------------
+
+Summary for Bug: Lang-18
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+2aa9dca994b006ccbfcb528de5ff0da6a5578411
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2011-07-13 17:01:37 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+LANG-719
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/LANG-719
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.lang3.time.FastDateFormatTest::testFormat
+   --> junit.framework.ComparisonFailure: expected:<AD AD AD AD 2003 [2003 03 20]03 January Jan 01 1 ...> but was:<AD AD AD AD 2003 [03 03 ]03 January Jan 01 1 ...>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.lang3.time.FastDateFormat
+--------------------------------------------------------------------------------

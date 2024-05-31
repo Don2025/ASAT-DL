@@ -1,0 +1,41 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Gson
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Gson
+       Program: gson
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Gson/Gson.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/gson.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Gson/active-bugs.csv
+Number of bugs: 18
+--------------------------------------------------------------------------------
+
+Summary for Bug: Gson-9
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+874e74a3072f7ff0d2533296698ad126321516d1
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2016-04-22 14:54:25 -1000
+--------------------------------------------------------------------------------
+Bug report id:
+836
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/google/gson/pull/836
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.google.gson.stream.JsonWriterTest::testBoxedBooleans
+   --> java.lang.NullPointerException
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.google.gson.internal.bind.JsonTreeWriter
+ - com.google.gson.internal.bind.TypeAdapters
+ - com.google.gson.stream.JsonWriter
+--------------------------------------------------------------------------------

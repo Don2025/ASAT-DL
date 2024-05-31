@@ -1,0 +1,41 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Gson
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Gson
+       Program: gson
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Gson/Gson.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/gson.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Gson/active-bugs.csv
+Number of bugs: 18
+--------------------------------------------------------------------------------
+
+Summary for Bug: Gson-16
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+03a72e752ef68269990f984c9fd613cfd59224bc
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2017-07-31 10:50:29 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+1128
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/google/gson/pull/1128
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.google.gson.internal.bind.RecursiveTypesResolveTest::testRecursiveTypeVariablesResolve12
+   --> java.lang.StackOverflowError
+ - com.google.gson.internal.bind.RecursiveTypesResolveTest::testRecursiveTypeVariablesResolve1
+   --> java.lang.StackOverflowError
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.google.gson.internal.$Gson$Types
+--------------------------------------------------------------------------------

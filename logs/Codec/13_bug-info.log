@@ -1,0 +1,43 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Codec
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Codec
+       Program: commons-codec
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Codec/Codec.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-codec.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Codec/active-bugs.csv
+Number of bugs: 18
+--------------------------------------------------------------------------------
+
+Summary for Bug: Codec-13
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+37ba197e62d6b60037d18afc33801e6221f1b8c6
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2014-04-10 13:51:06 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+CODEC-184
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/CODEC-184
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.codec.language.DoubleMetaphoneTest::testIsDoubleMetaphoneEqualBasic
+   --> java.lang.NullPointerException
+ - org.apache.commons.codec.language.DoubleMetaphoneTest::testCodec184
+   --> java.lang.NullPointerException
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.codec.binary.CharSequenceUtils
+ - org.apache.commons.codec.binary.StringUtils
+ - org.apache.commons.codec.language.DoubleMetaphone
+--------------------------------------------------------------------------------

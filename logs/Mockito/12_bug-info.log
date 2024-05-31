@@ -1,0 +1,57 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Mockito
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Mockito
+       Program: mockito
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Mockito/Mockito.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/mockito.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Mockito/active-bugs.csv
+Number of bugs: 38
+--------------------------------------------------------------------------------
+
+Summary for Bug: Mockito-12
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+7a647a702c8af81ccf5d37b09c11529c6c0cb1b7
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2010-05-16 16:21:00 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+188
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/mockito/mockito/issues/188
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.mockito.internal.util.reflection.GenericMasterTest::shouldDealWithNestedGenerics
+   --> java.lang.ClassCastException: sun.reflect.generics.reflectiveObjects.ParameterizedTypeImpl cannot be cast to java.lang.Class
+ - org.mockitousage.annotation.CaptorAnnotationBasicTest::shouldUseAnnotatedCaptor
+   --> java.lang.ClassCastException: sun.reflect.generics.reflectiveObjects.ParameterizedTypeImpl cannot be cast to java.lang.Class
+ - org.mockitousage.annotation.CaptorAnnotationBasicTest::shouldUseCaptorInOrdinaryWay
+   --> java.lang.ClassCastException: sun.reflect.generics.reflectiveObjects.ParameterizedTypeImpl cannot be cast to java.lang.Class
+ - org.mockitousage.annotation.CaptorAnnotationBasicTest::shouldCaptureGenericList
+   --> java.lang.ClassCastException: sun.reflect.generics.reflectiveObjects.ParameterizedTypeImpl cannot be cast to java.lang.Class
+ - org.mockitousage.annotation.CaptorAnnotationBasicTest::shouldUseGenericlessAnnotatedCaptor
+   --> java.lang.ClassCastException: sun.reflect.generics.reflectiveObjects.ParameterizedTypeImpl cannot be cast to java.lang.Class
+ - org.mockitousage.annotation.CaptorAnnotationTest::shouldScreamWhenWrongTypeForCaptor
+   --> java.lang.ClassCastException: sun.reflect.generics.reflectiveObjects.ParameterizedTypeImpl cannot be cast to java.lang.Class
+ - org.mockitousage.annotation.CaptorAnnotationTest::testNormalUsage
+   --> java.lang.ClassCastException: sun.reflect.generics.reflectiveObjects.ParameterizedTypeImpl cannot be cast to java.lang.Class
+ - org.mockitousage.annotation.CaptorAnnotationTest::shouldScreamWhenMoreThanOneMockitoAnnotaton
+   --> java.lang.ClassCastException: sun.reflect.generics.reflectiveObjects.ParameterizedTypeImpl cannot be cast to java.lang.Class
+ - org.mockitousage.annotation.CaptorAnnotationTest::shouldScreamWhenInitializingCaptorsForNullClass
+   --> java.lang.ClassCastException: sun.reflect.generics.reflectiveObjects.ParameterizedTypeImpl cannot be cast to java.lang.Class
+ - org.mockitousage.annotation.CaptorAnnotationTest::shouldLookForAnnotatedCaptorsInSuperClasses
+   --> java.lang.ClassCastException: sun.reflect.generics.reflectiveObjects.ParameterizedTypeImpl cannot be cast to java.lang.Class
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.mockito.internal.util.reflection.GenericMaster
+--------------------------------------------------------------------------------

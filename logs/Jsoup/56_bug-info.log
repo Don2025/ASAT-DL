@@ -1,0 +1,43 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Jsoup
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Jsoup
+       Program: jsoup
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/Jsoup.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jsoup.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/active-bugs.csv
+Number of bugs: 93
+--------------------------------------------------------------------------------
+
+Summary for Bug: Jsoup-56
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+c28e5bf53a9ce9e32ab84ce2e6eba87ec747d1a0
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2016-10-24 18:01:41 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+408
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/jhy/jsoup/issues/408
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jsoup.nodes.DocumentTypeTest::testRoundTrip
+   --> junit.framework.AssertionFailedError: expected:<<!DOCTYPE html [SYSTEM ]"exampledtdfile.dtd"...> but was:<<!DOCTYPE html []"exampledtdfile.dtd"...>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jsoup.nodes.DocumentType
+ - org.jsoup.parser.HtmlTreeBuilderState
+ - org.jsoup.parser.Token
+ - org.jsoup.parser.TokeniserState
+ - org.jsoup.parser.XmlTreeBuilder
+--------------------------------------------------------------------------------

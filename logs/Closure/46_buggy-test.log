@@ -1,0 +1,8 @@
+Compiling /home/tyd/defects4j/tmp/Closure/46_buggy...
+
+Testing /home/tyd/defects4j/tmp/Closure/46_buggy...
+Failing tests: 3
+  - com.google.javascript.rhino.jstype.JSTypeTest::testRecordTypeLeastSuperType2
+  - com.google.javascript.rhino.jstype.JSTypeTest::testRecordTypeLeastSuperType3
+  - com.google.javascript.rhino.jstype.RecordTypeTest::testSupAndInf
+

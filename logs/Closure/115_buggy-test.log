@@ -1,0 +1,10 @@
+Compiling /home/tyd/defects4j/tmp/Closure/115_buggy...
+
+Testing /home/tyd/defects4j/tmp/Closure/115_buggy...
+Failing tests: 5
+  - com.google.javascript.jscomp.InlineFunctionsTest::testBug4944818
+  - com.google.javascript.jscomp.InlineFunctionsTest::testDoubleInlining1
+  - com.google.javascript.jscomp.InlineFunctionsTest::testNoInlineIfParametersModified8
+  - com.google.javascript.jscomp.InlineFunctionsTest::testNoInlineIfParametersModified9
+  - com.google.javascript.jscomp.InlineFunctionsTest::testInlineFunctions6
+

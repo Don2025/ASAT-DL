@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JacksonDatabind
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JacksonDatabind
+       Program: jackson-databind
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/JacksonDatabind.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jackson-databind.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/active-bugs.csv
+Number of bugs: 112
+--------------------------------------------------------------------------------
+
+Summary for Bug: JacksonDatabind-44
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+700617aa96fdfb3259a1e8001c1bee24deaec34a
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2016-03-09 15:30:34 -0800
+--------------------------------------------------------------------------------
+Bug report id:
+1125
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/FasterXML/jackson-databind/issues/1125
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.fasterxml.jackson.databind.jsontype.TestSubtypes::testIssue1125WithDefault
+   --> com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "b" (class com.fasterxml.jackson.databind.jsontype.TestSubtypes$Default1125), not marked as ignorable (2 known properties: "a", "def"])
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.fasterxml.jackson.databind.type.SimpleType
+--------------------------------------------------------------------------------

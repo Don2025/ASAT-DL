@@ -1,0 +1,8 @@
+Compiling /home/tyd/defects4j/tmp/Closure/56_buggy...
+
+Testing /home/tyd/defects4j/tmp/Closure/56_buggy...
+Failing tests: 3
+  - com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest::testExceptNoNewLine
+  - com.google.javascript.jscomp.JsMessageExtractorTest::testSyntaxError1
+  - com.google.javascript.jscomp.JsMessageExtractorTest::testSyntaxError2
+

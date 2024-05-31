@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Chart
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Chart
+       Program: jfreechart
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Chart/Chart.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Svn
+    Repository: file:///home/tyd/study/dataset/defects4j/project_repos/jfreechart/trunk
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Chart/active-bugs.csv
+Number of bugs: 26
+--------------------------------------------------------------------------------
+
+Summary for Bug: Chart-24
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+190
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2007-09-26 07:00:52 -0700 
+--------------------------------------------------------------------------------
+Bug report id:
+UNKNOWN
+--------------------------------------------------------------------------------
+Bug report url:
+UNKNOWN
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jfree.chart.renderer.junit.GrayPaintScaleTests::testGetPaint
+   --> java.lang.IllegalArgumentException: Color parameter outside of expected range: Red Green Blue
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jfree.chart.renderer.GrayPaintScale
+--------------------------------------------------------------------------------

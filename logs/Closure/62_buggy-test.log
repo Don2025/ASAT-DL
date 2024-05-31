@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Closure/62_buggy...
+
+Testing /home/tyd/defects4j/tmp/Closure/62_buggy...
+Failing tests: 2
+  - com.google.javascript.jscomp.LightweightMessageFormatterTest::testFormatErrorSpaceEndOfLine1
+  - com.google.javascript.jscomp.LightweightMessageFormatterTest::testFormatErrorSpaceEndOfLine2
+

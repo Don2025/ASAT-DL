@@ -1,0 +1,9 @@
+Compiling /home/tyd/defects4j/tmp/Chart/18_buggy...
+
+Testing /home/tyd/defects4j/tmp/Chart/18_buggy...
+Failing tests: 4
+  - org.jfree.data.category.junit.DefaultCategoryDatasetTests::testBug1835955
+  - org.jfree.data.junit.DefaultKeyedValues2DTests::testRemoveColumnByKey
+  - org.jfree.data.junit.DefaultKeyedValuesTests::testRemoveValue
+  - org.jfree.data.junit.DefaultKeyedValuesTests::testGetIndex2
+

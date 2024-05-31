@@ -1,0 +1,41 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Jsoup
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Jsoup
+       Program: jsoup
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/Jsoup.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jsoup.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/active-bugs.csv
+Number of bugs: 93
+--------------------------------------------------------------------------------
+
+Summary for Bug: Jsoup-16
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+f36b950de16f6db134bd98969cd8fbe578d37480
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2011-07-02 21:12:11 +1000
+--------------------------------------------------------------------------------
+Bug report id:
+109
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/jhy/jsoup/issues/109
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jsoup.nodes.DocumentTypeTest::outerHtmlGeneration
+   --> junit.framework.AssertionFailedError: expected:<<!DOCTYPE html ["]http://www.ibm.com/d...> but was:<<!DOCTYPE html []http://www.ibm.com/d...>
+ - org.jsoup.nodes.DocumentTypeTest::constructorValidationThrowsExceptionOnBlankName
+   --> junit.framework.AssertionFailedError: Expected exception: java.lang.IllegalArgumentException
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jsoup.nodes.DocumentType
+--------------------------------------------------------------------------------

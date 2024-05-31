@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Math/68_buggy...
+
+Testing /home/tyd/defects4j/tmp/Math/68_buggy...
+Failing tests: 2
+  - org.apache.commons.math.optimization.general.MinpackTest::testMinpackJennrichSampson
+  - org.apache.commons.math.optimization.general.MinpackTest::testMinpackFreudensteinRoth
+

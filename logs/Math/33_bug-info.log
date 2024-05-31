@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Math
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Math
+       Program: commons-math
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Math/Math.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-math.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Math/active-bugs.csv
+Number of bugs: 106
+--------------------------------------------------------------------------------
+
+Summary for Bug: Math-33
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+3ef79313597d7d49067c48d65a09042d8d94822d
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2012-05-02 18:28:37 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+MATH-781
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/MATH-781
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.math3.optimization.linear.SimplexSolverTest::testMath781
+   --> junit.framework.AssertionFailedError
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.math3.optimization.linear.SimplexTableau
+--------------------------------------------------------------------------------

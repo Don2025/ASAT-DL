@@ -1,0 +1,41 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Mockito
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Mockito
+       Program: mockito
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Mockito/Mockito.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/mockito.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Mockito/active-bugs.csv
+Number of bugs: 38
+--------------------------------------------------------------------------------
+
+Summary for Bug: Mockito-33
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+5cb37751c0aba81d025dc5fe4f2f9a3bf86cc958
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2010-06-22 05:32:13 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+200
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/mockito/mockito/issues/200
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.mockitousage.bugs.InheritedGenericsPolimorphicCallTest::shouldStubbingWork
+   --> junit.framework.AssertionFailedError
+ - org.mockitousage.bugs.InheritedGenericsPolimorphicCallTest::shouldVerificationWorks
+   --> junit.framework.AssertionFailedError: 
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.mockito.internal.invocation.InvocationMatcher
+--------------------------------------------------------------------------------

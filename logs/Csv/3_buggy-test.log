@@ -1,0 +1,8 @@
+Compiling /home/tyd/defects4j/tmp/Csv/3_buggy...
+
+Testing /home/tyd/defects4j/tmp/Csv/3_buggy...
+Failing tests: 3
+  - org.apache.commons.csv.CSVLexerTest::testEscapedMySqlNullValue
+  - org.apache.commons.csv.CSVLexerTest::testEscapedCharacter
+  - org.apache.commons.csv.CSVParserTest::testBackslashEscaping
+

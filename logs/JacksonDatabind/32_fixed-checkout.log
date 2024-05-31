@@ -1,0 +1,13 @@
+Checking out d5a25f43 to /home/tyd/defects4j/tmp/JacksonDatabind/32_fixed.. OK
+Init local repository...................................................... OK
+Tag post-fix revision...................................................... OK
+Copy generated Ant build file.............................................. OK
+Run post-checkout hook..................................................... OK
+Excluding broken/flaky tests............................................... OK
+Initialize fixed program version........................................... OK
+Apply patch................................................................ OK
+Initialize buggy program version........................................... OK
+Diff d5a25f43:fe25f7e1..................................................... OK
+Apply patch................................................................ OK
+Tag pre-fix revision....................................................... OK
+Check out program version: JacksonDatabind-32f............................. OK

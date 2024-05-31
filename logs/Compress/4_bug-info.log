@@ -1,0 +1,60 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Compress
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Compress
+       Program: commons-compress
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Compress/Compress.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-compress.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Compress/active-bugs.csv
+Number of bugs: 47
+--------------------------------------------------------------------------------
+
+Summary for Bug: Compress-4
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+6273f3a6b804aa845747c8859d659373b14199e1
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2009-04-22 06:26:09 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+COMPRESS-64
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/COMPRESS-64
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.compress.archivers.jar.JarArchiveOutputStreamTest::testJarMarker
+   --> java.io.IOException: central directory is empty, can't expand corrupt archive.
+ - org.apache.commons.compress.archivers.zip.UTF8ZipFilesTest::testCP437FileRoundtripImplicitUnicodeExtra
+   --> java.io.IOException: central directory is empty, can't expand corrupt archive.
+ - org.apache.commons.compress.archivers.zip.UTF8ZipFilesTest::testUtf8FileRoundtripImplicitUnicodeExtra
+   --> java.io.IOException: central directory is empty, can't expand corrupt archive.
+ - org.apache.commons.compress.archivers.zip.UTF8ZipFilesTest::testCP437FileRoundtripExplicitUnicodeExtra
+   --> java.io.IOException: central directory is empty, can't expand corrupt archive.
+ - org.apache.commons.compress.archivers.zip.UTF8ZipFilesTest::testUtf8FileRoundtripExplicitUnicodeExtra
+   --> java.io.IOException: central directory is empty, can't expand corrupt archive.
+ - org.apache.commons.compress.archivers.zip.UTF8ZipFilesTest::testASCIIFileRoundtripImplicitUnicodeExtra
+   --> java.io.IOException: central directory is empty, can't expand corrupt archive.
+ - org.apache.commons.compress.archivers.zip.UTF8ZipFilesTest::testUtf8FileRoundtripNoEFSImplicitUnicodeExtra
+   --> java.io.IOException: central directory is empty, can't expand corrupt archive.
+ - org.apache.commons.compress.archivers.zip.UTF8ZipFilesTest::testZipArchiveInputStreamReadsUnicodeFields
+   --> java.io.IOException: central directory is empty, can't expand corrupt archive.
+ - org.apache.commons.compress.archivers.zip.UTF8ZipFilesTest::testASCIIFileRoundtripExplicitUnicodeExtra
+   --> java.io.IOException: central directory is empty, can't expand corrupt archive.
+ - org.apache.commons.compress.archivers.zip.UTF8ZipFilesTest::testUtf8FileRoundtripNoEFSExplicitUnicodeExtra
+   --> java.io.IOException: central directory is empty, can't expand corrupt archive.
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream
+ - org.apache.commons.compress.archivers.tar.TarArchiveOutputStream
+ - org.apache.commons.compress.archivers.zip.ZipArchiveOutputStream
+ - org.apache.commons.compress.changes.ChangeSetPerformer
+--------------------------------------------------------------------------------

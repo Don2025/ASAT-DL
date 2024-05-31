@@ -1,0 +1,44 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Closure
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Closure
+       Program: closure-compiler
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Closure/Closure.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/closure-compiler.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Closure/active-bugs.csv
+Number of bugs: 174
+--------------------------------------------------------------------------------
+
+Summary for Bug: Closure-54
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+7e9b8336568ea7f05c33e1b58eb67fa6d4eee756
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2011-09-01 02:30:59 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+537
+--------------------------------------------------------------------------------
+Bug report url:
+https://storage.googleapis.com/google-code-archive/v2/code.google.com/closure-compiler/issues/issue-537.json
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.google.javascript.jscomp.TypeCheckTest::testIssue537a
+   --> junit.framework.ComparisonFailure: expected:<[Function Foo.prototype.method: called with 1 argument(s). Function requires at least 0 argument(s) and no more than 0 argument(s).]> but was:<[Property baz never defined on Bar]>
+ - com.google.javascript.jscomp.TypeCheckTest::testIssue537b
+   --> junit.framework.ComparisonFailure: expected:<[Function Bar.prototype.baz: called with 1 argument(s). Function requires at least 0 argument(s) and no more than 0 argument(s).]> but was:<[Property baz never defined on Bar]>
+ - com.google.javascript.jscomp.TypedScopeCreatorTest::testPropertyOnUnknownSuperClass2
+   --> junit.framework.ComparisonFailure: expected:<[?]> but was:<[number]>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.google.javascript.jscomp.TypedScopeCreator
+ - com.google.javascript.rhino.jstype.FunctionType
+--------------------------------------------------------------------------------

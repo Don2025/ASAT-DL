@@ -1,0 +1,6 @@
+Compiling /home/tyd/defects4j/tmp/Closure/51_buggy...
+
+Testing /home/tyd/defects4j/tmp/Closure/51_buggy...
+Failing tests: 1
+  - com.google.javascript.jscomp.CodePrinterTest::testIssue582
+

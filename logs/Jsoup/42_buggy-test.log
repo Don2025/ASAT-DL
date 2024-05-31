@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Jsoup/42_buggy...
+
+Testing /home/tyd/defects4j/tmp/Jsoup/42_buggy...
+Failing tests: 2
+  - org.jsoup.nodes.FormElementTest::createsFormData
+  - org.jsoup.nodes.FormElementTest::usesOnForCheckboxValueIfNoValueSet
+

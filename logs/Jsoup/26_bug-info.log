@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Jsoup
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Jsoup
+       Program: jsoup
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/Jsoup.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jsoup.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/active-bugs.csv
+Number of bugs: 93
+--------------------------------------------------------------------------------
+
+Summary for Bug: Jsoup-26
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+d7b5d5b28a6dd7ff198f02e1ee82160220135a74
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2012-06-03 20:40:32 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+154
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/jhy/jsoup/issues/154
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jsoup.safety.CleanerTest::handlesFramesets
+   --> java.lang.NullPointerException
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jsoup.safety.Cleaner
+--------------------------------------------------------------------------------

@@ -1,0 +1,10 @@
+Compiling /home/tyd/defects4j/tmp/Closure/70_buggy...
+
+Testing /home/tyd/defects4j/tmp/Closure/70_buggy...
+Failing tests: 5
+  - com.google.javascript.jscomp.LooseTypeCheckTest::testDuplicateLocalVarDecl
+  - com.google.javascript.jscomp.LooseTypeCheckTest::testFunctionArguments13
+  - com.google.javascript.jscomp.TypeCheckTest::testScoping12
+  - com.google.javascript.jscomp.TypeCheckTest::testDuplicateLocalVarDecl
+  - com.google.javascript.jscomp.TypeCheckTest::testFunctionArguments13
+

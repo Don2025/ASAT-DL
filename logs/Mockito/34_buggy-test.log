@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Mockito/34_buggy...
+
+Testing /home/tyd/defects4j/tmp/Mockito/34_buggy...
+Failing tests: 2
+  - org.mockito.internal.invocation.InvocationMatcherTest::shouldMatchCaptureArgumentsWhenArgsCountDoesNOTMatch
+  - org.mockitousage.basicapi.UsingVarargsTest::shouldMatchEasilyEmptyVararg
+

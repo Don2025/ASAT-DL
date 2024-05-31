@@ -1,0 +1,16 @@
+Summary of configuration for Project: Closure
+--------------------------------------------------------------------------------
+    Script dir: /home/artifact/defects4j/framework
+      Base dir: /home/artifact/defects4j
+    Major root: /home/artifact/defects4j/major
+      Repo dir: /home/artifact/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Closure
+       Program: closure-compiler
+    Build file: /home/artifact/defects4j/framework/projects/Closure/Closure.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/artifact/defects4j/project_repos/closure-compiler.git
+     Commit db: /home/artifact/defects4j/framework/projects/Closure/active-bugs.csv
+Number of bugs: 174
+--------------------------------------------------------------------------------

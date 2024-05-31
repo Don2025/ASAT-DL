@@ -1,0 +1,6 @@
+Compiling /home/tyd/defects4j/tmp/Time/9_buggy...
+
+Testing /home/tyd/defects4j/tmp/Time/9_buggy...
+Failing tests: 1
+  - org.joda.time.TestDateTimeZone::testForOffsetHoursMinutes_int_int
+

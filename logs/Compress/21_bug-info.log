@@ -1,0 +1,53 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Compress
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Compress
+       Program: commons-compress
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Compress/Compress.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-compress.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Compress/active-bugs.csv
+Number of bugs: 47
+--------------------------------------------------------------------------------
+
+Summary for Bug: Compress-21
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+5c2d32b322fa797cf428b35c4c5998173d6403d5
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2013-12-20 12:13:11 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+COMPRESS-252
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/COMPRESS-252
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.compress.archivers.sevenz.SevenZOutputFileTest::testSevenEmptyFiles
+   --> java.io.IOException: Unknown property 128
+ - org.apache.commons.compress.archivers.sevenz.SevenZOutputFileTest::testEightFilesSomeNotEmpty
+   --> java.io.IOException: Badly terminated header
+ - org.apache.commons.compress.archivers.sevenz.SevenZOutputFileTest::testSixEmptyFiles
+   --> java.io.IOException: Badly terminated header
+ - org.apache.commons.compress.archivers.sevenz.SevenZOutputFileTest::testEightEmptyFiles
+   --> java.io.IOException: Unknown property 192
+ - org.apache.commons.compress.archivers.sevenz.SevenZOutputFileTest::testNineEmptyFiles
+   --> java.lang.ArrayIndexOutOfBoundsException: 0
+ - org.apache.commons.compress.archivers.sevenz.SevenZOutputFileTest::testSixFilesSomeNotEmpty
+   --> java.io.IOException: Badly terminated header
+ - org.apache.commons.compress.archivers.sevenz.SevenZOutputFileTest::testNineFilesSomeNotEmpty
+   --> java.io.IOException: Unknown property 128
+ - org.apache.commons.compress.archivers.sevenz.SevenZOutputFileTest::testSevenFilesSomeNotEmpty
+   --> java.io.IOException: Unknown property 128
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.compress.archivers.sevenz.SevenZOutputFile
+--------------------------------------------------------------------------------

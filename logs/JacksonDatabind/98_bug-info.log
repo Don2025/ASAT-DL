@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JacksonDatabind
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JacksonDatabind
+       Program: jackson-databind
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/JacksonDatabind.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jackson-databind.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/active-bugs.csv
+Number of bugs: 112
+--------------------------------------------------------------------------------
+
+Summary for Bug: JacksonDatabind-98
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+12f82c60782f05015336bb6305fd72c133a410b5
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2018-05-31 23:15:31 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+1328
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/FasterXML/jackson-databind/issues/1328
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.fasterxml.jackson.databind.jsontype.ext.ExternalTypeIdWithEnum1328Test::testExample
+   --> com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `com.fasterxml.jackson.databind.jsontype.ext.ExternalTypeIdWithEnum1328Test$AnimalAndType`, problem: argument type mismatch
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler
+--------------------------------------------------------------------------------

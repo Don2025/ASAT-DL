@@ -1,0 +1,40 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JacksonDatabind
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JacksonDatabind
+       Program: jackson-databind
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/JacksonDatabind.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jackson-databind.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/active-bugs.csv
+Number of bugs: 112
+--------------------------------------------------------------------------------
+
+Summary for Bug: JacksonDatabind-53
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+75a0953bcf6275a486243a67e91774c8d5ffb6ca
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2016-06-29 21:43:40 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+1215
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/FasterXML/jackson-databind/issues/1215
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.fasterxml.jackson.databind.jsontype.TypeRefinementForMap1215Test::testMapRefinement
+   --> com.fasterxml.jackson.databind.JsonMappingException: Can not construct instance of com.fasterxml.jackson.databind.jsontype.TypeRefinementForMap1215Test$HasUniqueId, problem: abstract types either need to be mapped to concrete types, have custom deserializer, or be instantiated with additional type information
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.fasterxml.jackson.databind.type.TypeBindings
+ - com.fasterxml.jackson.databind.type.TypeFactory
+--------------------------------------------------------------------------------

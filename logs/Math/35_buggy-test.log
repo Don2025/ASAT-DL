@@ -1,0 +1,9 @@
+Compiling /home/tyd/defects4j/tmp/Math/35_buggy...
+
+Testing /home/tyd/defects4j/tmp/Math/35_buggy...
+Failing tests: 4
+  - org.apache.commons.math3.genetics.ElitisticListPopulationTest::testChromosomeListConstructorTooLow
+  - org.apache.commons.math3.genetics.ElitisticListPopulationTest::testConstructorTooHigh
+  - org.apache.commons.math3.genetics.ElitisticListPopulationTest::testConstructorTooLow
+  - org.apache.commons.math3.genetics.ElitisticListPopulationTest::testChromosomeListConstructorTooHigh
+

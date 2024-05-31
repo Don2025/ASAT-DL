@@ -1,0 +1,6 @@
+Compiling /home/tyd/defects4j/tmp/Time/4_buggy...
+
+Testing /home/tyd/defects4j/tmp/Time/4_buggy...
+Failing tests: 1
+  - org.joda.time.TestPartial_Basics::testWith3
+

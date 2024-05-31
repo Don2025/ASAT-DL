@@ -1,0 +1,6 @@
+Compiling /home/tyd/defects4j/tmp/Time/23_buggy...
+
+Testing /home/tyd/defects4j/tmp/Time/23_buggy...
+Failing tests: 1
+  - org.joda.time.TestDateTimeZone::testForID_String_old
+

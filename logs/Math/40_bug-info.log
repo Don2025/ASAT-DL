@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Math
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Math
+       Program: commons-math
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Math/Math.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-math.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Math/active-bugs.csv
+Number of bugs: 106
+--------------------------------------------------------------------------------
+
+Summary for Bug: Math-40
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+c8becc7c47963bcdc1578298846ad6fbf08f64ef
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2011-12-01 23:24:36 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+MATH-716
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/MATH-716
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolverTest::testIssue716
+   --> org.apache.commons.math.exception.TooManyEvaluationsException: illegal state: maximal count (100) exceeded: evaluations
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver
+--------------------------------------------------------------------------------

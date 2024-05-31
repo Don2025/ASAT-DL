@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Closure
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Closure
+       Program: closure-compiler
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Closure/Closure.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/closure-compiler.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Closure/active-bugs.csv
+Number of bugs: 174
+--------------------------------------------------------------------------------
+
+Summary for Bug: Closure-19
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+686146c4de7d2bd985156ae15175365633dd0f94
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2012-07-03 04:13:14 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+769
+--------------------------------------------------------------------------------
+Bug report url:
+https://storage.googleapis.com/google-code-archive/v2/code.google.com/closure-compiler/issues/issue-769.json
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.google.javascript.jscomp.TypeInferenceTest::testNoThisInference
+   --> java.lang.IllegalArgumentException: Node cannot be refined. 
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.google.javascript.jscomp.type.ChainableReverseAbstractInterpreter
+--------------------------------------------------------------------------------

@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Csv/13_buggy...
+
+Testing /home/tyd/defects4j/tmp/Csv/13_buggy...
+Failing tests: 2
+  - org.apache.commons.csv.CSVPrinterTest::testMySqlNullOutput
+  - org.apache.commons.csv.CSVPrinterTest::testMySqlNullStringDefault
+

@@ -1,0 +1,40 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JacksonDatabind
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JacksonDatabind
+       Program: jackson-databind
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/JacksonDatabind.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jackson-databind.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/active-bugs.csv
+Number of bugs: 112
+--------------------------------------------------------------------------------
+
+Summary for Bug: JacksonDatabind-10
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+466f706901d39ae95393c6c7b1d0b544247922f1
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2015-02-23 16:53:56 -0800
+--------------------------------------------------------------------------------
+Bug report id:
+705
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/FasterXML/jackson-databind/issues/705
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.fasterxml.jackson.databind.ser.TestAnyGetter::testIssue705
+   --> junit.framework.ComparisonFailure: expected:<{"[stuff":"[key/value]]"}> but was:<{"[key":"value]"}>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.fasterxml.jackson.databind.ser.AnyGetterWriter
+ - com.fasterxml.jackson.databind.ser.BeanSerializerFactory
+--------------------------------------------------------------------------------

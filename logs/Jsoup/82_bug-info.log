@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Jsoup
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Jsoup
+       Program: jsoup
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/Jsoup.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jsoup.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/active-bugs.csv
+Number of bugs: 93
+--------------------------------------------------------------------------------
+
+Summary for Bug: Jsoup-82
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+6be19a6fa26e6e5e3d716283bad4b5de0348a8b7
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2018-04-29 14:42:51 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+1007
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/jhy/jsoup/issues/1007
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jsoup.parser.HtmlParserTest::fallbackToUtfIfCantEncode
+   --> junit.framework.AssertionFailedError: expected:<[UTF-8]> but was:<[ISO-2022-CN]>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jsoup.helper.DataUtil
+--------------------------------------------------------------------------------

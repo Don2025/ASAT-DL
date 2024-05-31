@@ -1,0 +1,40 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Closure
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Closure
+       Program: closure-compiler
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Closure/Closure.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/closure-compiler.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Closure/active-bugs.csv
+Number of bugs: 174
+--------------------------------------------------------------------------------
+
+Summary for Bug: Closure-162
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+3395eb68a19a8492196df62fb9e38c814de80f08
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2011-09-06 23:59:07 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+548
+--------------------------------------------------------------------------------
+Bug report url:
+https://storage.googleapis.com/google-code-archive/v2/code.google.com/closure-compiler/issues/issue-548.json
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.google.javascript.jscomp.ScopedAliasesTest::testForwardJsDoc
+   --> junit.framework.AssertionFailedError: expected:<[STRING foo.Foo.Bar 4 [source_file: testcode]
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.google.javascript.jscomp.Scope
+ - com.google.javascript.jscomp.ScopedAliases
+--------------------------------------------------------------------------------

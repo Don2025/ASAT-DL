@@ -1,0 +1,43 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Cli
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Cli
+       Program: commons-cli
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Cli/Cli.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-cli.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Cli/active-bugs.csv
+Number of bugs: 39
+--------------------------------------------------------------------------------
+
+Summary for Bug: Cli-12
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+aa050a69b2395f496f953f4f9c4f63a475dcf430
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2008-06-01 10:01:50 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+cli-1
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/CLI-1
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.cli.GnuParserTest::testShortWithEqual
+   --> junit.framework.ComparisonFailure: expected:<[]bar> but was:<[=]bar>
+ - org.apache.commons.cli.GnuParserTest::testLongWithEqualSingleDash
+   --> junit.framework.ComparisonFailure: expected:<[]bar> but was:<[oo=]bar>
+ - org.apache.commons.cli.GnuParserTest::testLongWithEqual
+   --> org.apache.commons.cli.UnrecognizedOptionException: Unrecognized option: --foo=bar
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.cli.GnuParser
+--------------------------------------------------------------------------------

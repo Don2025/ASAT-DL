@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JxPath
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JxPath
+       Program: commons-jxpath
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JxPath/JxPath.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-jxpath.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JxPath/active-bugs.csv
+Number of bugs: 22
+--------------------------------------------------------------------------------
+
+Summary for Bug: JxPath-8
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+1befe1b93eec887971e729b89dd4d900319a06b0
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2007-07-11 16:44:01 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+JXPATH-95
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/JXPATH-95
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.jxpath.ri.compiler.CoreOperationTest::testNan
+   --> junit.framework.AssertionFailedError: Evaluating <$nan > $nan> expected:<false> but was:<true>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression
+--------------------------------------------------------------------------------

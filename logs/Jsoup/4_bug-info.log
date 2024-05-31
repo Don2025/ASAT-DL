@@ -1,0 +1,41 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Jsoup
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Jsoup
+       Program: jsoup
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/Jsoup.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jsoup.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/active-bugs.csv
+Number of bugs: 93
+--------------------------------------------------------------------------------
+
+Summary for Bug: Jsoup-4
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+5e52f1b266173593fab32fe9d8a4963066b2f2fe
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2011-07-02 21:11:58 +1000
+--------------------------------------------------------------------------------
+Bug report id:
+31
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/jhy/jsoup/issues/31
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jsoup.nodes.EntitiesTest::escape
+   --> junit.framework.AssertionFailedError: expected:<...ello &amp;&lt;&gt; &[A]ring; &aring; &#960;...> but was:<...ello &amp;&lt;&gt; &[a]ring; &aring; &#960;...>
+ - org.jsoup.nodes.EntitiesTest::caseSensitive
+   --> junit.framework.AssertionFailedError: expected:<&[U]uml; &uuml; &amp; &a...> but was:<&[u]uml; &uuml; &amp; &a...>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jsoup.nodes.Entities
+--------------------------------------------------------------------------------

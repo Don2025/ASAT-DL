@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/JacksonDatabind/36_buggy...
+
+Testing /home/tyd/defects4j/tmp/JacksonDatabind/36_buggy...
+Failing tests: 2
+  - com.fasterxml.jackson.databind.TestStdDateFormat::testLenient
+  - com.fasterxml.jackson.databind.introspect.TestScalaLikeImplicitProperties::testGetterSetterProperty
+

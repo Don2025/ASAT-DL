@@ -1,0 +1,6 @@
+Compiling /home/tyd/defects4j/tmp/Compress/3_buggy...
+
+Testing /home/tyd/defects4j/tmp/Compress/3_buggy...
+Failing tests: 1
+  - org.apache.commons.compress.archivers.ArchiveOutputStreamTest::testFinish
+

@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Jsoup/72_buggy...
+
+Testing /home/tyd/defects4j/tmp/Jsoup/72_buggy...
+Failing tests: 2
+  - org.jsoup.parser.CharacterReaderTest::consumeToNonexistentEndWhenAtAnd
+  - org.jsoup.parser.HtmlParserTest::commentAtEnd
+

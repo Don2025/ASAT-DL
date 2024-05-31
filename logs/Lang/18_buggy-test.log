@@ -1,0 +1,6 @@
+Compiling /home/tyd/defects4j/tmp/Lang/18_buggy...
+
+Testing /home/tyd/defects4j/tmp/Lang/18_buggy...
+Failing tests: 1
+  - org.apache.commons.lang3.time.FastDateFormatTest::testFormat
+

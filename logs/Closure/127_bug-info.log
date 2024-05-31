@@ -1,0 +1,49 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Closure
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Closure
+       Program: closure-compiler
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Closure/Closure.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/closure-compiler.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Closure/active-bugs.csv
+Number of bugs: 174
+--------------------------------------------------------------------------------
+
+Summary for Bug: Closure-127
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+211dc0161ae737f59cac22f30b048d56a059d14b
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2013-03-22 17:55:47 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+936
+--------------------------------------------------------------------------------
+Bug report url:
+https://storage.googleapis.com/google-code-archive/v2/code.google.com/closure-compiler/issues/issue-936.json
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.google.javascript.jscomp.UnreachableCodeEliminationTest::testIssue4177428_return
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.UnreachableCodeEliminationTest::testDontRemoveBreakInTryFinally
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.UnreachableCodeEliminationTest::testIssue4177428_continue
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.UnreachableCodeEliminationTest::testDontRemoveBreakInTryFinallySwitch
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.UnreachableCodeEliminationTest::testIssue4177428a
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.UnreachableCodeEliminationTest::testIssue4177428c
+   --> junit.framework.AssertionFailedError: 
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.google.javascript.jscomp.UnreachableCodeElimination
+--------------------------------------------------------------------------------

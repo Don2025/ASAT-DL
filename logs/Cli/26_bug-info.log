@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Cli
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Cli
+       Program: commons-cli
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Cli/Cli.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-cli.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Cli/active-bugs.csv
+Number of bugs: 39
+--------------------------------------------------------------------------------
+
+Summary for Bug: Cli-26
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+aa2434d301c49d100f50af544333886a6767ce9d
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2009-03-16 07:26:44 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+CLI-177
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/CLI-177
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.cli.OptionBuilderTest::testBuilderIsResettedAlways
+   --> junit.framework.AssertionFailedError: we inherited a description
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.cli.OptionBuilder
+--------------------------------------------------------------------------------

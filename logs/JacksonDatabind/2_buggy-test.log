@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/JacksonDatabind/2_buggy...
+
+Testing /home/tyd/defects4j/tmp/JacksonDatabind/2_buggy...
+Failing tests: 2
+  - com.fasterxml.jackson.databind.deser.TestJdkTypes::testInetAddress
+  - com.fasterxml.jackson.databind.node.TestConversions::testConversionOfPojos
+

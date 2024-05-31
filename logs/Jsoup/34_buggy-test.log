@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Jsoup/34_buggy...
+
+Testing /home/tyd/defects4j/tmp/Jsoup/34_buggy...
+Failing tests: 2
+  - org.jsoup.parser.CharacterReaderTest::nextIndexOfUnmatched
+  - org.jsoup.parser.HtmlParserTest::handlesUnclosedCdataAtEOF
+

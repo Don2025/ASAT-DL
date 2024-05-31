@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/JacksonDatabind/78_buggy...
+
+Testing /home/tyd/defects4j/tmp/JacksonDatabind/78_buggy...
+Failing tests: 2
+  - com.fasterxml.jackson.databind.interop.IllegalTypesCheckTest::testIssue1599
+  - com.fasterxml.jackson.databind.introspect.TestScalaLikeImplicitProperties::testGetterSetterProperty
+

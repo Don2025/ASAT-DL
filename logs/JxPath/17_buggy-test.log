@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/JxPath/17_buggy...
+
+Testing /home/tyd/defects4j/tmp/JxPath/17_buggy...
+Failing tests: 2
+  - org.apache.commons.jxpath.ri.model.dom.DOMModelTest::testAxisAttribute
+  - org.apache.commons.jxpath.ri.model.jdom.JDOMModelTest::testAxisAttribute
+

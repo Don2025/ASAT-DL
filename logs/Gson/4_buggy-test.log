@@ -1,0 +1,8 @@
+Compiling /home/tyd/defects4j/tmp/Gson/4_buggy...
+
+Testing /home/tyd/defects4j/tmp/Gson/4_buggy...
+Failing tests: 3
+  - com.google.gson.stream.JsonReaderTest::testTopLevelValueTypeWithSkipValue
+  - com.google.gson.stream.JsonReaderTest::testTopLevelValueTypes
+  - com.google.gson.stream.JsonWriterTest::testTopLevelValueTypes
+

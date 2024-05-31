@@ -1,0 +1,8 @@
+Compiling /home/tyd/defects4j/tmp/Mockito/2_buggy...
+
+Testing /home/tyd/defects4j/tmp/Mockito/2_buggy...
+Failing tests: 3
+  - org.mockito.internal.util.TimerTest::should_throw_friendly_reminder_exception_when_duration_is_negative
+  - org.mockito.verification.NegativeDurationTest::should_throw_exception_when_duration_is_negative_for_timeout_method
+  - org.mockito.verification.NegativeDurationTest::should_throw_exception_when_duration_is_negative_for_after_method
+

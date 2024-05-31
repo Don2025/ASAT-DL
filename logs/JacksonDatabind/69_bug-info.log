@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JacksonDatabind
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JacksonDatabind
+       Program: jackson-databind
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/JacksonDatabind.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jackson-databind.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/active-bugs.csv
+Number of bugs: 112
+--------------------------------------------------------------------------------
+
+Summary for Bug: JacksonDatabind-69
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+d44600d3750e5dba9fac68aee7248ed2a80a2225
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2017-01-09 13:42:27 -0800
+--------------------------------------------------------------------------------
+Bug report id:
+1476
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/FasterXML/jackson-databind/issues/1476
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.fasterxml.jackson.databind.creators.Creator1476Test::testConstructorChoice
+   --> com.fasterxml.jackson.databind.JsonMappingException: Could not find creator property with name 'intField' (in class com.fasterxml.jackson.databind.creators.Creator1476Test$SimplePojo)
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.fasterxml.jackson.databind.deser.impl.CreatorCollector
+--------------------------------------------------------------------------------

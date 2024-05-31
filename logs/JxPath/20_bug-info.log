@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JxPath
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JxPath
+       Program: commons-jxpath
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JxPath/JxPath.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-jxpath.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JxPath/active-bugs.csv
+Number of bugs: 22
+--------------------------------------------------------------------------------
+
+Summary for Bug: JxPath-20
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+820a69d81b3b5d33f4a2b2cd9f153450f7535452
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2011-06-08 17:58:55 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+JXPATH-149
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/JXPATH-149
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.jxpath.ri.compiler.JXPath149Test::testComplexOperationWithVariables
+   --> junit.framework.AssertionFailedError: Evaluating <$a + $b <= $c> expected:<true> but was:<false>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression
+--------------------------------------------------------------------------------

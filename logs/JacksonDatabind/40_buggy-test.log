@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/JacksonDatabind/40_buggy...
+
+Testing /home/tyd/defects4j/tmp/JacksonDatabind/40_buggy...
+Failing tests: 2
+  - com.fasterxml.jackson.databind.deser.TestSimpleTypes::testEmptyToNullCoercionForPrimitives
+  - com.fasterxml.jackson.databind.introspect.TestScalaLikeImplicitProperties::testGetterSetterProperty
+

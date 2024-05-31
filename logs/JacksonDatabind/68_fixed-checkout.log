@@ -1,0 +1,13 @@
+Checking out d0cfb645 to /home/tyd/defects4j/tmp/JacksonDatabind/68_fixed.. OK
+Init local repository...................................................... OK
+Tag post-fix revision...................................................... OK
+Copy generated Ant build file.............................................. OK
+Run post-checkout hook..................................................... OK
+Excluding broken/flaky tests............................................... OK
+Initialize fixed program version........................................... OK
+Apply patch................................................................ OK
+Initialize buggy program version........................................... OK
+Diff d0cfb645:1aeb5255..................................................... OK
+Apply patch................................................................ OK
+Tag pre-fix revision....................................................... OK
+Check out program version: JacksonDatabind-68f............................. OK

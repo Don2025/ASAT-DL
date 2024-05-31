@@ -1,0 +1,8 @@
+Compiling /home/tyd/defects4j/tmp/Jsoup/18_buggy...
+
+Testing /home/tyd/defects4j/tmp/Jsoup/18_buggy...
+Failing tests: 3
+  - org.jsoup.parser.CharacterReaderTest::handleCarriageReturnAsLineFeed
+  - org.jsoup.parser.CharacterReaderTest::consumeToEnd
+  - org.jsoup.parser.ParserTest::handlesNewlinesAndWhitespaceInTag
+

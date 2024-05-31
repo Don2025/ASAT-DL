@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Cli/22_buggy...
+
+Testing /home/tyd/defects4j/tmp/Cli/22_buggy...
+Failing tests: 2
+  - org.apache.commons.cli.ApplicationTest::testGroovy
+  - org.apache.commons.cli.PosixParserTest::testStopAtExpectedArg
+

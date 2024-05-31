@@ -1,0 +1,10 @@
+Compiling /home/tyd/defects4j/tmp/JacksonDatabind/106_buggy...
+
+Testing /home/tyd/defects4j/tmp/JacksonDatabind/106_buggy...
+Failing tests: 5
+  - com.fasterxml.jackson.databind.introspect.TestScalaLikeImplicitProperties::testVarProperty
+  - com.fasterxml.jackson.databind.introspect.TestScalaLikeImplicitProperties::testGetterSetterProperty
+  - com.fasterxml.jackson.databind.introspect.TestScalaLikeImplicitProperties::testVarWithBeanProperty
+  - com.fasterxml.jackson.databind.node.TestTreeTraversingParser::testNumberOverflowLong
+  - com.fasterxml.jackson.databind.node.TestTreeTraversingParser::testNumberOverflowInt
+

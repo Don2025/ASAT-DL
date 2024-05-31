@@ -1,0 +1,43 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Gson
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Gson
+       Program: gson
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Gson/Gson.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/gson.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Gson/active-bugs.csv
+Number of bugs: 18
+--------------------------------------------------------------------------------
+
+Summary for Bug: Gson-7
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+2b08c88c09d14e0b1a68a982bab0bb18206df76b
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2016-03-12 15:51:22 -0500
+--------------------------------------------------------------------------------
+Bug report id:
+604
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/google/gson/issues/604
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.google.gson.functional.MapTest::testMapDeserializationWithUnquotedLongKeys
+   --> com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected a long but was STRING at line 1 column 2 path $.
+ - com.google.gson.functional.MapTest::testMapDeserializationWithUnquotedIntegerKeys
+   --> com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected an int but was STRING at line 1 column 2 path $.
+ - com.google.gson.stream.JsonReaderTest::testPeekingUnquotedStringsPrefixedWithIntegers
+   --> java.lang.IllegalStateException: Expected an int but was STRING at line 1 column 2 path $[0]
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.google.gson.stream.JsonReader
+--------------------------------------------------------------------------------

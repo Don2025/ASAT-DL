@@ -1,0 +1,40 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Jsoup
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Jsoup
+       Program: jsoup
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/Jsoup.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jsoup.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/active-bugs.csv
+Number of bugs: 93
+--------------------------------------------------------------------------------
+
+Summary for Bug: Jsoup-65
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+4fa93397353a7cd3cf15f9c29c40f8a18fc051e5
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2017-10-07 15:46:27 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+807
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/jhy/jsoup/issues/807
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jsoup.parser.HtmlParserTest::testTemplateInsideTable
+   --> junit.framework.AssertionFailedError
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jsoup.parser.HtmlTreeBuilder
+ - org.jsoup.parser.HtmlTreeBuilderState
+--------------------------------------------------------------------------------

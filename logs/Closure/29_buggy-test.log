@@ -1,0 +1,10 @@
+Compiling /home/tyd/defects4j/tmp/Closure/29_buggy...
+
+Testing /home/tyd/defects4j/tmp/Closure/29_buggy...
+Failing tests: 5
+  - com.google.javascript.jscomp.InlineObjectLiteralsTest::testObject10
+  - com.google.javascript.jscomp.InlineObjectLiteralsTest::testObject12
+  - com.google.javascript.jscomp.InlineObjectLiteralsTest::testObject22
+  - com.google.javascript.jscomp.InlineObjectLiteralsTest::testIssue724
+  - com.google.javascript.jscomp.IntegrationTest::testIssue724
+

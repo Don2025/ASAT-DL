@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Math/1_buggy...
+
+Testing /home/tyd/defects4j/tmp/Math/1_buggy...
+Failing tests: 2
+  - org.apache.commons.math3.fraction.BigFractionTest::testDigitLimitConstructor
+  - org.apache.commons.math3.fraction.FractionTest::testDigitLimitConstructor
+

@@ -1,0 +1,8 @@
+Compiling /home/tyd/defects4j/tmp/Closure/147_buggy...
+
+Testing /home/tyd/defects4j/tmp/Closure/147_buggy...
+Failing tests: 3
+  - com.google.javascript.jscomp.CheckGlobalThisTest::testIssue182a
+  - com.google.javascript.jscomp.CheckGlobalThisTest::testIssue182b
+  - com.google.javascript.jscomp.RuntimeTypeCheckTest::testValueWithInnerFn
+

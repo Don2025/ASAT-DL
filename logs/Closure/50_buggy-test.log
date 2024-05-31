@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Closure/50_buggy...
+
+Testing /home/tyd/defects4j/tmp/Closure/50_buggy...
+Failing tests: 2
+  - com.google.javascript.jscomp.PeepholeReplaceKnownMethodsTest::testStringJoinAdd
+  - com.google.javascript.jscomp.PeepholeReplaceKnownMethodsTest::testNoStringJoin
+

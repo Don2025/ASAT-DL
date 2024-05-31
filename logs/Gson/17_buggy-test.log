@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Gson/17_buggy...
+
+Testing /home/tyd/defects4j/tmp/Gson/17_buggy...
+Failing tests: 2
+  - com.google.gson.DefaultDateTypeAdapterTest::testUnexpectedToken
+  - com.google.gson.DefaultDateTypeAdapterTest::testNullValue
+

@@ -1,0 +1,41 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Jsoup
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Jsoup
+       Program: jsoup
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/Jsoup.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jsoup.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/active-bugs.csv
+Number of bugs: 93
+--------------------------------------------------------------------------------
+
+Summary for Bug: Jsoup-43
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+11f7c1bd7a2d12f0b1150aa246c61afefd11991f
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2015-04-21 22:11:28 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+554
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/jhy/jsoup/issues/554
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jsoup.nodes.ElementTest::testElementSiblingIndexSameContent
+   --> junit.framework.AssertionFailedError
+ - org.jsoup.nodes.ElementTest::testGetSiblingsWithDuplicateContent
+   --> junit.framework.AssertionFailedError: expected:<[]is> but was:<[th]is>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jsoup.nodes.Element
+--------------------------------------------------------------------------------

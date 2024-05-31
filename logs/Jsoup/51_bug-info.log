@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Jsoup
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Jsoup
+       Program: jsoup
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/Jsoup.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jsoup.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/active-bugs.csv
+Number of bugs: 93
+--------------------------------------------------------------------------------
+
+Summary for Bug: Jsoup-51
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+25e0e1e9ffca9a350d060db7d2179c5c9e459055
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2016-04-05 17:05:20 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+667
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/jhy/jsoup/issues/667
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jsoup.parser.HtmlParserTest::testSupportsNonAsciiTags
+   --> junit.framework.AssertionFailedError: expected:<[Yes]> but was:<[]>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jsoup.parser.CharacterReader
+--------------------------------------------------------------------------------

@@ -1,0 +1,6 @@
+Compiling /home/tyd/defects4j/tmp/Chart/21_buggy...
+
+Testing /home/tyd/defects4j/tmp/Chart/21_buggy...
+Failing tests: 1
+  - org.jfree.data.statistics.junit.DefaultBoxAndWhiskerCategoryDatasetTests::testGetRangeBounds
+

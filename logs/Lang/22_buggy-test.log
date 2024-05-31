@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Lang/22_buggy...
+
+Testing /home/tyd/defects4j/tmp/Lang/22_buggy...
+Failing tests: 2
+  - org.apache.commons.lang3.math.FractionTest::testReducedFactory_int_int
+  - org.apache.commons.lang3.math.FractionTest::testReduce
+

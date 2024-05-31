@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Closure/169_buggy...
+
+Testing /home/tyd/defects4j/tmp/Closure/169_buggy...
+Failing tests: 2
+  - com.google.javascript.jscomp.TypeCheckTest::testIssue791
+  - com.google.javascript.rhino.jstype.RecordTypeTest::testSubtypeWithUnknowns2
+

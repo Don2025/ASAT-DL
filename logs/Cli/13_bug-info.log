@@ -1,0 +1,41 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Cli
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Cli
+       Program: commons-cli
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Cli/Cli.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-cli.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Cli/active-bugs.csv
+Number of bugs: 39
+--------------------------------------------------------------------------------
+
+Summary for Bug: Cli-13
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+538fb6889f0387a40b821cfb315685e929110736
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2008-06-09 07:37:19 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+CLI-61
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/CLI-61
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.cli2.bug.BugLoopingOptionLookAlikeTest::testLoopingOptionLookAlike2
+   --> junit.framework.ComparisonFailure: expected:<Unexpected [testfile.txt while processing ]> but was:<Unexpected [value "testfile.txt" found while processing  input]>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.cli2.WriteableCommandLine
+ - org.apache.commons.cli2.commandline.WriteableCommandLineImpl
+ - org.apache.commons.cli2.option.ArgumentImpl
+--------------------------------------------------------------------------------

@@ -1,0 +1,41 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Closure
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Closure
+       Program: closure-compiler
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Closure/Closure.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/closure-compiler.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Closure/active-bugs.csv
+Number of bugs: 174
+--------------------------------------------------------------------------------
+
+Summary for Bug: Closure-7
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+e736b1c92981fafdc87f3f41f66918305f173734
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2012-10-17 15:53:59 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+841
+--------------------------------------------------------------------------------
+Bug report url:
+https://storage.googleapis.com/google-code-archive/v2/code.google.com/closure-compiler/issues/issue-841.json
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.google.javascript.jscomp.ClosureReverseAbstractInterpreterTest::testGoogIsFunction2
+   --> junit.framework.AssertionFailedError: Expected: (Object|boolean|number|string)
+ - com.google.javascript.jscomp.SemanticReverseAbstractInterpreterTest::testTypeof3
+   --> junit.framework.AssertionFailedError: Expected: (Object|boolean|number|string)
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.google.javascript.jscomp.type.ChainableReverseAbstractInterpreter
+--------------------------------------------------------------------------------

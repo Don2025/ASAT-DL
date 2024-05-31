@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Math/28_buggy...
+
+Testing /home/tyd/defects4j/tmp/Math/28_buggy...
+Failing tests: 2
+  - org.apache.commons.math3.exception.util.LocalizedFormatsTest::testMessageNumber
+  - org.apache.commons.math3.optimization.linear.SimplexSolverTest::testMath828Cycle
+

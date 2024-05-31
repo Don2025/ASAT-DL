@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Compress
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Compress
+       Program: commons-compress
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Compress/Compress.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-compress.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Compress/active-bugs.csv
+Number of bugs: 47
+--------------------------------------------------------------------------------
+
+Summary for Bug: Compress-12
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+bc84d2083e4b1da77547bb4e810a06553e8f0bed
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2012-02-23 01:03:01 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+COMPRESS-178
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/COMPRESS-178
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.compress.archivers.TarTestCase::testCOMPRESS178
+   --> java.lang.IllegalArgumentException: Invalid byte 0 at offset 2 in '00{NUL}0765{NUL}' len=8
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.compress.archivers.tar.TarArchiveInputStream
+--------------------------------------------------------------------------------

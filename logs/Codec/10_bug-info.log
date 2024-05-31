@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Codec
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Codec
+       Program: commons-codec
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Codec/Codec.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-codec.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Codec/active-bugs.csv
+Number of bugs: 18
+--------------------------------------------------------------------------------
+
+Summary for Bug: Codec-10
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+41c68e9ef470696009d72133c7f05a20e2728e34
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2011-03-01 17:56:14 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+CODEC-117
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/CODEC-117
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.codec.language.CaverphoneTest::testEndMb
+   --> junit.framework.ComparisonFailure: Source: mbmb expected:<M[PM]1111111> but was:<M[MP]1111111>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.codec.language.Caverphone
+--------------------------------------------------------------------------------

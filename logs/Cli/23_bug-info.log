@@ -1,0 +1,41 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Cli
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Cli
+       Program: commons-cli
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Cli/Cli.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-cli.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Cli/active-bugs.csv
+Number of bugs: 39
+--------------------------------------------------------------------------------
+
+Summary for Bug: Cli-23
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+2ddaae14dd23643a4b5f71f8274534b0b34556a4
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2009-02-18 05:42:58 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+CLI-162
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/CLI-162
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.cli.bug.BugCLI162Test::testInfiniteLoop
+   --> java.lang.RuntimeException: Text too long for line - throwing exception to avoid infinite loop [CLI-162]:              looooong description
+ - org.apache.commons.cli.bug.BugCLI162Test::testPrintHelpLongLines
+   --> java.lang.RuntimeException: Text too long for line - throwing exception to avoid infinite loop [CLI-162]:                              used if omited. Example: -e "Runs such and such"
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.cli.HelpFormatter
+--------------------------------------------------------------------------------

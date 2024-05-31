@@ -1,0 +1,9 @@
+Compiling /home/tyd/defects4j/tmp/Mockito/35_buggy...
+
+Testing /home/tyd/defects4j/tmp/Mockito/35_buggy...
+Failing tests: 4
+  - org.mockitousage.bugs.NPEWithCertainMatchersTest::shouldNotThrowNPEWhenIntPassed
+  - org.mockitousage.bugs.NPEWithCertainMatchersTest::shouldNotThrowNPEWhenIntegerPassed
+  - org.mockitousage.bugs.NPEWithCertainMatchersTest::shouldNotThrowNPEWhenIntegerPassedToEq
+  - org.mockitousage.bugs.NPEWithCertainMatchersTest::shouldNotThrowNPEWhenIntegerPassedToSame
+

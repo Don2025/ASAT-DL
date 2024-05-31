@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Jsoup
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Jsoup
+       Program: jsoup
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/Jsoup.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jsoup.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/active-bugs.csv
+Number of bugs: 93
+--------------------------------------------------------------------------------
+
+Summary for Bug: Jsoup-15
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+7fe868089855c33d6345e740bfdbe6f140794598
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2011-07-02 21:12:10 +1000
+--------------------------------------------------------------------------------
+Bug report id:
+104
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/jhy/jsoup/issues/104
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jsoup.parser.ParserTest::handlesDataOnlyTags
+   --> junit.framework.AssertionFailedError: expected:<Hello []There> but was:<Hello ['); i++; ]There>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jsoup.parser.TreeBuilderState
+--------------------------------------------------------------------------------

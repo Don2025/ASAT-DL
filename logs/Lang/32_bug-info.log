@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Lang
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Lang
+       Program: commons-lang
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Lang/Lang.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-lang.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Lang/active-bugs.csv
+Number of bugs: 64
+--------------------------------------------------------------------------------
+
+Summary for Bug: Lang-32
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+006fca88e86bd6f650d4d021d2ff3573a572827d
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2010-02-07 03:14:09 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+LANG-586
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/LANG-586
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.lang3.builder.HashCodeBuilderTest::testReflectionObjectCycle
+   --> junit.framework.AssertionFailedError: Expected: <null> but was: []
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.lang3.builder.HashCodeBuilder
+--------------------------------------------------------------------------------

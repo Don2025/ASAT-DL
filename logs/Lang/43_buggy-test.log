@@ -1,0 +1,6 @@
+Compiling /home/tyd/defects4j/tmp/Lang/43_buggy...
+
+Testing /home/tyd/defects4j/tmp/Lang/43_buggy...
+Failing tests: 1
+  - org.apache.commons.lang.text.ExtendedMessageFormatTest::testEscapedQuote_LANG_477
+

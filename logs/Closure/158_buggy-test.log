@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Closure/158_buggy...
+
+Testing /home/tyd/defects4j/tmp/Closure/158_buggy...
+Failing tests: 2
+  - com.google.javascript.jscomp.CommandLineRunnerTest::testWarningGuardOrdering2
+  - com.google.javascript.jscomp.CommandLineRunnerTest::testWarningGuardOrdering4
+

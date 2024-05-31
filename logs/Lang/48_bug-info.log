@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Lang
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Lang
+       Program: commons-lang
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Lang/Lang.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-lang.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Lang/active-bugs.csv
+Number of bugs: 64
+--------------------------------------------------------------------------------
+
+Summary for Bug: Lang-48
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+eb8f74efb75e71fc91e515a38becc2aac203e339
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2008-01-13 07:00:22 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+LANG-393
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/LANG-393
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.lang.builder.EqualsBuilderTest::testBigDecimal
+   --> junit.framework.AssertionFailedError
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.lang.builder.EqualsBuilder
+--------------------------------------------------------------------------------

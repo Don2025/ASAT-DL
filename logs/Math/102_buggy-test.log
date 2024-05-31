@@ -1,0 +1,11 @@
+Compiling /home/tyd/defects4j/tmp/Math/102_buggy...
+
+Testing /home/tyd/defects4j/tmp/Math/102_buggy...
+Failing tests: 6
+  - org.apache.commons.math.stat.inference.ChiSquareFactoryTest::testChiSquareLargeTestStatistic
+  - org.apache.commons.math.stat.inference.ChiSquareFactoryTest::testChiSquare
+  - org.apache.commons.math.stat.inference.ChiSquareTestTest::testChiSquareLargeTestStatistic
+  - org.apache.commons.math.stat.inference.ChiSquareTestTest::testChiSquare
+  - org.apache.commons.math.stat.inference.TestUtilsTest::testChiSquareLargeTestStatistic
+  - org.apache.commons.math.stat.inference.TestUtilsTest::testChiSquare
+

@@ -1,0 +1,50 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Closure
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Closure
+       Program: closure-compiler
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Closure/Closure.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/closure-compiler.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Closure/active-bugs.csv
+Number of bugs: 174
+--------------------------------------------------------------------------------
+
+Summary for Bug: Closure-148
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+f86b8929454da31fbc59cbf95293c7138e0b8200
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2010-07-15 21:01:20 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+196
+--------------------------------------------------------------------------------
+Bug report url:
+https://storage.googleapis.com/google-code-archive/v2/code.google.com/closure-compiler/issues/issue-196.json
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.google.javascript.jscomp.PeepholeFoldConstantsTest::testFoldTypeof
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.SourceMapTest::testGoldenOutput0
+   --> junit.framework.ComparisonFailure: expected:<...ng definitions. **/
+ - com.google.javascript.jscomp.SourceMapTest::testGoldenOutput1
+   --> junit.framework.ComparisonFailure: expected:<...ode", "count": 1 }
+ - com.google.javascript.jscomp.SourceMapTest::testGoldenOutput2
+   --> junit.framework.ComparisonFailure: expected:<...ode", "count": 1 }
+ - com.google.javascript.jscomp.SourceMapTest::testGoldenOutput3
+   --> junit.framework.ComparisonFailure: expected:<...ode", "count": 1 }
+ - com.google.javascript.jscomp.SourceMapTest::testGoldenOutput4
+   --> junit.framework.ComparisonFailure: expected:<...ode", "count": 1 }
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.google.javascript.jscomp.PeepholeFoldConstants
+ - com.google.javascript.jscomp.SourceMap
+--------------------------------------------------------------------------------

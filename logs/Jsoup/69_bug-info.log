@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Jsoup
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Jsoup
+       Program: jsoup
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/Jsoup.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jsoup.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/active-bugs.csv
+Number of bugs: 93
+--------------------------------------------------------------------------------
+
+Summary for Bug: Jsoup-69
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+f75f47397836ba2127f06c8390a87eada369f7cc
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2017-11-13 00:57:36 +0100
+--------------------------------------------------------------------------------
+Bug report id:
+429
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/jhy/jsoup/issues/429
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jsoup.nodes.FormElementTest::removeFormElement
+   --> junit.framework.AssertionFailedError: expected:<2> but was:<3>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jsoup.nodes.FormElement
+--------------------------------------------------------------------------------

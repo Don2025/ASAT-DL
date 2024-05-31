@@ -1,0 +1,6 @@
+Compiling /home/tyd/defects4j/tmp/Compress/45_buggy...
+
+Testing /home/tyd/defects4j/tmp/Compress/45_buggy...
+Failing tests: 1
+  - org.apache.commons.compress.archivers.tar.TarUtilsTest::testRoundTripOctalOrBinary8
+

@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Chart
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Chart
+       Program: jfreechart
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Chart/Chart.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Svn
+    Repository: file:///home/tyd/study/dataset/defects4j/project_repos/jfreechart/trunk
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Chart/active-bugs.csv
+Number of bugs: 26
+--------------------------------------------------------------------------------
+
+Summary for Bug: Chart-13
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+822
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2008-04-08 12:50:42 -0700 
+--------------------------------------------------------------------------------
+Bug report id:
+UNKNOWN
+--------------------------------------------------------------------------------
+Bug report url:
+UNKNOWN
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jfree.chart.block.junit.BorderArrangementTests::testSizingWithWidthConstraint
+   --> java.lang.IllegalArgumentException: Range(double, double): require lower (0.0) <= upper (-2.3000000000000007).
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jfree.chart.block.BorderArrangement
+--------------------------------------------------------------------------------

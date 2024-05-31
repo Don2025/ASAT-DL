@@ -1,0 +1,61 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JacksonCore
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JacksonCore
+       Program: jackson-core
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JacksonCore/JacksonCore.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jackson-core.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JacksonCore/active-bugs.csv
+Number of bugs: 26
+--------------------------------------------------------------------------------
+
+Summary for Bug: JacksonCore-22
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+6feec20c842586056aa5b19c402b26be08c88ca3
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2017-06-04 05:33:06 +0200
+--------------------------------------------------------------------------------
+Bug report id:
+208
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/FasterXML/jackson-core/issues/208
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.fasterxml.jackson.core.filter.BasicParserFilteringTest::testSingleMatchFilteringWithPath
+   --> junit.framework.AssertionFailedError: expected:<1> but was:<0>
+ - com.fasterxml.jackson.core.filter.BasicParserFilteringTest::testAllowMultipleMatchesWithPath1
+   --> junit.framework.AssertionFailedError: expected:<3> but was:<0>
+ - com.fasterxml.jackson.core.filter.BasicParserFilteringTest::testAllowMultipleMatchesWithPath2
+   --> junit.framework.AssertionFailedError: expected:<2> but was:<0>
+ - com.fasterxml.jackson.core.filter.BasicParserFilteringTest::testMultipleMatchFilteringWithPath1
+   --> junit.framework.AssertionFailedError: expected:<2> but was:<0>
+ - com.fasterxml.jackson.core.filter.BasicParserFilteringTest::testMultipleMatchFilteringWithPath2
+   --> junit.framework.AssertionFailedError: expected:<2> but was:<0>
+ - com.fasterxml.jackson.core.filter.BasicParserFilteringTest::testMultipleMatchFilteringWithPath3
+   --> junit.framework.AssertionFailedError: expected:<2> but was:<0>
+ - com.fasterxml.jackson.core.filter.BasicParserFilteringTest::testSingleMatchFilteringWithoutPath
+   --> junit.framework.AssertionFailedError: expected:<1> but was:<0>
+ - com.fasterxml.jackson.core.filter.BasicParserFilteringTest::testNotAllowMultipleMatchesWithoutPath1
+   --> junit.framework.AssertionFailedError: expected:<1> but was:<0>
+ - com.fasterxml.jackson.core.filter.BasicParserFilteringTest::testNotAllowMultipleMatchesWithoutPath2
+   --> junit.framework.ComparisonFailure: expected:<2[]> but was:<2[ 4]>
+ - com.fasterxml.jackson.core.filter.BasicParserFilteringTest::testIndexMatchWithPath1
+   --> junit.framework.AssertionFailedError: expected:<1> but was:<0>
+ - com.fasterxml.jackson.core.filter.BasicParserFilteringTest::testIndexMatchWithPath2
+   --> junit.framework.AssertionFailedError: expected:<2> but was:<0>
+ - com.fasterxml.jackson.core.filter.BasicParserFilteringTest::testAllowMultipleMatchesWithoutPath
+   --> junit.framework.AssertionFailedError: expected:<3> but was:<0>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.fasterxml.jackson.core.filter.FilteringParserDelegate
+--------------------------------------------------------------------------------

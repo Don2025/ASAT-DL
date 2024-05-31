@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Compress/31_buggy...
+
+Testing /home/tyd/defects4j/tmp/Compress/31_buggy...
+Failing tests: 2
+  - org.apache.commons.compress.archivers.TarTestCase::testCOMPRESS178
+  - org.apache.commons.compress.archivers.tar.TarUtilsTest::testParseOctalInvalid
+

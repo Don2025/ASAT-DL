@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Math
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Math
+       Program: commons-math
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Math/Math.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-math.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Math/active-bugs.csv
+Number of bugs: 106
+--------------------------------------------------------------------------------
+
+Summary for Bug: Math-52
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+3c319db494928e9d51ea6091b301302c65f4eceb
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2011-08-05 15:05:33 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+MATH-639
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/MATH-639
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.math.geometry.euclidean.threed.RotationTest::testIssue639
+   --> junit.framework.AssertionFailedError: expected:<0.6228370359608201> but was:<NaN>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.math.geometry.euclidean.threed.Rotation
+--------------------------------------------------------------------------------

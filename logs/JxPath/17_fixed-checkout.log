@@ -1,0 +1,11 @@
+Checking out a1bc20f2 to /home/tyd/defects4j/tmp/JxPath/17_fixed........... OK
+Init local repository...................................................... OK
+Tag post-fix revision...................................................... OK
+Run post-checkout hook..................................................... OK
+Initialize fixed program version........................................... OK
+Apply patch................................................................ OK
+Initialize buggy program version........................................... OK
+Diff a1bc20f2:1a292f1c..................................................... OK
+Apply patch................................................................ OK
+Tag pre-fix revision....................................................... OK
+Check out program version: JxPath-17f...................................... OK

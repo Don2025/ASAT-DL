@@ -1,0 +1,6 @@
+Compiling /home/tyd/defects4j/tmp/Math/104_buggy...
+
+Testing /home/tyd/defects4j/tmp/Math/104_buggy...
+Failing tests: 1
+  - org.apache.commons.math.special.GammaTest::testRegularizedGammaPositivePositive
+

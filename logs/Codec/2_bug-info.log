@@ -1,0 +1,41 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Codec
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Codec
+       Program: commons-codec
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Codec/Codec.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-codec.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Codec/active-bugs.csv
+Number of bugs: 18
+--------------------------------------------------------------------------------
+
+Summary for Bug: Codec-2
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+b8c2d9d9dc9aab45f83cf49ac93cfa8546e4c08e
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2009-07-13 22:33:28 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+CODEC-77
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/CODEC-77
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.codec.binary.Base64InputStreamTest::testBase64EmptyInputStream
+   --> junit.framework.AssertionFailedError: EOF expected:<-1> but was:<13>
+ - org.apache.commons.codec.binary.Base64OutputStreamTest::testBase64EmptyOutputStream
+   --> junit.framework.AssertionFailedError: Streaming base64 encode
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.codec.binary.Base64
+--------------------------------------------------------------------------------

@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JacksonDatabind
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JacksonDatabind
+       Program: jackson-databind
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/JacksonDatabind.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jackson-databind.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/active-bugs.csv
+Number of bugs: 112
+--------------------------------------------------------------------------------
+
+Summary for Bug: JacksonDatabind-100
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+d98ae778876cddd5ed3eacab9e5daf55186ff483
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2018-08-15 16:56:18 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+2096
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/FasterXML/jackson-databind/issues/2096
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.fasterxml.jackson.databind.node.TestConversions::testBase64Text
+   --> junit.framework.AssertionFailedError: Failed (variant MODIFIED-FOR-URL, data length 1): Cannot access contents of TextNode as binary due to broken Base64 encoding: Unexpected end-of-String in base64 content
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.fasterxml.jackson.databind.node.TreeTraversingParser
+--------------------------------------------------------------------------------

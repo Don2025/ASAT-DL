@@ -1,0 +1,6 @@
+Compiling /home/tyd/defects4j/tmp/Closure/160_buggy...
+
+Testing /home/tyd/defects4j/tmp/Closure/160_buggy...
+Failing tests: 1
+  - com.google.javascript.jscomp.CommandLineRunnerTest::testCheckSymbolsOverrideForQuiet
+

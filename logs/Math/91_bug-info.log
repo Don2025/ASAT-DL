@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Math
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Math
+       Program: commons-math
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Math/Math.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-math.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Math/active-bugs.csv
+Number of bugs: 106
+--------------------------------------------------------------------------------
+
+Summary for Bug: Math-91
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+e1df5f5486f10ac521dfc3dc20d1bfe508e67aa8
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2009-03-29 16:51:48 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+MATH-252
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/MATH-252
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.math.fraction.FractionTest::testCompareTo
+   --> junit.framework.AssertionFailedError: expected:<-1> but was:<0>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.math.fraction.Fraction
+--------------------------------------------------------------------------------

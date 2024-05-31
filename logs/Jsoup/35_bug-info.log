@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Jsoup
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Jsoup
+       Program: jsoup
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/Jsoup.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jsoup.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/active-bugs.csv
+Number of bugs: 93
+--------------------------------------------------------------------------------
+
+Summary for Bug: Jsoup-35
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+76399e5b273d63d6affeb94597d8dfddce811964
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2013-10-06 16:20:52 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+313
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/jhy/jsoup/issues/313
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jsoup.parser.HtmlParserTest::handlesUnclosedAnchors
+   --> junit.framework.AssertionFailedError: expected:<...com/">Link</a>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jsoup.parser.HtmlTreeBuilderState
+--------------------------------------------------------------------------------

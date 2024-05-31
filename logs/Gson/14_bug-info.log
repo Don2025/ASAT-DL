@@ -1,0 +1,51 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Gson
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Gson
+       Program: gson
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Gson/Gson.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/gson.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Gson/active-bugs.csv
+Number of bugs: 18
+--------------------------------------------------------------------------------
+
+Summary for Bug: Gson-14
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+a300148003e3a067875b1444e8268b6e0f0e0e02
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2017-05-30 17:47:04 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+1074
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/google/gson/issues/1074
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.google.gson.internal.bind.RecursiveTypesResolveTest::testDoubleSupertype
+   --> junit.framework.AssertionFailedError: expected:<? super java.lang.Number> but was:<? super ? super java.lang.Number>
+ - com.google.gson.internal.bind.RecursiveTypesResolveTest::testIssue440WeakReference
+   --> java.lang.StackOverflowError
+ - com.google.gson.internal.bind.RecursiveTypesResolveTest::testSubSupertype
+   --> junit.framework.AssertionFailedError: expected:<?> but was:<? extends ? super java.lang.Number>
+ - com.google.gson.internal.bind.RecursiveTypesResolveTest::testDoubleSubtype
+   --> junit.framework.AssertionFailedError: expected:<? extends java.lang.Number> but was:<? extends ? extends java.lang.Number>
+ - com.google.gson.internal.bind.RecursiveTypesResolveTest::testIssue603PrintStream
+   --> java.lang.StackOverflowError
+ - com.google.gson.internal.bind.RecursiveTypesResolveTest::testSuperSubtype
+   --> junit.framework.AssertionFailedError: expected:<?> but was:<? super ? extends java.lang.Number>
+ - com.google.gson.internal.bind.RecursiveTypesResolveTest::testRecursiveResolveSimple
+   --> java.lang.StackOverflowError
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.google.gson.internal.$Gson$Types
+--------------------------------------------------------------------------------

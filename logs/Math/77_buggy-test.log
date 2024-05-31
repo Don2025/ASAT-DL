@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Math/77_buggy...
+
+Testing /home/tyd/defects4j/tmp/Math/77_buggy...
+Failing tests: 2
+  - org.apache.commons.math.linear.ArrayRealVectorTest::testBasicFunctions
+  - org.apache.commons.math.linear.SparseRealVectorTest::testBasicFunctions
+

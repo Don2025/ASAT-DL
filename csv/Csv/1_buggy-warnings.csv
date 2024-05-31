@@ -1,0 +1,2 @@
+"Warning Type","Code","Warning"
+"Dodgy code Warning","SF","Switch statement found in org.apache.commons.csv.CSVPrinter.printComment(String) where one case falls through to the next case"

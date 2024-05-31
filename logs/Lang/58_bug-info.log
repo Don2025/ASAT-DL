@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Lang
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Lang
+       Program: commons-lang
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Lang/Lang.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-lang.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Lang/active-bugs.csv
+Number of bugs: 64
+--------------------------------------------------------------------------------
+
+Summary for Bug: Lang-58
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+1fd45a4f68ea497dfbdf1a67b8b8805a4a9b1166
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2006-12-19 21:50:04 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+LANG-300
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/LANG-300
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.lang.math.NumberUtilsTest::testLang300
+   --> java.lang.NumberFormatException: 1l is not a valid number.
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.lang.math.NumberUtils
+--------------------------------------------------------------------------------

@@ -1,0 +1,54 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Closure
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Closure
+       Program: closure-compiler
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Closure/Closure.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/closure-compiler.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Closure/active-bugs.csv
+Number of bugs: 174
+--------------------------------------------------------------------------------
+
+Summary for Bug: Closure-89
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+4b065734d8afb5ab0d241ee5da22af0fa9d75ec3
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2010-12-01 01:36:46 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+289
+--------------------------------------------------------------------------------
+Bug report url:
+https://storage.googleapis.com/google-code-archive/v2/code.google.com/closure-compiler/issues/issue-289.json
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.google.javascript.jscomp.CollapsePropertiesTest::testAddPropertyToChildOfUncollapsibleFunctionInLocalScope
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.CollapsePropertiesTest::testAliasCreatedForFunctionDepth1_1
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.CollapsePropertiesTest::testAliasCreatedForFunctionDepth1_2
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.CollapsePropertiesTest::testAliasCreatedForFunctionDepth1_3
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.CollapsePropertiesTest::testAddPropertyToUncollapsibleNamedCtorInLocalScopeDepth1
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.CollapsePropertiesTest::testAddPropertyToUncollapsibleFunctionInLocalScopeDepth1
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.CollapsePropertiesTest::testAddPropertyToUncollapsibleFunctionInLocalScopeDepth2
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.CollapsePropertiesTest::testAliasCreatedForFunctionDepth2
+   --> junit.framework.AssertionFailedError: 
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.google.javascript.jscomp.CollapseProperties
+ - com.google.javascript.jscomp.GlobalNamespace
+--------------------------------------------------------------------------------

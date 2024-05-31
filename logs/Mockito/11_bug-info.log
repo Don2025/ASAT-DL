@@ -1,0 +1,41 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Mockito
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Mockito
+       Program: mockito
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Mockito/Mockito.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/mockito.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Mockito/active-bugs.csv
+Number of bugs: 38
+--------------------------------------------------------------------------------
+
+Summary for Bug: Mockito-11
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+1802cf79c482f2df29abb3d6735bcf0b16cedb7d
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2014-09-26 16:01:47 +0200
+--------------------------------------------------------------------------------
+Bug report id:
+87
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/mockito/mockito/issues/87
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.mockito.internal.creation.DelegatingMethodTest::equals_should_return_true_when_equal
+   --> junit.framework.AssertionFailedError
+ - org.mockito.internal.creation.DelegatingMethodTest::equals_should_return_true_when_self
+   --> junit.framework.AssertionFailedError
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.mockito.internal.creation.DelegatingMethod
+--------------------------------------------------------------------------------

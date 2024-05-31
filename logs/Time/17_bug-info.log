@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Time
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Time
+       Program: joda-time
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Time/Time.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/joda-time.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Time/active-bugs.csv
+Number of bugs: 26
+--------------------------------------------------------------------------------
+
+Summary for Bug: Time-17
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+a8913f5ad5dfde59263c981c9e9eb28e43fd2e00
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2012-02-02 13:09:36 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+141
+--------------------------------------------------------------------------------
+Bug report url:
+https://sourceforge.net/p/joda-time/bugs/141
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.joda.time.TestDateTimeZoneCutover::testBug3476684_adjustOffset
+   --> junit.framework.AssertionFailedError: expected:<2012-02-25T23:15:00.000-03:00> but was:<2012-02-25T23:15:00.000-02:00>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.joda.time.DateTimeZone
+--------------------------------------------------------------------------------

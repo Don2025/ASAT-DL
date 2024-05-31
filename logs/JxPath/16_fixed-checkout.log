@@ -1,0 +1,11 @@
+Checking out 6cf70928 to /home/tyd/defects4j/tmp/JxPath/16_fixed........... OK
+Init local repository...................................................... OK
+Tag post-fix revision...................................................... OK
+Run post-checkout hook..................................................... OK
+Initialize fixed program version........................................... OK
+Apply patch................................................................ OK
+Initialize buggy program version........................................... OK
+Diff 6cf70928:e2c9d22b..................................................... OK
+Apply patch................................................................ OK
+Tag pre-fix revision....................................................... OK
+Check out program version: JxPath-16f...................................... OK

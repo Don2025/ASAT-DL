@@ -1,0 +1,8 @@
+Compiling /home/tyd/defects4j/tmp/JacksonDatabind/103_fixed...
+
+Testing /home/tyd/defects4j/tmp/JacksonDatabind/103_fixed...
+Failing tests: 3
+  - com.fasterxml.jackson.databind.introspect.TestScalaLikeImplicitProperties::testVarProperty
+  - com.fasterxml.jackson.databind.introspect.TestScalaLikeImplicitProperties::testGetterSetterProperty
+  - com.fasterxml.jackson.databind.introspect.TestScalaLikeImplicitProperties::testVarWithBeanProperty
+

@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Collections
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Collections
+       Program: commons-collections
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Collections/Collections.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-collections.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Collections/active-bugs.csv
+Number of bugs: 4
+--------------------------------------------------------------------------------
+
+Summary for Bug: Collections-25
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+73d69dfe8677210e44049bc1a2a7d1ff85bc1ca7
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2015-06-04 20:36:25 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+COLLECTIONS-566
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/COLLECTIONS-566
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.collections4.IteratorUtilsTest::testCollatedIterator
+   --> java.lang.NullPointerException: You must invoke setComparator() to set a comparator first.
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.collections4.IteratorUtils
+--------------------------------------------------------------------------------

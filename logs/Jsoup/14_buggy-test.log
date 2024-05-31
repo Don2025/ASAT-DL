@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Jsoup/14_buggy...
+
+Testing /home/tyd/defects4j/tmp/Jsoup/14_buggy...
+Failing tests: 2
+  - org.jsoup.parser.ParserTest::parsesUnterminatedTextarea
+  - org.jsoup.parser.ParserTest::handlesUnclosedTitle
+

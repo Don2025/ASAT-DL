@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Jsoup
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Jsoup
+       Program: jsoup
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/Jsoup.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jsoup.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/active-bugs.csv
+Number of bugs: 93
+--------------------------------------------------------------------------------
+
+Summary for Bug: Jsoup-41
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+8391b7231a2519557d41209d728acc4f422af381
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2015-03-29 18:10:57 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+537
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/jhy/jsoup/issues/537
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jsoup.nodes.ElementTest::testHashAndEquals
+   --> junit.framework.AssertionFailedError: expected: org.jsoup.nodes.Element<<p class="one">One</p>> but was: org.jsoup.nodes.Element<<p class="one">One</p>>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jsoup.nodes.Element
+--------------------------------------------------------------------------------

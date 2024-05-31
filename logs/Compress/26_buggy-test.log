@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Compress/26_buggy...
+
+Testing /home/tyd/defects4j/tmp/Compress/26_buggy...
+Failing tests: 2
+  - org.apache.commons.compress.utils.IOUtilsTest::skipUsingRead
+  - org.apache.commons.compress.utils.IOUtilsTest::skipUsingSkipAndRead
+

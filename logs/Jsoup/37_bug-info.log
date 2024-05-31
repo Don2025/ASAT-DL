@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Jsoup
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Jsoup
+       Program: jsoup
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/Jsoup.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jsoup.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/active-bugs.csv
+Number of bugs: 93
+--------------------------------------------------------------------------------
+
+Summary for Bug: Jsoup-37
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+c07ba8a34b6a6d6665928e106fea67bd9144e4e0
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2013-11-16 16:48:43 -0800
+--------------------------------------------------------------------------------
+Bug report id:
+368
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/jhy/jsoup/issues/368
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jsoup.nodes.ElementTest::testNotPretty
+   --> junit.framework.AssertionFailedError: expected:<[   
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jsoup.nodes.Element
+--------------------------------------------------------------------------------

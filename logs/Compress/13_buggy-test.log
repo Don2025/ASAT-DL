@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Compress/13_buggy...
+
+Testing /home/tyd/defects4j/tmp/Compress/13_buggy...
+Failing tests: 2
+  - org.apache.commons.compress.archivers.zip.ZipArchiveInputStreamTest::winzipBackSlashWorkaround
+  - org.apache.commons.compress.archivers.zip.ZipFileTest::testWinzipBackSlashWorkaround
+

@@ -1,0 +1,6 @@
+Compiling /home/tyd/defects4j/tmp/Chart/7_buggy...
+
+Testing /home/tyd/defects4j/tmp/Chart/7_buggy...
+Failing tests: 1
+  - org.jfree.data.time.junit.TimePeriodValuesTests::testGetMaxMiddleIndex
+

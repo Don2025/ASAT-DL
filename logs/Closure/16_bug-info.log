@@ -1,0 +1,41 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Closure
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Closure
+       Program: closure-compiler
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Closure/Closure.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/closure-compiler.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Closure/active-bugs.csv
+Number of bugs: 174
+--------------------------------------------------------------------------------
+
+Summary for Bug: Closure-16
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+3b97e5e4212c769daa22a96094ed19b4658c8760
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2012-07-09 16:18:36 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+772
+--------------------------------------------------------------------------------
+Bug report url:
+https://storage.googleapis.com/google-code-archive/v2/code.google.com/closure-compiler/issues/issue-772.json
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.google.javascript.jscomp.IntegrationTest::testIssue772
+   --> junit.framework.AssertionFailedError: Expected no warnings or errors
+ - com.google.javascript.jscomp.ScopedAliasesTest::testIssue772
+   --> junit.framework.AssertionFailedError: Expected: <null> but was: Node tree inequality:
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.google.javascript.jscomp.ScopedAliases
+--------------------------------------------------------------------------------

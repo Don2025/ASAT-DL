@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Chart
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Chart
+       Program: jfreechart
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Chart/Chart.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Svn
+    Repository: file:///home/tyd/study/dataset/defects4j/project_repos/jfreechart/trunk
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Chart/active-bugs.csv
+Number of bugs: 26
+--------------------------------------------------------------------------------
+
+Summary for Bug: Chart-9
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+1083
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2008-06-10 02:08:12 -0700 
+--------------------------------------------------------------------------------
+Bug report id:
+818
+--------------------------------------------------------------------------------
+Bug report url:
+https://sourceforge.net/p/jfreechart/bugs/818
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jfree.data.time.junit.TimeSeriesTests::testBug1864222
+   --> java.lang.IllegalArgumentException: Requires start <= end.
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jfree.data.time.TimeSeries
+--------------------------------------------------------------------------------

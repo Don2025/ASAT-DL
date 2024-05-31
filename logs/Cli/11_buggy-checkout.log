@@ -1,0 +1,12 @@
+Checking out d36adebd to /home/tyd/defects4j/tmp/Cli/11_buggy.............. OK
+Init local repository...................................................... OK
+Tag post-fix revision...................................................... OK
+Run post-checkout hook..................................................... OK
+Excluding broken/flaky tests............................................... OK
+Initialize fixed program version........................................... OK
+Apply patch................................................................ OK
+Initialize buggy program version........................................... OK
+Diff d36adebd:33abc034..................................................... OK
+Apply patch................................................................ OK
+Tag pre-fix revision....................................................... OK
+Check out program version: Cli-11b......................................... OK

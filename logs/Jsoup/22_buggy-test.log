@@ -1,0 +1,8 @@
+Compiling /home/tyd/defects4j/tmp/Jsoup/22_buggy...
+
+Testing /home/tyd/defects4j/tmp/Jsoup/22_buggy...
+Failing tests: 3
+  - org.jsoup.nodes.ElementTest::elementIsNotASiblingOfItself
+  - org.jsoup.nodes.NodeTest::nodeIsNotASiblingOfItself
+  - org.jsoup.nodes.NodeTest::orphanNodeReturnsNullForSiblingElements
+

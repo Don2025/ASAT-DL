@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Jsoup
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Jsoup
+       Program: jsoup
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/Jsoup.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jsoup.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/active-bugs.csv
+Number of bugs: 93
+--------------------------------------------------------------------------------
+
+Summary for Bug: Jsoup-81
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+e38dfd44829e13ee83fd62bfe937580f5a998c11
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2018-04-28 19:58:51 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+1009
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/jhy/jsoup/issues/1009
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jsoup.helper.DataUtilTest::supportsXmlCharsetDeclaration
+   --> junit.framework.AssertionFailedError: expected:<Hell[ö Wö]rld!> but was:<Hell[� W�]rld!>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jsoup.helper.DataUtil
+--------------------------------------------------------------------------------

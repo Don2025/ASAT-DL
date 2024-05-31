@@ -1,0 +1,46 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Closure
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Closure
+       Program: closure-compiler
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Closure/Closure.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/closure-compiler.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Closure/active-bugs.csv
+Number of bugs: 174
+--------------------------------------------------------------------------------
+
+Summary for Bug: Closure-106
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+e609670bb56e0c7216c9476a5f6a5594e7f1acdb
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2009-11-12 20:02:06 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+19
+--------------------------------------------------------------------------------
+Bug report url:
+https://storage.googleapis.com/google-code-archive/v2/code.google.com/closure-compiler/issues/issue-19.json
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.google.javascript.jscomp.CheckSideEffectsTest::testJSDocComments
+   --> junit.framework.AssertionFailedError: Unexpected error(s): JSC_USELESS_CODE. Suspicious code. This code lacks side-effects. Is there a bug? at testcode line 1 expected:<0> but was:<1>
+ - com.google.javascript.jscomp.CollapsePropertiesTest::testTwinReferenceCancelsChildCollapsing
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.CollapsePropertiesTest::testCrashInNestedAssign
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.CollapsePropertiesTest::testCrashInCommaOperator
+   --> java.lang.IllegalArgumentException
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.google.javascript.jscomp.GlobalNamespace
+ - com.google.javascript.rhino.JSDocInfoBuilder
+--------------------------------------------------------------------------------

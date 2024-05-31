@@ -1,0 +1,11 @@
+Checking out fab38abb to /home/tyd/defects4j/tmp/JxPath/1_buggy............ OK
+Init local repository...................................................... OK
+Tag post-fix revision...................................................... OK
+Run post-checkout hook..................................................... OK
+Initialize fixed program version........................................... OK
+Apply patch................................................................ OK
+Initialize buggy program version........................................... OK
+Diff fab38abb:932131e6..................................................... OK
+Apply patch................................................................ OK
+Tag pre-fix revision....................................................... OK
+Check out program version: JxPath-1b....................................... OK

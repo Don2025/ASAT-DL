@@ -1,0 +1,42 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Math
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Math
+       Program: commons-math
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Math/Math.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-math.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Math/active-bugs.csv
+Number of bugs: 106
+--------------------------------------------------------------------------------
+
+Summary for Bug: Math-98
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+a0f3e0435c405ec842240413e2165863c9c76a16
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2008-06-17 19:09:36 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+MATH-209
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/MATH-209
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.math.linear.BigMatrixImplTest::testMath209
+   --> java.lang.ArrayIndexOutOfBoundsException: 2
+ - org.apache.commons.math.linear.RealMatrixImplTest::testMath209
+   --> java.lang.ArrayIndexOutOfBoundsException: 2
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.math.linear.BigMatrixImpl
+ - org.apache.commons.math.linear.RealMatrixImpl
+--------------------------------------------------------------------------------

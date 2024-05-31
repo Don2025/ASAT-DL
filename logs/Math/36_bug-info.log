@@ -1,0 +1,41 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Math
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Math
+       Program: commons-math
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Math/Math.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-math.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Math/active-bugs.csv
+Number of bugs: 106
+--------------------------------------------------------------------------------
+
+Summary for Bug: Math-36
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+1a15d5f4c13eca0435b0ed7e6a624064e7f7e07f
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2012-02-14 13:16:57 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+MATH-744
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/MATH-744
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.math.fraction.BigFractionTest::testFloatValueForLargeNumeratorAndDenominator
+   --> junit.framework.AssertionFailedError: expected:<5.0> but was:<NaN>
+ - org.apache.commons.math.fraction.BigFractionTest::testDoubleValueForLargeNumeratorAndDenominator
+   --> junit.framework.AssertionFailedError: expected:<5.0> but was:<NaN>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.math.fraction.BigFraction
+--------------------------------------------------------------------------------

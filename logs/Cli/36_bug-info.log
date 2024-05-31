@@ -1,0 +1,40 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Cli
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Cli
+       Program: commons-cli
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Cli/Cli.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-cli.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Cli/active-bugs.csv
+Number of bugs: 39
+--------------------------------------------------------------------------------
+
+Summary for Bug: Cli-36
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+afc13c445a4c80432e52d735685b272fadfeeddf
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2016-06-21 20:27:06 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+CLI-266
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/CLI-266
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.cli.bug.BugCLI266Test::testOptionComparatorInsertedOrder
+   --> junit.framework.AssertionFailedError: expected:<[p]> but was:<[x]>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.cli.OptionGroup
+ - org.apache.commons.cli.Options
+--------------------------------------------------------------------------------

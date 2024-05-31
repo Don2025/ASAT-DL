@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Jsoup
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Jsoup
+       Program: jsoup
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/Jsoup.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jsoup.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/active-bugs.csv
+Number of bugs: 93
+--------------------------------------------------------------------------------
+
+Summary for Bug: Jsoup-7
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+82855b07f5336d30c70dc20548ab7ab8adeac05e
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2011-07-02 21:12:02 +1000
+--------------------------------------------------------------------------------
+Bug report id:
+43
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/jhy/jsoup/issues/43
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jsoup.nodes.DocumentTest::testNormalisesStructure
+   --> junit.framework.AssertionFailedError: expected:<...</script><noscript><[/noscript></head><body><p>two</p><p>three</p></body]></html>> but was:<...</script><noscript><[body><p>two</p><body><p>three</p></body></body></noscript></head]></html>>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jsoup.nodes.Document
+--------------------------------------------------------------------------------

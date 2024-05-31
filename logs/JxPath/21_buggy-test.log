@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/JxPath/21_buggy...
+
+Testing /home/tyd/defects4j/tmp/JxPath/21_buggy...
+Failing tests: 2
+  - org.apache.commons.jxpath.ri.model.JXPath151Test::testMapValueEquality
+  - org.apache.commons.jxpath.ri.model.MixedModelTest::testNull
+

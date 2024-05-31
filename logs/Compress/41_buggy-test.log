@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Compress/41_buggy...
+
+Testing /home/tyd/defects4j/tmp/Compress/41_buggy...
+Failing tests: 2
+  - org.apache.commons.compress.archivers.ZipTestCase::testListAllFilesWithNestedArchive
+  - org.apache.commons.compress.archivers.zip.ZipArchiveInputStreamTest::testThrowOnInvalidEntry
+

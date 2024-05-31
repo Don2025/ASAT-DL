@@ -1,0 +1,40 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JacksonDatabind
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JacksonDatabind
+       Program: jackson-databind
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/JacksonDatabind.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jackson-databind.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/active-bugs.csv
+Number of bugs: 112
+--------------------------------------------------------------------------------
+
+Summary for Bug: JacksonDatabind-48
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+fe32b967f6b029a10ec1d40f7e12c8b37ba32ee8
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2016-05-24 22:15:03 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+1223
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/FasterXML/jackson-databind/issues/1223
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.fasterxml.jackson.databind.ser.TestFeatures::testVisibilityFeatures
+   --> junit.framework.AssertionFailedError: Should find 1 property, not 2; properties = [[Property 'name'; ctors: null, field(s): null, getter(s): null, setter(s): [method com.fasterxml.jackson.databind.ser.TestFeatures$TCls#setName(1 params)][visible=true,ignore=false,explicitName=false]], [Property 'groupname'; ctors: null, field(s): [field com.fasterxml.jackson.databind.ser.TestFeatures$TCls#groupname][visible=true,ignore=false,explicitName=true], getter(s): null, setter(s): null]]
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.fasterxml.jackson.databind.DeserializationConfig
+ - com.fasterxml.jackson.databind.SerializationConfig
+--------------------------------------------------------------------------------

@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Jsoup
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Jsoup
+       Program: jsoup
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/Jsoup.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jsoup.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/active-bugs.csv
+Number of bugs: 93
+--------------------------------------------------------------------------------
+
+Summary for Bug: Jsoup-24
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+04b8921d4dcab019b02588620d953c4f19d43a58
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2012-04-14 12:59:04 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+115
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/jhy/jsoup/issues/115
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jsoup.parser.HtmlParserTest::handlesQuotesInCommentsInScripts
+   --> junit.framework.AssertionFailedError: expected:<...ocument.write('</scr['] + 'ipt>');
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jsoup.parser.TokeniserState
+--------------------------------------------------------------------------------

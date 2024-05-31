@@ -1,0 +1,40 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JacksonCore
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JacksonCore
+       Program: jackson-core
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JacksonCore/JacksonCore.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jackson-core.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JacksonCore/active-bugs.csv
+Number of bugs: 26
+--------------------------------------------------------------------------------
+
+Summary for Bug: JacksonCore-12
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+fede6c9df74d370f2e728b5c46e14bd570abb83c
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2015-11-25 21:02:31 -0800
+--------------------------------------------------------------------------------
+Bug report id:
+37
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/FasterXML/jackson-core/issues/37
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.fasterxml.jackson.core.json.LocationInObjectTest::testOffsetWithObjectFieldsUsingReader
+   --> junit.framework.AssertionFailedError: expected:<6> but was:<1>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.fasterxml.jackson.core.json.ReaderBasedJsonParser
+ - com.fasterxml.jackson.core.json.UTF8StreamJsonParser
+--------------------------------------------------------------------------------

@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Compress/47_fixed...
+
+Testing /home/tyd/defects4j/tmp/Compress/47_fixed...
+Failing tests: 2
+  - org.apache.commons.compress.archivers.zip.UTF8ZipFilesTest::testReadWinZipArchiveForStream
+  - org.apache.commons.compress.archivers.zip.UTF8ZipFilesTest::testReadWinZipArchive
+

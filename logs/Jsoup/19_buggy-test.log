@@ -1,0 +1,6 @@
+Compiling /home/tyd/defects4j/tmp/Jsoup/19_buggy...
+
+Testing /home/tyd/defects4j/tmp/Jsoup/19_buggy...
+Failing tests: 1
+  - org.jsoup.safety.CleanerTest::handlesCustomProtocols
+

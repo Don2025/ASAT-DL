@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JacksonDatabind
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JacksonDatabind
+       Program: jackson-databind
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/JacksonDatabind.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jackson-databind.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/active-bugs.csv
+Number of bugs: 112
+--------------------------------------------------------------------------------
+
+Summary for Bug: JacksonDatabind-94
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+6799f8f10cc78e9af6d443ed6982d00a13f2e7d2
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2018-02-10 19:22:01 -0800
+--------------------------------------------------------------------------------
+Bug report id:
+1931
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/FasterXML/jackson-databind/issues/1931
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.fasterxml.jackson.databind.interop.IllegalTypesCheckTest::testC3P0Types
+   --> junit.framework.AssertionFailedError: Expected an exception with one of substrings ([Illegal type]): got one with message "Can not instantiate value of type [simple type, class com.mchange.v2.c3p0.jacksontest.ComboPooledDataSource] from String value ('/tmp/foobar.txt'); no single-String constructor/factory method
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator
+--------------------------------------------------------------------------------

@@ -1,0 +1,9 @@
+Compiling /home/tyd/defects4j/tmp/Codec/4_buggy...
+
+Testing /home/tyd/defects4j/tmp/Codec/4_buggy...
+Failing tests: 4
+  - org.apache.commons.codec.binary.Base64Codec13Test::testEncoder
+  - org.apache.commons.codec.binary.Base64Codec13Test::testBinaryEncoder
+  - org.apache.commons.codec.language.SoundexTest::testUsMappingEWithAcute
+  - org.apache.commons.codec.language.SoundexTest::testUsMappingOWithDiaeresis
+

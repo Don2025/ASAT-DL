@@ -1,0 +1,41 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Codec
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Codec
+       Program: commons-codec
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Codec/Codec.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-codec.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Codec/active-bugs.csv
+Number of bugs: 18
+--------------------------------------------------------------------------------
+
+Summary for Bug: Codec-18
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+5ef5bd199a4e3df74479b4b363fa29b0b3092547
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2017-03-26 21:43:36 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+CODEC-231
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/CODEC-231
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.codec.binary.StringUtilsTest::testEqualsCS1
+   --> java.lang.StringIndexOutOfBoundsException: String index out of range: 3
+ - org.apache.commons.codec.binary.StringUtilsTest::testEqualsCS2
+   --> java.lang.StringIndexOutOfBoundsException: String index out of range: 3
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.codec.binary.StringUtils
+--------------------------------------------------------------------------------

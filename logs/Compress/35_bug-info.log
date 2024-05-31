@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Compress
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Compress
+       Program: commons-compress
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Compress/Compress.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-compress.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Compress/active-bugs.csv
+Number of bugs: 47
+--------------------------------------------------------------------------------
+
+Summary for Bug: Compress-35
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+7250daa429020181bb5a4c40d1aaa169631b8496
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2016-02-05 21:20:19 +0100
+--------------------------------------------------------------------------------
+Bug report id:
+COMPRESS-335
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/COMPRESS-335
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.compress.DetectArchiverTestCase::testCOMPRESS335
+   --> org.apache.commons.compress.archivers.ArchiveException: No Archiver found for the stream signature
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.compress.archivers.tar.TarUtils
+--------------------------------------------------------------------------------

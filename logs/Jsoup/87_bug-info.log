@@ -1,0 +1,42 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Jsoup
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Jsoup
+       Program: jsoup
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/Jsoup.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jsoup.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/active-bugs.csv
+Number of bugs: 93
+--------------------------------------------------------------------------------
+
+Summary for Bug: Jsoup-87
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+7ff7c43e9fbf4bbaf2b4517b3d4f8a429d87d3bb
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2018-12-22 19:56:49 -0800
+--------------------------------------------------------------------------------
+Bug report id:
+1149
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/jhy/jsoup/issues/1149
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jsoup.parser.HtmlParserTest::preservedCaseLinksCantNest
+   --> junit.framework.AssertionFailedError: expected:<<A> ONE <[/A> <A> Two] </A>> but was:<<A> ONE <[A> Two </A>] </A>>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jsoup.nodes.Element
+ - org.jsoup.parser.HtmlTreeBuilder
+ - org.jsoup.parser.HtmlTreeBuilderState
+ - org.jsoup.parser.Tag
+--------------------------------------------------------------------------------

@@ -1,0 +1,45 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Mockito
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Mockito
+       Program: mockito
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Mockito/Mockito.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/mockito.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Mockito/active-bugs.csv
+Number of bugs: 38
+--------------------------------------------------------------------------------
+
+Summary for Bug: Mockito-26
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+af44738c7de74f24e37ea0c1242e73b07c3f4362
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2012-06-30 15:06:31 +0200
+--------------------------------------------------------------------------------
+Bug report id:
+352
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/mockito/mockito/issues/352
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.mockito.internal.progress.HandyReturnValuesTest::should_default_values_for_primitive
+   --> java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.Double
+ - org.mockito.internal.stubbing.defaultanswers.ReturnsEmptyValuesTest::should_return_primitive
+   --> junit.framework.AssertionFailedError: expected:<0.0> but was:<0>
+ - org.mockito.internal.stubbing.defaultanswers.ReturnsMocksTest::should_return_the_usual_default_values_for_primitives
+   --> junit.framework.AssertionFailedError: expected:<0.0> but was:<0>
+ - org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNullsTest::should_return_the_usual_default_values_for_primitives
+   --> junit.framework.AssertionFailedError: expected:<0.0> but was:<0>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.mockito.internal.util.Primitives
+--------------------------------------------------------------------------------

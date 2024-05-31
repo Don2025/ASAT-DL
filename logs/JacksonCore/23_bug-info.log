@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JacksonCore
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JacksonCore
+       Program: jackson-core
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JacksonCore/JacksonCore.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jackson-core.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JacksonCore/active-bugs.csv
+Number of bugs: 26
+--------------------------------------------------------------------------------
+
+Summary for Bug: JacksonCore-23
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+157f2c490003c7494af8ecb7d57880cda1fde736
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2018-12-11 22:06:44 -0800
+--------------------------------------------------------------------------------
+Bug report id:
+502
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/FasterXML/jackson-core/issues/502
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.fasterxml.jackson.core.util.TestDefaultPrettyPrinter::testInvalidSubClass
+   --> junit.framework.AssertionFailedError: Should not pass
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.fasterxml.jackson.core.util.DefaultPrettyPrinter
+--------------------------------------------------------------------------------

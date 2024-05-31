@@ -1,0 +1,6 @@
+Compiling /home/tyd/defects4j/tmp/Compress/34_buggy...
+
+Testing /home/tyd/defects4j/tmp/Compress/34_buggy...
+Failing tests: 1
+  - org.apache.commons.compress.archivers.zip.X7875_NewUnixTest::testParseReparse
+

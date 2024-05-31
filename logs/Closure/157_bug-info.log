@@ -1,0 +1,63 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Closure
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Closure
+       Program: closure-compiler
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Closure/Closure.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/closure-compiler.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Closure/active-bugs.csv
+Number of bugs: 174
+--------------------------------------------------------------------------------
+
+Summary for Bug: Closure-157
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+41acde3e8e5e8d37ade765b41d9fd29861f03e5e
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2011-04-04 21:26:33 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+347
+--------------------------------------------------------------------------------
+Bug report url:
+https://storage.googleapis.com/google-code-archive/v2/code.google.com/closure-compiler/issues/issue-347.json
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.google.javascript.jscomp.CodePrinterTest::testObjectLit2
+   --> junit.framework.ComparisonFailure: expected:<var x={[1]:1}> but was:<var x={["1"]:1}>
+ - com.google.javascript.jscomp.CodePrinterTest::testObjectLit3
+   --> junit.framework.ComparisonFailure: expected:<var x={[3E9]:1}> but was:<var x={["3000000000"]:1}>
+ - com.google.javascript.jscomp.CodePrinterTest::testGetter
+   --> junit.framework.ComparisonFailure: expected:<var x={get ["a"](){return 1}}> but was:<var x={get [a](){return 1}}>
+ - com.google.javascript.jscomp.CodePrinterTest::testSetter
+   --> junit.framework.ComparisonFailure: expected:<var x={get ["a"](){return 1}}> but was:<var x={get [a](){return 1}}>
+ - com.google.javascript.jscomp.FunctionNamesTest::testFunctionsNamesAndIds
+   --> junit.framework.AssertionFailedError: Function id/name mismatch expected:<{0=goog.widget.member_fn, 1=goog.widget::local_fn, 2=goog.widget::<anonymous>, 3=goog.widget, 4=foo::bar, 5=foo, 6=literal.f1, 7=literal.f2, 8=named, 9=<anonymous>, 10=quax, 11=recliteral.l1.l2, 12=litnamed, 13=reclitnamed, 14=numliteral.__2, 15=recnumliteral.__3.a}> but was:<{0=goog.widget.member_fn, 1=goog.widget::local_fn, 2=goog.widget::<anonymous>, 3=goog.widget, 4=foo::bar, 5=foo, 6=literal.f1, 7=literal.f2, 8=named, 9=<anonymous>, 10=quax, 11=recliteral.l1.l2, 12=litnamed, 13=reclitnamed, 14=<anonymous>, 15=<anonymous>}>
+ - com.google.javascript.jscomp.RenamePropertiesTest::testPrototypePropertiesAsObjLitKeys2
+   --> java.lang.RuntimeException: INTERNAL COMPILER ERROR.
+ - com.google.javascript.jscomp.RenamePropertiesTest::testPrototypePropertiesAsObjLitKeys3
+   --> java.lang.RuntimeException: INTERNAL COMPILER ERROR.
+ - com.google.javascript.jscomp.SimpleDefinitionFinderTest::testDefineNumber
+   --> junit.framework.AssertionFailedError: expected:<[DEF STRING null -> NUMBER]> but was:<[]>
+ - com.google.javascript.jscomp.parsing.IRFactoryTest::testObjectLiteral6
+   --> junit.framework.ComparisonFailure: expected:<...: true]
+ - com.google.javascript.jscomp.parsing.IRFactoryTest::testObjectLiteral7
+   --> junit.framework.ComparisonFailure: expected:<...ue]
+ - com.google.javascript.jscomp.parsing.IRFactoryTest::testObjectLiteral8
+   --> junit.framework.ComparisonFailure: expected:<...ue]
+ - com.google.javascript.jscomp.parsing.ParserTest::testObjectLiteralDoc1
+   --> junit.framework.AssertionFailedError: expected:<40> but was:<39>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.google.javascript.jscomp.CodeGenerator
+ - com.google.javascript.jscomp.parsing.IRFactory
+ - com.google.javascript.jscomp.RenamePrototypes
+--------------------------------------------------------------------------------

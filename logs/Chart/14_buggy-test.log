@@ -1,0 +1,9 @@
+Compiling /home/tyd/defects4j/tmp/Chart/14_buggy...
+
+Testing /home/tyd/defects4j/tmp/Chart/14_buggy...
+Failing tests: 4
+  - org.jfree.chart.plot.junit.CategoryPlotTests::testRemoveRangeMarker
+  - org.jfree.chart.plot.junit.CategoryPlotTests::testRemoveDomainMarker
+  - org.jfree.chart.plot.junit.XYPlotTests::testRemoveRangeMarker
+  - org.jfree.chart.plot.junit.XYPlotTests::testRemoveDomainMarker
+

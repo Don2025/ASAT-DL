@@ -1,0 +1,6 @@
+Compiling /home/tyd/defects4j/tmp/Mockito/11_buggy...
+
+Testing /home/tyd/defects4j/tmp/Mockito/11_buggy...
+Failing tests: 2
+  - org.mockito.internal.creation.DelegatingMethodTest::equals_should_return_true_when_equal
+  - org.mockito.internal.creation.DelegatingMethodTest::equals_should_return_true_when_self

@@ -1,0 +1,41 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Closure
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Closure
+       Program: closure-compiler
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Closure/Closure.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/closure-compiler.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Closure/active-bugs.csv
+Number of bugs: 174
+--------------------------------------------------------------------------------
+
+Summary for Bug: Closure-39
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+d577973fb378dfe0d05991ec0dfa6c1f40e574ee
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2012-02-03 21:03:48 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+643
+--------------------------------------------------------------------------------
+Bug report url:
+https://storage.googleapis.com/google-code-archive/v2/code.google.com/closure-compiler/issues/issue-643.json
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.google.javascript.rhino.jstype.RecordTypeTest::testRecursiveRecord
+   --> junit.framework.ComparisonFailure: expected:<{loop: [?], number: number, st...> but was:<{loop: [{...}], number: number, st...>
+ - com.google.javascript.rhino.jstype.RecordTypeTest::testLongToString
+   --> junit.framework.ComparisonFailure: expected:<...number, a4: number, [a5: number, a6: number]}> but was:<...number, a4: number, [...]}>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.google.javascript.rhino.jstype.PrototypeObjectType
+--------------------------------------------------------------------------------

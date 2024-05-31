@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/JacksonCore/9_buggy...
+
+Testing /home/tyd/defects4j/tmp/JacksonCore/9_buggy...
+Failing tests: 2
+  - com.fasterxml.jackson.core.json.TestJsonParser::testGetValueAsTextBytes
+  - com.fasterxml.jackson.core.json.TestJsonParser::testGetValueAsTextChars
+

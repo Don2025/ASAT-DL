@@ -1,0 +1,9 @@
+Compiling /home/tyd/defects4j/tmp/JxPath/16_buggy...
+
+Testing /home/tyd/defects4j/tmp/JxPath/16_buggy...
+Failing tests: 4
+  - org.apache.commons.jxpath.ri.model.dom.DOMModelTest::testAxisFollowing
+  - org.apache.commons.jxpath.ri.model.dom.DOMModelTest::testAxisPreceding
+  - org.apache.commons.jxpath.ri.model.jdom.JDOMModelTest::testAxisFollowing
+  - org.apache.commons.jxpath.ri.model.jdom.JDOMModelTest::testAxisPreceding
+

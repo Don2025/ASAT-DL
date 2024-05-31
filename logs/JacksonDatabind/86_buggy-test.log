@@ -1,0 +1,8 @@
+Compiling /home/tyd/defects4j/tmp/JacksonDatabind/86_buggy...
+
+Testing /home/tyd/defects4j/tmp/JacksonDatabind/86_buggy...
+Failing tests: 3
+  - com.fasterxml.jackson.databind.introspect.TestScalaLikeImplicitProperties::testGetterSetterProperty
+  - com.fasterxml.jackson.databind.type.RecursiveTypeTest::testSuperClassWithReferencedJavaType
+  - com.fasterxml.jackson.databind.type.TestTypeFactoryWithRecursiveTypes::testBasePropertiesIncludedWhenSerializingSubWhenSubTypeLoadedAfterBaseType
+

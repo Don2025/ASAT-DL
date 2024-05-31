@@ -1,0 +1,47 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Time
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Time
+       Program: joda-time
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Time/Time.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/joda-time.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Time/active-bugs.csv
+Number of bugs: 26
+--------------------------------------------------------------------------------
+
+Summary for Bug: Time-6
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+28aeba952e838fb12c9b934ce6ef65658e45d7b2
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2013-08-16 14:41:18 +0100
+--------------------------------------------------------------------------------
+Bug report id:
+28
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/JodaOrg/joda-time/issues/28
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.joda.time.chrono.TestGJDate::test_cutoverPreZero
+   --> junit.framework.AssertionFailedError
+ - org.joda.time.chrono.TestGJDate::test_plusWeekyears_positiveToNegative_crossCutover
+   --> junit.framework.AssertionFailedError: expected:<-0002-06-30> but was:<-0001-06-28>
+ - org.joda.time.chrono.TestGJDate::test_plusYears_positiveToZero_crossCutover
+   --> org.joda.time.IllegalFieldValueException: Value 0 for year is not supported
+ - org.joda.time.chrono.TestGJDate::test_plusYears_positiveToNegative_crossCutover
+   --> junit.framework.AssertionFailedError: expected:<-0002-06-30> but was:<-0001-06-30>
+ - org.joda.time.chrono.TestGJDate::test_plusWeekyears_positiveToZero_crossCutover
+   --> org.joda.time.IllegalFieldValueException: Value 0 for year is not supported
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.joda.time.chrono.GJChronology
+--------------------------------------------------------------------------------

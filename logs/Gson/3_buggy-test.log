@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Gson/3_buggy...
+
+Testing /home/tyd/defects4j/tmp/Gson/3_buggy...
+Failing tests: 2
+  - com.google.gson.functional.MapTest::testConcurrentMap
+  - com.google.gson.functional.MapTest::testConcurrentNavigableMap
+

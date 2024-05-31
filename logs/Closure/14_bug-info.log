@@ -1,0 +1,43 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Closure
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Closure
+       Program: closure-compiler
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Closure/Closure.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/closure-compiler.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Closure/active-bugs.csv
+Number of bugs: 174
+--------------------------------------------------------------------------------
+
+Summary for Bug: Closure-14
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+4b15b25f400335b6e2820cb690430324748372f9
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2012-07-24 21:04:32 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+779
+--------------------------------------------------------------------------------
+Bug report url:
+https://storage.googleapis.com/google-code-archive/v2/code.google.com/closure-compiler/issues/issue-779.json
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.google.javascript.jscomp.CheckMissingReturnTest::testIssue779
+   --> junit.framework.AssertionFailedError: Unexpected error(s): JSC_MISSING_RETURN_STATEMENT. Missing return statement. Function expected to return number. at testcode line 1 : 24 expected:<0> but was:<1>
+ - com.google.javascript.jscomp.ControlFlowAnalysisTest::testDeepNestedFinally
+   --> junit.framework.AssertionFailedError: No cross edges found
+ - com.google.javascript.jscomp.ControlFlowAnalysisTest::testDeepNestedBreakwithFinally
+   --> junit.framework.AssertionFailedError: No cross edges found
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.google.javascript.jscomp.ControlFlowAnalysis
+--------------------------------------------------------------------------------

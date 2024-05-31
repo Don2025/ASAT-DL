@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/JacksonDatabind/57_buggy...
+
+Testing /home/tyd/defects4j/tmp/JacksonDatabind/57_buggy...
+Failing tests: 2
+  - com.fasterxml.jackson.databind.introspect.TestScalaLikeImplicitProperties::testGetterSetterProperty
+  - com.fasterxml.jackson.databind.seq.ReadValuesTest::testRootBeans
+

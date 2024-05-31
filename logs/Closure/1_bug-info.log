@@ -1,0 +1,53 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Closure
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Closure
+       Program: closure-compiler
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Closure/Closure.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/closure-compiler.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Closure/active-bugs.csv
+Number of bugs: 174
+--------------------------------------------------------------------------------
+
+Summary for Bug: Closure-1
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+1dfad5043a207e032a78ef50c3cba50488bcd300
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2013-01-05 01:20:43 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+253
+--------------------------------------------------------------------------------
+Bug report url:
+https://storage.googleapis.com/google-code-archive/v2/code.google.com/closure-compiler/issues/issue-253.json
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.google.javascript.jscomp.CommandLineRunnerTest::testSimpleModeLeavesUnusedParams
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.CommandLineRunnerTest::testForwardDeclareDroppedTypes
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.CommandLineRunnerTest::testDebugFlag1
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.IntegrationTest::testIssue787
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.RemoveUnusedVarsTest::testRemoveGlobal1
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.RemoveUnusedVarsTest::testRemoveGlobal2
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.RemoveUnusedVarsTest::testRemoveGlobal3
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.RemoveUnusedVarsTest::testIssue168b
+   --> junit.framework.AssertionFailedError: 
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.google.javascript.jscomp.RemoveUnusedVars
+--------------------------------------------------------------------------------

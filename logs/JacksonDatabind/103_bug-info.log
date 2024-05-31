@@ -1,0 +1,54 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JacksonDatabind
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JacksonDatabind
+       Program: jackson-databind
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/JacksonDatabind.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jackson-databind.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/active-bugs.csv
+Number of bugs: 112
+--------------------------------------------------------------------------------
+
+Summary for Bug: JacksonDatabind-103
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+f6cf1817509dc5ed61b9730c17abe492cc62b074
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2018-09-05 23:17:05 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+2128
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/FasterXML/jackson-databind/issues/2128
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.fasterxml.jackson.databind.exc.BasicExceptionTest::testLocationAddition
+   --> junit.framework.AssertionFailedError: Should only get one 'at [' marker, got 2, source: Cannot deserialize Map key of type `com.fasterxml.jackson.databind.BaseMapTest$ABC` from String "value": not a valid representation, problem: (com.fasterxml.jackson.databind.exc.InvalidFormatException) Cannot deserialize Map key of type `com.fasterxml.jackson.databind.BaseMapTest$ABC` from String "value": not one of values excepted for Enum class: [A, B, C]
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.fasterxml.jackson.databind.DatabindContext
+ - com.fasterxml.jackson.databind.DeserializationContext
+ - com.fasterxml.jackson.databind.JsonMappingException
+ - com.fasterxml.jackson.databind.SerializerProvider
+ - com.fasterxml.jackson.databind.deser.BasicDeserializerFactory
+ - com.fasterxml.jackson.databind.deser.BeanDeserializerFactory
+ - com.fasterxml.jackson.databind.deser.DeserializerCache
+ - com.fasterxml.jackson.databind.deser.SettableAnyProperty
+ - com.fasterxml.jackson.databind.deser.SettableBeanProperty
+ - com.fasterxml.jackson.databind.deser.std.StdDeserializer
+ - com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer
+ - com.fasterxml.jackson.databind.deser.std.StdValueInstantiator
+ - com.fasterxml.jackson.databind.introspect.BasicBeanDescription
+ - com.fasterxml.jackson.databind.ser.DefaultSerializerProvider
+ - com.fasterxml.jackson.databind.ser.PropertyBuilder
+ - com.fasterxml.jackson.databind.util.ClassUtil
+--------------------------------------------------------------------------------

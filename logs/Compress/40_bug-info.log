@@ -1,0 +1,41 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Compress
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Compress
+       Program: commons-compress
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Compress/Compress.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-compress.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Compress/active-bugs.csv
+Number of bugs: 47
+--------------------------------------------------------------------------------
+
+Summary for Bug: Compress-40
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+52dd5908e374973d69c51856b74d4d93d591c90a
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2016-07-01 21:37:24 +0200
+--------------------------------------------------------------------------------
+Bug report id:
+COMPRESS-363
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/COMPRESS-363
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.compress.utils.BitInputStreamTest::littleEndianWithOverflow
+   --> junit.framework.AssertionFailedError: expected:<1186> but was:<1184>
+ - org.apache.commons.compress.utils.BitInputStreamTest::bigEndianWithOverflow
+   --> junit.framework.AssertionFailedError: expected:<8274274654740644818> but was:<203824122492715986>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.compress.utils.BitInputStream
+--------------------------------------------------------------------------------

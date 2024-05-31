@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Jsoup
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Jsoup
+       Program: jsoup
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/Jsoup.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jsoup.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/active-bugs.csv
+Number of bugs: 93
+--------------------------------------------------------------------------------
+
+Summary for Bug: Jsoup-33
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+2518e92a052d922d81d11e28b8e5205639fed9a7
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2013-10-06 13:46:11 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+305
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/jhy/jsoup/issues/305
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jsoup.parser.HtmlParserTest::handlesKnownEmptyBlocks
+   --> junit.framework.AssertionFailedError: expected:<...src="/foo"></script>[<div id="2"><img /><img /></div><a id="3"></a><i></i><foo /><foo>One</foo> <hr /> hr text <hr />] hr text two> but was:<...src="/foo"></script>[&lt;div id=2&gt;&lt;img /&gt;&lt;img&gt;&lt;/div&gt;&lt;a id=3 /&gt;&lt;i /&gt;&lt;foo /&gt;&lt;foo&gt;One&lt;/foo&gt; &lt;hr /&gt; hr text &lt;hr&gt;] hr text two>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jsoup.parser.HtmlTreeBuilder
+--------------------------------------------------------------------------------

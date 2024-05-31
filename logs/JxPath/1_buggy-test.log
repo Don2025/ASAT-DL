@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/JxPath/1_buggy...
+
+Testing /home/tyd/defects4j/tmp/JxPath/1_buggy...
+Failing tests: 2
+  - org.apache.commons.jxpath.ri.model.dom.DOMModelTest::testGetNode
+  - org.apache.commons.jxpath.ri.model.jdom.JDOMModelTest::testGetNode
+

@@ -1,0 +1,41 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Jsoup
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Jsoup
+       Program: jsoup
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/Jsoup.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jsoup.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/active-bugs.csv
+Number of bugs: 93
+--------------------------------------------------------------------------------
+
+Summary for Bug: Jsoup-31
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+caf61a4a0778a72ab713f72e9ef749bf373c98ac
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2012-09-29 12:58:35 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+242
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/jhy/jsoup/issues/242
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jsoup.parser.XmlTreeBuilderTest::handlesXmlDeclarationAsDeclaration
+   --> junit.framework.AssertionFailedError: expected:<<[?xml encoding='UTF-8' ?]> <body> One </body>...> but was:<<[!--?xml encoding='UTF-8' ?--]> <body> One </body>...>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jsoup.parser.Token
+ - org.jsoup.parser.TokeniserState
+ - org.jsoup.parser.XmlTreeBuilder
+--------------------------------------------------------------------------------

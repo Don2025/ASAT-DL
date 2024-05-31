@@ -1,0 +1,6 @@
+Compiling /home/tyd/defects4j/tmp/Cli/38_buggy...
+
+Testing /home/tyd/defects4j/tmp/Cli/38_buggy...
+Failing tests: 1
+  - org.apache.commons.cli.bug.BugCLI265Test::shouldParseConcatenatedShortOptions
+

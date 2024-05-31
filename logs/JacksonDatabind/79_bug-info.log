@@ -1,0 +1,41 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JacksonDatabind
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JacksonDatabind
+       Program: jackson-databind
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/JacksonDatabind.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jackson-databind.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/active-bugs.csv
+Number of bugs: 112
+--------------------------------------------------------------------------------
+
+Summary for Bug: JacksonDatabind-79
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+ec859af181fa5b2da62077d00154e3c13c9d8f28
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2017-04-18 12:46:33 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+1607
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/FasterXML/jackson-databind/issues/1607
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.fasterxml.jackson.databind.objectid.AlwaysAsReferenceFirstTest::testIssue1607
+   --> junit.framework.ComparisonFailure: expected:<{"alwaysClass":[1],"alwaysProp":2}> but was:<{"alwaysClass":[{"id":1,"value":13}],"alwaysProp":2}>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector
+ - com.fasterxml.jackson.databind.introspect.ObjectIdInfo
+ - com.fasterxml.jackson.databind.ser.std.BeanSerializerBase
+--------------------------------------------------------------------------------

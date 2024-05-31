@@ -1,0 +1,40 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Time
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Time
+       Program: joda-time
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Time/Time.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/joda-time.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Time/active-bugs.csv
+Number of bugs: 26
+--------------------------------------------------------------------------------
+
+Summary for Bug: Time-1
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+9a62b06be5d0df8e833ff8583398cca386608cac
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2013-12-02 21:11:47 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+93
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/JodaOrg/joda-time/issues/93
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.joda.time.TestPartial_Constructors::testConstructorEx7_TypeArray_intArray
+   --> junit.framework.AssertionFailedError
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.joda.time.field.UnsupportedDurationField
+ - org.joda.time.Partial
+--------------------------------------------------------------------------------

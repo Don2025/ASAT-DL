@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Gson/16_buggy...
+
+Testing /home/tyd/defects4j/tmp/Gson/16_buggy...
+Failing tests: 2
+  - com.google.gson.internal.bind.RecursiveTypesResolveTest::testRecursiveTypeVariablesResolve12
+  - com.google.gson.internal.bind.RecursiveTypesResolveTest::testRecursiveTypeVariablesResolve1
+

@@ -1,0 +1,51 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Jsoup
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Jsoup
+       Program: jsoup
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/Jsoup.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jsoup.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/active-bugs.csv
+Number of bugs: 93
+--------------------------------------------------------------------------------
+
+Summary for Bug: Jsoup-28
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+a31ec08e102fd3832f3ff4449e9163440f0afb2c
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2012-09-23 12:16:52 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+224
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/jhy/jsoup/issues/224
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jsoup.nodes.EntitiesTest::unescape
+   --> junit.framework.AssertionFailedError: expected:<Hello &<> ® Å [&angst] π π 新 there &! ¾ © ...> but was:<Hello &<> ® Å [Å] π π 新 there &! ¾ © ...>
+ - org.jsoup.nodes.EntitiesTest::noSpuriousDecodes
+   --> junit.framework.AssertionFailedError: expected:<...tp://www.foo.com?a=1[&num_rooms=1&children=0&int]=VA&b=2> but was:<...tp://www.foo.com?a=1[#_rooms=1&children=0∫]=VA&b=2>
+ - org.jsoup.parser.AttributeParseTest::moreAttributeUnescapes
+   --> junit.framework.AssertionFailedError: expected:<...23&mid-size=true&ok=[&wr]> but was:<...23&mid-size=true&ok=[≀]>
+ - org.jsoup.parser.AttributeParseTest::strictAttributeUnescapes
+   --> junit.framework.AssertionFailedError: expected:<?foo=bar[&mid]&lt=true> but was:<?foo=bar[∣]&lt=true>
+ - org.jsoup.parser.HtmlParserTest::doesNotFindShortestMatchingEntity
+   --> junit.framework.AssertionFailedError: expected:<One [&amp;clubsuit]e; ♣> but was:<One [♣]e; ♣>
+ - org.jsoup.parser.HtmlParserTest::relaxedBaseEntityMatchAndStrictExtendedMatch
+   --> junit.framework.AssertionFailedError: expected:<&amp; &quot; &reg; &[amp;icy &amp;hopf] &icy; &hopf;> but was:<&amp; &quot; &reg; &[icy; &hopf;] &icy; &hopf;>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jsoup.nodes.Entities
+ - org.jsoup.parser.Parser
+ - org.jsoup.parser.Tokeniser
+--------------------------------------------------------------------------------

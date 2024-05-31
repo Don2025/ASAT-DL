@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Jsoup/40_buggy...
+
+Testing /home/tyd/defects4j/tmp/Jsoup/40_buggy...
+Failing tests: 2
+  - org.jsoup.nodes.DocumentTypeTest::constructorValidationOkWithBlankName
+  - org.jsoup.parser.HtmlParserTest::handlesInvalidDoctypes
+

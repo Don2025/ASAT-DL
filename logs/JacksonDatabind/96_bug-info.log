@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JacksonDatabind
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JacksonDatabind
+       Program: jackson-databind
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/JacksonDatabind.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jackson-databind.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/active-bugs.csv
+Number of bugs: 112
+--------------------------------------------------------------------------------
+
+Summary for Bug: JacksonDatabind-96
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+dd57a2dd576a77423553c197df109a5b60c1c669
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2018-05-25 15:46:15 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+2051
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/FasterXML/jackson-databind/issues/2051
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.fasterxml.jackson.databind.deser.creators.CreatorWithNamingStrategyTest::testSnakeCaseWithOneArg
+   --> com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid definition for property `param_name0` (of type `com.fasterxml.jackson.databind.deser.creators.CreatorWithNamingStrategyTest$OneProperty`): Could not find creator property with name 'param_name0' (known Creator properties: [paramName0])
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.fasterxml.jackson.databind.deser.BasicDeserializerFactory
+--------------------------------------------------------------------------------

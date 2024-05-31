@@ -1,0 +1,45 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Jsoup
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Jsoup
+       Program: jsoup
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/Jsoup.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jsoup.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/active-bugs.csv
+Number of bugs: 93
+--------------------------------------------------------------------------------
+
+Summary for Bug: Jsoup-22
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+4b0dde413a3c38a77461ac64ad278a042d6eea68
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2012-04-14 10:48:29 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+184
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/jhy/jsoup/issues/184
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jsoup.nodes.ElementTest::elementIsNotASiblingOfItself
+   --> junit.framework.AssertionFailedError: expected:<2> but was:<3>
+ - org.jsoup.nodes.NodeTest::nodeIsNotASiblingOfItself
+   --> junit.framework.AssertionFailedError: expected:<2> but was:<3>
+ - org.jsoup.nodes.NodeTest::orphanNodeReturnsNullForSiblingElements
+   --> java.lang.NullPointerException
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jsoup.nodes.Element
+ - org.jsoup.nodes.Node
+ - org.jsoup.select.Elements
+--------------------------------------------------------------------------------

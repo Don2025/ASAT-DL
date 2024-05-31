@@ -1,0 +1,41 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Mockito
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Mockito
+       Program: mockito
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Mockito/Mockito.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/mockito.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Mockito/active-bugs.csv
+Number of bugs: 38
+--------------------------------------------------------------------------------
+
+Summary for Bug: Mockito-24
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+c17169c2cbb0b3d055d64ec2c4859122ca919c42
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2014-01-08 13:13:43 -0800
+--------------------------------------------------------------------------------
+Bug report id:
+467
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/mockito/mockito/issues/467
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.mockito.internal.stubbing.defaultanswers.ReturnsEmptyValuesTest::should_return_zero_if_mock_is_compared_to_itself
+   --> junit.framework.AssertionFailedError: expected:<0> but was:<1>
+ - org.mockitousage.bugs.ShouldMocksCompareToBeConsistentWithEqualsTest::should_compare_to_be_consistent_with_equals_when_comparing_the_same_reference
+   --> junit.framework.AssertionFailedError: expected:<1> but was:<2>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.mockito.internal.stubbing.defaultanswers.ReturnsEmptyValues
+--------------------------------------------------------------------------------

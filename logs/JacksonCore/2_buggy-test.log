@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/JacksonCore/2_buggy...
+
+Testing /home/tyd/defects4j/tmp/JacksonCore/2_buggy...
+Failing tests: 2
+  - com.fasterxml.jackson.core.json.TestParserErrorHandling::testMangledNumbersBytes
+  - com.fasterxml.jackson.core.json.TestParserErrorHandling::testMangledNumbersChars
+

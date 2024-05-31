@@ -1,0 +1,41 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JacksonCore
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JacksonCore
+       Program: jackson-core
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JacksonCore/JacksonCore.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jackson-core.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JacksonCore/active-bugs.csv
+Number of bugs: 26
+--------------------------------------------------------------------------------
+
+Summary for Bug: JacksonCore-7
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+5cddffa133e7de41fa9efb5962cf3d0cff9b3e89
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2015-01-15 16:10:26 -0800
+--------------------------------------------------------------------------------
+Bug report id:
+177
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/FasterXML/jackson-core/issues/177
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.fasterxml.jackson.core.json.GeneratorFailTest::testFailOnWritingStringNotFieldNameBytes
+   --> junit.framework.AssertionFailedError: Should not have let com.fasterxml.jackson.core.json.UTF8JsonGenerator.writeString() be used in place of 'writeFieldName()': output = {:"a"
+ - com.fasterxml.jackson.core.json.GeneratorFailTest::testFailOnWritingStringNotFieldNameChars
+   --> junit.framework.AssertionFailedError: Should not have let com.fasterxml.jackson.core.json.WriterBasedJsonGenerator.writeString() be used in place of 'writeFieldName()': output = {:"a"
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.fasterxml.jackson.core.json.JsonWriteContext
+--------------------------------------------------------------------------------

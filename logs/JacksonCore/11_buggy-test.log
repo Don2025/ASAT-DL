@@ -1,0 +1,6 @@
+Compiling /home/tyd/defects4j/tmp/JacksonCore/11_buggy...
+
+Testing /home/tyd/defects4j/tmp/JacksonCore/11_buggy...
+Failing tests: 1
+  - com.fasterxml.jackson.core.sym.SymbolsViaParserTest::testSymbolTableExpansionBytes
+

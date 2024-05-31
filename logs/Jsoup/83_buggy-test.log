@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Jsoup/83_buggy...
+
+Testing /home/tyd/defects4j/tmp/Jsoup/83_buggy...
+Failing tests: 2
+  - org.jsoup.parser.HtmlParserTest::parsesQuiteRoughAttributes
+  - org.jsoup.parser.TokeniserStateTest::handlesLessInTagThanAsNewTag
+

@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/JxPath/19_buggy...
+
+Testing /home/tyd/defects4j/tmp/JxPath/19_buggy...
+Failing tests: 2
+  - org.apache.commons.jxpath.ri.model.AliasedNamespaceIterationTest::testIterateJDOM
+  - org.apache.commons.jxpath.ri.model.AliasedNamespaceIterationTest::testIterateDOM
+

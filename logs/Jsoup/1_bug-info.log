@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Jsoup
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Jsoup
+       Program: jsoup
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/Jsoup.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jsoup.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/active-bugs.csv
+Number of bugs: 93
+--------------------------------------------------------------------------------
+
+Summary for Bug: Jsoup-1
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+27a52f90a25699bebe23ff1ff94d6db361fdb11d
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2011-07-02 21:11:53 +1000
+--------------------------------------------------------------------------------
+Bug report id:
+23
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/jhy/jsoup/issues/23
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jsoup.parser.ParserTest::createsStructureFromBodySnippet
+   --> junit.framework.AssertionFailedError: expected:<[foo bar baz]> but was:<[bar baz foo]>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jsoup.nodes.Document
+--------------------------------------------------------------------------------

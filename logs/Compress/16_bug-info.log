@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Compress
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Compress
+       Program: commons-compress
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Compress/Compress.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-compress.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Compress/active-bugs.csv
+Number of bugs: 47
+--------------------------------------------------------------------------------
+
+Summary for Bug: Compress-16
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+9bdacbfb9631d3a3710a64f35482c643b78a2e79
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2012-07-07 05:30:40 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+COMPRESS-191
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/COMPRESS-191
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.compress.archivers.ArchiveStreamFactoryTest::aiffFilesAreNoTARs
+   --> junit.framework.AssertionFailedError: created an input stream for a non-archive
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.compress.archivers.ArchiveStreamFactory
+--------------------------------------------------------------------------------

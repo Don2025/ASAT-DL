@@ -1,0 +1,9 @@
+Compiling /home/tyd/defects4j/tmp/JacksonDatabind/98_buggy...
+
+Testing /home/tyd/defects4j/tmp/JacksonDatabind/98_buggy...
+Failing tests: 4
+  - com.fasterxml.jackson.databind.introspect.TestScalaLikeImplicitProperties::testVarProperty
+  - com.fasterxml.jackson.databind.introspect.TestScalaLikeImplicitProperties::testGetterSetterProperty
+  - com.fasterxml.jackson.databind.introspect.TestScalaLikeImplicitProperties::testVarWithBeanProperty
+  - com.fasterxml.jackson.databind.jsontype.ext.ExternalTypeIdWithEnum1328Test::testExample
+

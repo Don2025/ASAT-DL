@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Gson
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Gson
+       Program: gson
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Gson/Gson.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/gson.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Gson/active-bugs.csv
+Number of bugs: 18
+--------------------------------------------------------------------------------
+
+Summary for Bug: Gson-1
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+c6a4f55d1a9b191dbbd958c366091e567191ccab
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2010-11-02 03:32:39 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+40
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/google/gson/issues/40
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.google.gson.functional.TypeVariableTest::testSingle
+   --> java.lang.UnsupportedOperationException: Expecting parameterized type, got class com.google.gson.functional.TypeVariableTest$Bar.
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.google.gson.TypeInfoFactory
+--------------------------------------------------------------------------------

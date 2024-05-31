@@ -1,0 +1,42 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Math
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Math
+       Program: commons-math
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Math/Math.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-math.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Math/active-bugs.csv
+Number of bugs: 106
+--------------------------------------------------------------------------------
+
+Summary for Bug: Math-1
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+0da657a65c92b086a301a6ffe9e34ec272f8889c
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2013-08-31 19:43:02 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+MATH-996
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/MATH-996
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.math3.fraction.BigFractionTest::testDigitLimitConstructor
+   --> org.apache.commons.math3.fraction.FractionConversionException: illegal state: Overflow trying to convert 0.5 to fraction (2,499,999,794/4,999,999,587)
+ - org.apache.commons.math3.fraction.FractionTest::testDigitLimitConstructor
+   --> org.apache.commons.math3.fraction.FractionConversionException: illegal state: Overflow trying to convert 0.5 to fraction (2,499,999,794/4,999,999,587)
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.math3.fraction.BigFraction
+ - org.apache.commons.math3.fraction.Fraction
+--------------------------------------------------------------------------------

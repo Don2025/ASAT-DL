@@ -1,0 +1,43 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Cli
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Cli
+       Program: commons-cli
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Cli/Cli.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-cli.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Cli/active-bugs.csv
+Number of bugs: 39
+--------------------------------------------------------------------------------
+
+Summary for Bug: Cli-27
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+4c971f08861e8cefb8ca9ac20799bfdad4e973a4
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2009-05-30 02:31:22 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+CLI-182
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/CLI-182
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.cli.BasicParserTest::testOptionGroupLong
+   --> junit.framework.ComparisonFailure: selected option expected:<bar> but was:<null>
+ - org.apache.commons.cli.GnuParserTest::testOptionGroupLong
+   --> junit.framework.ComparisonFailure: selected option expected:<bar> but was:<null>
+ - org.apache.commons.cli.PosixParserTest::testOptionGroupLong
+   --> junit.framework.ComparisonFailure: selected option expected:<bar> but was:<null>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.cli.OptionGroup
+--------------------------------------------------------------------------------

@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Jsoup
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Jsoup
+       Program: jsoup
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/Jsoup.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jsoup.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/active-bugs.csv
+Number of bugs: 93
+--------------------------------------------------------------------------------
+
+Summary for Bug: Jsoup-47
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+a025d87deb9cc4cda49ae1b77feb0f29805dd7c5
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2015-07-13 23:11:21 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+528
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/jhy/jsoup/issues/528
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jsoup.nodes.EntitiesTest::escapesGtInXmlAttributesButNotInHtml
+   --> junit.framework.AssertionFailedError: expected:<<a title="[&lt;p>One&lt;]/p>">One</a>> but was:<<a title="[<p>One<]/p>">One</a>>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jsoup.nodes.Entities
+--------------------------------------------------------------------------------

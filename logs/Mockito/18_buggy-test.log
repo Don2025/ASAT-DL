@@ -1,0 +1,6 @@
+Compiling /home/tyd/defects4j/tmp/Mockito/18_buggy...
+
+Testing /home/tyd/defects4j/tmp/Mockito/18_buggy...
+Failing tests: 1
+  - org.mockito.internal.stubbing.defaultanswers.ReturnsEmptyValuesTest::should_return_empty_iterable
+

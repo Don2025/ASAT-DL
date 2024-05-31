@@ -1,0 +1,49 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Jsoup
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Jsoup
+       Program: jsoup
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/Jsoup.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jsoup.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/active-bugs.csv
+Number of bugs: 93
+--------------------------------------------------------------------------------
+
+Summary for Bug: Jsoup-36
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+f052908ec90e12bdc6b67915ef2290aa9eefa48b
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2013-11-10 17:18:48 -0800
+--------------------------------------------------------------------------------
+Bug report id:
+321
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/jhy/jsoup/issues/321
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jsoup.helper.DataUtilTest::shouldCorrectCharsetForDuplicateCharsetString
+   --> java.nio.charset.IllegalCharsetNameException: charset=iso-8859-1
+ - org.jsoup.helper.DataUtilTest::shouldNotThrowExceptionOnEmptyCharset
+   --> java.nio.charset.IllegalCharsetNameException: 
+ - org.jsoup.helper.DataUtilTest::testQuotedCharset
+   --> java.nio.charset.IllegalCharsetNameException: 'UTF-8'
+ - org.jsoup.helper.DataUtilTest::shouldSelectFirstCharsetOnWeirdMultileCharsetsInMetaTags
+   --> java.nio.charset.IllegalCharsetNameException: ISO-8859-1,
+ - org.jsoup.helper.DataUtilTest::shouldReturnNullForIllegalCharsetNames
+   --> java.nio.charset.IllegalCharsetNameException: $HJKDF§$/(
+ - org.jsoup.integration.ParseTest::testBrokenHtml5CharsetWithASingleDoubleQuote
+   --> java.nio.charset.IllegalCharsetNameException: UTF-8"
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jsoup.helper.DataUtil
+--------------------------------------------------------------------------------

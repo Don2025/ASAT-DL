@@ -1,0 +1,6 @@
+Compiling /home/tyd/defects4j/tmp/Cli/26_buggy...
+
+Testing /home/tyd/defects4j/tmp/Cli/26_buggy...
+Failing tests: 1
+  - org.apache.commons.cli.OptionBuilderTest::testBuilderIsResettedAlways
+

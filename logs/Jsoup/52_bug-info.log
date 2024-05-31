@@ -1,0 +1,53 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Jsoup
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Jsoup
+       Program: jsoup
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/Jsoup.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jsoup.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/active-bugs.csv
+Number of bugs: 93
+--------------------------------------------------------------------------------
+
+Summary for Bug: Jsoup-52
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+4eb4f2b2e88a2f9e6c5c1e8d0477060954f24218
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2016-05-07 16:11:01 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+701
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/jhy/jsoup/issues/701
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jsoup.nodes.DocumentTest::testMetaCharsetUpdateXmlNoCharset
+   --> junit.framework.AssertionFailedError: expected:<....0" encoding="UTF-8"[?]>
+ - org.jsoup.nodes.DocumentTest::testMetaCharsetUpdateXmlIso8859
+   --> junit.framework.AssertionFailedError: expected:<...ncoding="ISO-8859-1"[?]>
+ - org.jsoup.nodes.DocumentTest::testMetaCharsetUpdateXmlUtf8
+   --> junit.framework.AssertionFailedError: expected:<....0" encoding="UTF-8"[?]>
+ - org.jsoup.nodes.DocumentTest::testMetaCharsetUpdateXmlDisabledNoChanges
+   --> junit.framework.AssertionFailedError: expected:<...encoding="dontTouch"[?]>
+ - org.jsoup.parser.XmlTreeBuilderTest::handlesXmlDeclarationAsDeclaration
+   --> junit.framework.AssertionFailedError: expected:<<?xml encoding=["UTF-8"]?> <body> One </body...> but was:<<?xml encoding=['UTF-8' ]?> <body> One </body...>
+ - org.jsoup.parser.XmlTreeBuilderTest::testDetectCharsetEncodingDeclaration
+   --> junit.framework.AssertionFailedError: expected:<[ISO-8859-1]> but was:<[UTF-8]>
+ - org.jsoup.parser.XmlTreeBuilderTest::testParseDeclarationAttributes
+   --> junit.framework.AssertionFailedError: expected:<[1]> but was:<[]>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jsoup.helper.DataUtil
+ - org.jsoup.nodes.XmlDeclaration
+ - org.jsoup.parser.XmlTreeBuilder
+--------------------------------------------------------------------------------

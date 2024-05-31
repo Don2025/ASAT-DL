@@ -1,0 +1,45 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Math
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Math
+       Program: commons-math
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Math/Math.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-math.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Math/active-bugs.csv
+Number of bugs: 106
+--------------------------------------------------------------------------------
+
+Summary for Bug: Math-37
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+65ed08e15af15617e967d3ea9d635dc55a0ef866
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2012-01-27 07:00:19 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+MATH-722
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/MATH-722
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.math.complex.ComplexTest::testTanhInf
+   --> junit.framework.AssertionFailedError: expected:<1.0> but was:<NaN>
+ - org.apache.commons.math.complex.ComplexTest::testTan
+   --> junit.framework.AssertionFailedError: expected:<1.0> but was:<NaN>
+ - org.apache.commons.math.complex.ComplexTest::testTanh
+   --> junit.framework.AssertionFailedError: expected:<1.0> but was:<NaN>
+ - org.apache.commons.math.complex.ComplexTest::testTanInf
+   --> junit.framework.AssertionFailedError: expected:<1.0> but was:<NaN>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.math.complex.Complex
+--------------------------------------------------------------------------------

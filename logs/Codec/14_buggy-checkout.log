@@ -1,0 +1,11 @@
+Checking out 39d5df29 to /home/tyd/defects4j/tmp/Codec/14_buggy............ OK
+Init local repository...................................................... OK
+Tag post-fix revision...................................................... OK
+Run post-checkout hook..................................................... OK
+Initialize fixed program version........................................... OK
+Apply patch................................................................ OK
+Initialize buggy program version........................................... OK
+Diff 39d5df29:50a1d17b..................................................... OK
+Apply patch................................................................ OK
+Tag pre-fix revision....................................................... OK
+Check out program version: Codec-14b....................................... OK

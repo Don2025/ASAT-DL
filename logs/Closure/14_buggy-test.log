@@ -1,0 +1,8 @@
+Compiling /home/tyd/defects4j/tmp/Closure/14_buggy...
+
+Testing /home/tyd/defects4j/tmp/Closure/14_buggy...
+Failing tests: 3
+  - com.google.javascript.jscomp.CheckMissingReturnTest::testIssue779
+  - com.google.javascript.jscomp.ControlFlowAnalysisTest::testDeepNestedFinally
+  - com.google.javascript.jscomp.ControlFlowAnalysisTest::testDeepNestedBreakwithFinally
+

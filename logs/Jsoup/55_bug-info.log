@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Jsoup
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Jsoup
+       Program: jsoup
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/Jsoup.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jsoup.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/active-bugs.csv
+Number of bugs: 93
+--------------------------------------------------------------------------------
+
+Summary for Bug: Jsoup-55
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+f0f0e41e6c581de43dfaa98f5c2af52e43e42e62
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2016-08-19 12:54:51 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+746
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/jhy/jsoup/issues/746
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jsoup.parser.AttributeParseTest::dropsSlashFromAttributeName
+   --> junit.framework.AssertionFailedError: SelfClosingStartTag ignores last character
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jsoup.parser.TokeniserState
+--------------------------------------------------------------------------------

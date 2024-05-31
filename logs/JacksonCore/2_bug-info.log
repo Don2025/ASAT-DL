@@ -1,0 +1,42 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JacksonCore
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JacksonCore
+       Program: jackson-core
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JacksonCore/JacksonCore.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jackson-core.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JacksonCore/active-bugs.csv
+Number of bugs: 26
+--------------------------------------------------------------------------------
+
+Summary for Bug: JacksonCore-2
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+38d6e35d1f1a9b48193804925517500de8efee1f
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2013-09-21 11:26:42 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+105
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/FasterXML/jackson-core/issues/105
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.fasterxml.jackson.core.json.TestParserErrorHandling::testMangledNumbersBytes
+   --> junit.framework.AssertionFailedError: Should have gotten an exception; instead got token: VALUE_NUMBER_INT
+ - com.fasterxml.jackson.core.json.TestParserErrorHandling::testMangledNumbersChars
+   --> junit.framework.AssertionFailedError: Should have gotten an exception; instead got token: VALUE_NUMBER_INT
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.fasterxml.jackson.core.json.ReaderBasedJsonParser
+ - com.fasterxml.jackson.core.json.UTF8StreamJsonParser
+--------------------------------------------------------------------------------

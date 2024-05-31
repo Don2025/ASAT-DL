@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Time
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Time
+       Program: joda-time
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Time/Time.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/joda-time.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Time/active-bugs.csv
+Number of bugs: 26
+--------------------------------------------------------------------------------
+
+Summary for Bug: Time-19
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+82c5e4f9550e4df36e07b66f35f7c3e9d7eb5eba
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2011-10-24 00:16:21 +0100
+--------------------------------------------------------------------------------
+Bug report id:
+124
+--------------------------------------------------------------------------------
+Bug report url:
+https://sourceforge.net/p/joda-time/bugs/124
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.joda.time.TestDateTimeZoneCutover::testDateTimeCreation_london
+   --> junit.framework.ComparisonFailure: expected:<...1-10-30T01:15:00.000[+01:00]> but was:<...1-10-30T01:15:00.000[Z]>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.joda.time.DateTimeZone
+--------------------------------------------------------------------------------

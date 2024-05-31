@@ -1,0 +1,40 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Compress
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Compress
+       Program: commons-compress
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Compress/Compress.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-compress.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Compress/active-bugs.csv
+Number of bugs: 47
+--------------------------------------------------------------------------------
+
+Summary for Bug: Compress-33
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+b72b5c716ac18150396d05988d9eab745bea02b9
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2015-05-23 15:05:43 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+COMPRESS-316
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/COMPRESS-316
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.compress.compressors.DetectCompressorTestCase::testDetection
+   --> org.apache.commons.compress.compressors.CompressorException: No Compressor found for the stream signature.
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.compress.compressors.CompressorStreamFactory
+ - org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStream
+--------------------------------------------------------------------------------

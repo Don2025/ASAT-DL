@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Math/98_buggy...
+
+Testing /home/tyd/defects4j/tmp/Math/98_buggy...
+Failing tests: 2
+  - org.apache.commons.math.linear.BigMatrixImplTest::testMath209
+  - org.apache.commons.math.linear.RealMatrixImplTest::testMath209
+

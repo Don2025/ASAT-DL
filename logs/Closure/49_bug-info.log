@@ -1,0 +1,169 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Closure
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Closure
+       Program: closure-compiler
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Closure/Closure.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/closure-compiler.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Closure/active-bugs.csv
+Number of bugs: 174
+--------------------------------------------------------------------------------
+
+Summary for Bug: Closure-49
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+1a7ba5cb0111dd3ed9afd9691cab39b3c341e408
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2011-11-03 21:10:49 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+539
+--------------------------------------------------------------------------------
+Bug report url:
+https://storage.googleapis.com/google-code-archive/v2/code.google.com/closure-compiler/issues/issue-539.json
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.google.javascript.jscomp.FunctionInjectorTest::testInline19b
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.FunctionInjectorTest::testInlineIntoLoop
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.FunctionInjectorTest::testInline13
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.FunctionInjectorTest::testInline14
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.FunctionInjectorTest::testInline15
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.FunctionInjectorTest::testInline16
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.FunctionInjectorTest::testInline17
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.FunctionInjectorTest::testInline18
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.FunctionInjectorTest::testInline19
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.FunctionInjectorTest::testBug1897706
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.FunctionInjectorTest::testInlineFunctionWithInnerFunction5
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.FunctionToBlockMutatorTest::testMutateWithParameters3
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.FunctionToBlockMutatorTest::testMutateCallInLoopVars1
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.FunctionToBlockMutatorTest::testMutateInitializeUninitializedVars1
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.FunctionToBlockMutatorTest::testMutateInitializeUninitializedVars2
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.FunctionToBlockMutatorTest::testMutateFunctionDefinition
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.FunctionToBlockMutatorTest::testMutate8
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.InlineFunctionsTest::testLoopWithFunctionWithFunction
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.InlineFunctionsTest::testShadowVariables16
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.InlineFunctionsTest::testShadowVariables18
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.InlineFunctionsTest::testCostBasedInlining11
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.InlineFunctionsTest::testMixedModeInliningCosting3
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.InlineFunctionsTest::testInlineNeverMutateConstants
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.InlineFunctionsTest::testInlineWithThis7
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.InlineFunctionsTest::testAnonymous1
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.InlineFunctionsTest::testAnonymous3
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.InlineFunctionsTest::testShadowVariables1
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.InlineFunctionsTest::testShadowVariables3
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.InlineFunctionsTest::testShadowVariables6
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.InlineFunctionsTest::testShadowVariables7
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.InlineFunctionsTest::testFunctionExpressionCallInlining11b
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.InlineFunctionsTest::testComplexInlineNoResultNoParamCall3
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.InlineFunctionsTest::testCostBasedInlining9
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.InlineFunctionsTest::testMethodWithFunctionWithFunction
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.InlineFunctionsTest::testFunctionExpressionYCombinator
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.InlineFunctionsTest::testComplexInlineVars7
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.InlineFunctionsTest::testComplexFunctionWithFunctionDefinition2a
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.InlineFunctionsTest::testComplexInline7
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.InlineFunctionsTest::testFunctionExpressionOmega
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.InlineFunctionsTest::testInlineFunctions15b
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.InlineFunctionsTest::testInlineFunctions15d
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.InlineFunctionsTest::testInlineFunctions16a
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.InlineFunctionsTest::testBug4944818
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.InlineFunctionsTest::testComplexSample
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.InlineFunctionsTest::testNoInlineIfParametersModified1
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.InlineFunctionsTest::testNoInlineIfParametersModified2
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.InlineFunctionsTest::testNoInlineIfParametersModified3
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.InlineFunctionsTest::testNoInlineIfParametersModified4
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.InlineFunctionsTest::testNoInlineIfParametersModified5
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.InlineFunctionsTest::testNoInlineIfParametersModified6
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.InlineFunctionsTest::testNoInlineIfParametersModified7
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.InlineFunctionsTest::testIssue423
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.InlineFunctionsTest::testComplexFunctionWithFunctionDefinition2
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.InlineFunctionsTest::testComplexFunctionWithFunctionDefinition3
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.InlineFunctionsTest::testDecomposeFunctionExpressionInCall
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.InlineFunctionsTest::testInlineNeverOverrideNewValues
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.InlineFunctionsTest::testInlineBlockMutableArgs1
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.InlineFunctionsTest::testInlineBlockMutableArgs2
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.InlineFunctionsTest::testInlineBlockMutableArgs3
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.InlineFunctionsTest::testInlineBlockMutableArgs4
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.InlineFunctionsTest::testInlineFunctions10
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.InlineFunctionsTest::testInlineFunctions13
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.InlineFunctionsTest::testInlineFunctions22
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.InlineFunctionsTest::testInlineFunctions23
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.InlineFunctionsTest::testInlineFunctions9
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.MakeDeclaredNamesUniqueTest::testMakeLocalNamesUniqueWithContext5
+   --> junit.framework.AssertionFailedError: 
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.google.javascript.jscomp.MakeDeclaredNamesUnique
+--------------------------------------------------------------------------------

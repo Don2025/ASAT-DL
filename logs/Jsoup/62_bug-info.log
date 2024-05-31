@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Jsoup
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Jsoup
+       Program: jsoup
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/Jsoup.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jsoup.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/active-bugs.csv
+Number of bugs: 93
+--------------------------------------------------------------------------------
+
+Summary for Bug: Jsoup-62
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+b934c5d3e30917de86796c89fcb7cd000f642a80
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2017-06-10 15:51:45 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+819
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/jhy/jsoup/issues/819
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jsoup.parser.HtmlParserTest::caseSensitiveParseTree
+   --> junit.framework.AssertionFailedError: expected:<<r> <X> A <[/X> <y> B </y]> </r>> but was:<<r> <X> A <[y> B </y> </X]> </r>>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jsoup.parser.HtmlTreeBuilderState
+--------------------------------------------------------------------------------

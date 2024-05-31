@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Jsoup/16_buggy...
+
+Testing /home/tyd/defects4j/tmp/Jsoup/16_buggy...
+Failing tests: 2
+  - org.jsoup.nodes.DocumentTypeTest::outerHtmlGeneration
+  - org.jsoup.nodes.DocumentTypeTest::constructorValidationThrowsExceptionOnBlankName
+

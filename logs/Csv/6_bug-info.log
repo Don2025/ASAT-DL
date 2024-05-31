@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Csv
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Csv
+       Program: commons-csv
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Csv/Csv.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-csv.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Csv/active-bugs.csv
+Number of bugs: 16
+--------------------------------------------------------------------------------
+
+Summary for Bug: Csv-6
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+9f03b06a1ec8cb2cb64aec6068d2a6c1f663fbc9
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2014-04-22 20:20:17 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+CSV-111
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/CSV-111
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.csv.CSVRecordTest::testToMapWithShortRecord
+   --> java.lang.ArrayIndexOutOfBoundsException: 2
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.csv.CSVRecord
+--------------------------------------------------------------------------------

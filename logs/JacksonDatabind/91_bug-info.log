@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JacksonDatabind
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JacksonDatabind
+       Program: jackson-databind
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/JacksonDatabind.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jackson-databind.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/active-bugs.csv
+Number of bugs: 112
+--------------------------------------------------------------------------------
+
+Summary for Bug: JacksonDatabind-91
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+dfaca81ae7a82b7c3018f265815e98a5138118f7
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2017-11-01 15:36:43 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+1809
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/FasterXML/jackson-databind/issues/1809
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.fasterxml.jackson.databind.deser.jdk.MapDeserializerCachingTest::testCachedSerialize
+   --> junit.framework.AssertionFailedError: Not using custom key deserializer for input: {"data":{"1st":"onedata","2nd":"twodata"}}; resulted in: {1st=onedata, 2nd=twodata}
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.fasterxml.jackson.databind.deser.DeserializerCache
+--------------------------------------------------------------------------------

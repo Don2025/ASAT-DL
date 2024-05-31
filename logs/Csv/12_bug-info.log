@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Csv
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Csv
+       Program: commons-csv
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Csv/Csv.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-csv.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Csv/active-bugs.csv
+Number of bugs: 16
+--------------------------------------------------------------------------------
+
+Summary for Bug: Csv-12
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+c81ad0328eefb438cc875b9c9f081be93f9fdcc2
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2014-08-27 14:12:40 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+CSV-128
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/CSV-128
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.csv.CSVParserTest::testExcelHeaderCountLessThanData
+   --> java.lang.IllegalArgumentException: The header contains a duplicate name: "" in [A, B, C, , ]
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.csv.CSVFormat
+--------------------------------------------------------------------------------

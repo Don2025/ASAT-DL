@@ -1,0 +1,12 @@
+Compiling /home/tyd/defects4j/tmp/Codec/1_buggy...
+
+Testing /home/tyd/defects4j/tmp/Codec/1_buggy...
+Failing tests: 7
+  - org.apache.commons.codec.language.CaverphoneTest::testLocaleIndependence
+  - org.apache.commons.codec.language.DoubleMetaphoneTest::testLocaleIndependence
+  - org.apache.commons.codec.language.MetaphoneTest::testLocaleIndependence
+  - org.apache.commons.codec.language.RefinedSoundexTest::testLocaleIndependence
+  - org.apache.commons.codec.language.SoundexTest::testUsMappingEWithAcute
+  - org.apache.commons.codec.language.SoundexTest::testUsMappingOWithDiaeresis
+  - org.apache.commons.codec.language.SoundexTest::testLocaleIndependence
+

@@ -1,0 +1,41 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JxPath
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JxPath
+       Program: commons-jxpath
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JxPath/JxPath.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-jxpath.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JxPath/active-bugs.csv
+Number of bugs: 22
+--------------------------------------------------------------------------------
+
+Summary for Bug: JxPath-21
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+99a20785daf2bfc018552e2eabed1067bf225013
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2011-06-08 18:19:50 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+JXPATH-151
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/JXPATH-151
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.jxpath.ri.model.JXPath151Test::testMapValueEquality
+   --> junit.framework.AssertionFailedError: Evaluating <map/b != map/a> expected:<true> but was:<false>
+ - org.apache.commons.jxpath.ri.model.MixedModelTest::testNull
+   --> junit.framework.AssertionFailedError: Evaluating value iterator <$testnull/nothing[1]> expected:<[null]> but was:<[]>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.jxpath.ri.model.beans.PropertyPointer
+--------------------------------------------------------------------------------

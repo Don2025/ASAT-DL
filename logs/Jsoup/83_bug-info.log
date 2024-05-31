@@ -1,0 +1,42 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Jsoup
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Jsoup
+       Program: jsoup
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/Jsoup.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jsoup.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/active-bugs.csv
+Number of bugs: 93
+--------------------------------------------------------------------------------
+
+Summary for Bug: Jsoup-83
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+bdf1df7eb3ca76cdcdaca38f7df5d941bbb1c664
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2018-04-29 15:25:23 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+797
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/jhy/jsoup/issues/797
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jsoup.parser.HtmlParserTest::parsesQuiteRoughAttributes
+   --> junit.framework.AssertionFailedError: expected:<<p =a>One<a[></a></p><p><a>Something</a></p><a]>Else</a>> but was:<<p =a>One<a[ <p>Something</a></p><a <p]>Else</a>>
+ - org.jsoup.parser.TokeniserStateTest::handlesLessInTagThanAsNewTag
+   --> junit.framework.AssertionFailedError: expected:<<p[></p><p></p><div id="one"><span>Two</span></div]>> but was:<<p[ <p<div id="one" <span>Two</p]>>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jsoup.parser.CharacterReader
+ - org.jsoup.parser.TokeniserState
+--------------------------------------------------------------------------------

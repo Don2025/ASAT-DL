@@ -1,0 +1,8 @@
+Compiling /home/tyd/defects4j/tmp/Closure/163_buggy...
+
+Testing /home/tyd/defects4j/tmp/Closure/163_buggy...
+Failing tests: 3
+  - com.google.javascript.jscomp.CrossModuleMethodMotionTest::testIssue600b
+  - com.google.javascript.jscomp.CrossModuleMethodMotionTest::testIssue600e
+  - com.google.javascript.jscomp.CrossModuleMethodMotionTest::testIssue600
+

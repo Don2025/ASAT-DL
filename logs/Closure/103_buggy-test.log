@@ -1,0 +1,8 @@
+Compiling /home/tyd/defects4j/tmp/Closure/103_buggy...
+
+Testing /home/tyd/defects4j/tmp/Closure/103_buggy...
+Failing tests: 3
+  - com.google.javascript.jscomp.CheckUnreachableCodeTest::testInstanceOfThrowsException
+  - com.google.javascript.jscomp.ControlFlowAnalysisTest::testInstanceOf
+  - com.google.javascript.jscomp.DisambiguatePropertiesTest::testSupertypeReferenceOfSubtypeProperty
+

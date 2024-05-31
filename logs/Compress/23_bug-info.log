@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Compress
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Compress
+       Program: commons-compress
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Compress/Compress.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-compress.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Compress/active-bugs.csv
+Number of bugs: 47
+--------------------------------------------------------------------------------
+
+Summary for Bug: Compress-23
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+cbb5a1ad9b0b80f717ee71dc0fc765afdc1601c0
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2014-01-22 05:13:34 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+COMPRESS-256
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/COMPRESS-256
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.compress.archivers.sevenz.SevenZFileTest::testCompressedHeaderWithNonDefaultDictionarySize
+   --> org.tukaani.xz.UnsupportedOptionsException: LZMA dictionary is too big for this implementation
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.compress.archivers.sevenz.Coders
+--------------------------------------------------------------------------------

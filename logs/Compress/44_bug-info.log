@@ -1,0 +1,43 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Compress
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Compress
+       Program: commons-compress
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Compress/Compress.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-compress.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Compress/active-bugs.csv
+Number of bugs: 47
+--------------------------------------------------------------------------------
+
+Summary for Bug: Compress-44
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+6f379134ae1807cd404ed6c9579707e5dc6a6df0
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2017-06-17 20:29:37 +0200
+--------------------------------------------------------------------------------
+Bug report id:
+COMPRESS-412
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/COMPRESS-412
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.compress.utils.ChecksumCalculatingInputStreamTest::testClassInstantiationWithParameterBeingNullThrowsNullPointerExceptionOne
+   --> junit.framework.AssertionFailedError: Expected exception: java.lang.NullPointerException
+ - org.apache.commons.compress.utils.ChecksumCalculatingInputStreamTest::testClassInstantiationWithParameterBeingNullThrowsNullPointerExceptionTwo
+   --> junit.framework.AssertionFailedError: Expected exception: java.lang.NullPointerException
+ - org.apache.commons.compress.utils.ChecksumCalculatingInputStreamTest::testClassInstantiationWithParameterBeingNullThrowsNullPointerExceptionThree
+   --> junit.framework.AssertionFailedError: Expected exception: java.lang.NullPointerException
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.compress.utils.ChecksumCalculatingInputStream
+--------------------------------------------------------------------------------

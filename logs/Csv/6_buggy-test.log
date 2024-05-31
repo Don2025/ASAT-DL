@@ -1,0 +1,6 @@
+Compiling /home/tyd/defects4j/tmp/Csv/6_buggy...
+
+Testing /home/tyd/defects4j/tmp/Csv/6_buggy...
+Failing tests: 1
+  - org.apache.commons.csv.CSVRecordTest::testToMapWithShortRecord
+

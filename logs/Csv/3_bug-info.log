@@ -1,0 +1,43 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Csv
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Csv
+       Program: commons-csv
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Csv/Csv.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-csv.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Csv/active-bugs.csv
+Number of bugs: 16
+--------------------------------------------------------------------------------
+
+Summary for Bug: Csv-3
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+2c6120826245f89fedf2f936ab4a0c3edd8717f3
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2013-05-03 01:10:34 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+CSV-58
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/CSV-58
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.csv.CSVLexerTest::testEscapedMySqlNullValue
+   --> junit.framework.AssertionFailedError: 
+ - org.apache.commons.csv.CSVLexerTest::testEscapedCharacter
+   --> junit.framework.AssertionFailedError: 
+ - org.apache.commons.csv.CSVParserTest::testBackslashEscaping
+   --> junit.framework.AssertionFailedError: Records do not match expected result (entry 8): arrays first differed at element [1]; expected:<   "quoted "" [/]" / string"   > but was:<   "quoted "" []" / string"   >
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.csv.Lexer
+--------------------------------------------------------------------------------

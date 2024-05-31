@@ -1,0 +1,41 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Time
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Time
+       Program: joda-time
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Time/Time.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/joda-time.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Time/active-bugs.csv
+Number of bugs: 26
+--------------------------------------------------------------------------------
+
+Summary for Bug: Time-10
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+3a413d7844c22dc6ddd50bf5d0d55ff3589e47ac
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2013-06-16 11:28:26 +0100
+--------------------------------------------------------------------------------
+Bug report id:
+22
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/JodaOrg/joda-time/issues/22
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.joda.time.TestDays::testFactory_daysBetween_RPartial_MonthDay
+   --> org.joda.time.IllegalFieldValueException: Value 29 for dayOfMonth must be in the range [1,28]
+ - org.joda.time.TestMonths::testFactory_monthsBetween_RPartial_MonthDay
+   --> org.joda.time.IllegalFieldValueException: Value 29 for dayOfMonth must be in the range [1,28]
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.joda.time.base.BaseSingleFieldPeriod
+--------------------------------------------------------------------------------

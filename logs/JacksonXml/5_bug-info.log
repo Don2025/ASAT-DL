@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JacksonXml
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JacksonXml
+       Program: jackson-dataformat-xml
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JacksonXml/JacksonXml.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jackson-dataformat-xml.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JacksonXml/active-bugs.csv
+Number of bugs: 6
+--------------------------------------------------------------------------------
+
+Summary for Bug: JacksonXml-5
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+8aa276ba6b2092a562195f9a94eb562686a3352c
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2018-05-21 12:28:21 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+282
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/FasterXML/jackson-dataformat-xml/issues/282
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.fasterxml.jackson.dataformat.xml.MapperCopyTest::testCopyWith
+   --> junit.framework.AssertionFailedError: Should NOT use name 'AnnotatedName' but 'Pojo282', xml = <AnnotatedName><a>3</a></AnnotatedName>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider
+--------------------------------------------------------------------------------

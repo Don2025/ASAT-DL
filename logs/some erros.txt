@@ -1,0 +1,30 @@
+这些文件 运行 defects4j compile 和 defects4j test 时有报错
+
+Math:
+17-35, 98, 100-102
+
+Gson: 3-18 报错 error: unmappable character for encoding ASCII ，
+主要是因为文件 /tmp/Gson/3_buggy/gson/src/test/java/com/google/gson/functional/InternationalizationTest.java，
+要修改中文"好好好" 为 \u597d\u597d\u597d 这串unicode编码
+
+JacksonXml 报错主要是因为author有个é
+
+
+这些compile ant test后能用：
+Lang 64个 active bugs, √
+Mockito 38个 active bugs，√
+Time 27个 active bugs，√
+JxPath 22个 active bugs，√
+Jsoup 93个 active bugs，√
+JacksonXml 6个 active bugs，√
+JacksonCore 26个 active bugs，√
+Gson 18个 active bugs  √
+Cli 40个 active bugs，√
+Closure 176个 active bugs，√
+Compress 47个 active bugs，√
+Collections 28个 active bugs，√
+Codec 18个 active bugs，√
+Csv 16个 active bugs，√
+Chart 26个 active bugs，√
+JacksonDatabind 112个 active bugs，√
+Math 106个 active bugs，√

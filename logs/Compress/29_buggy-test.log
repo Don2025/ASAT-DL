@@ -1,0 +1,8 @@
+Compiling /home/tyd/defects4j/tmp/Compress/29_buggy...
+
+Testing /home/tyd/defects4j/tmp/Compress/29_buggy...
+Failing tests: 3
+  - org.apache.commons.compress.archivers.ArchiveStreamFactoryTest::testEncodingInputStream
+  - org.apache.commons.compress.archivers.ArchiveStreamFactoryTest::testEncodingInputStreamAutodetect
+  - org.apache.commons.compress.archivers.ArchiveStreamFactoryTest::testEncodingOutputStream
+

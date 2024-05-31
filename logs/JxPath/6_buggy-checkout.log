@@ -1,0 +1,11 @@
+Checking out 9b6406bf to /home/tyd/defects4j/tmp/JxPath/6_buggy............ OK
+Init local repository...................................................... OK
+Tag post-fix revision...................................................... OK
+Run post-checkout hook..................................................... OK
+Initialize fixed program version........................................... OK
+Apply patch................................................................ OK
+Initialize buggy program version........................................... OK
+Diff 9b6406bf:5e277f49..................................................... OK
+Apply patch................................................................ OK
+Tag pre-fix revision....................................................... OK
+Check out program version: JxPath-6b....................................... OK

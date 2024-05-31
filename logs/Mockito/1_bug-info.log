@@ -1,0 +1,89 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Mockito
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Mockito
+       Program: mockito
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Mockito/Mockito.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/mockito.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Mockito/active-bugs.csv
+Number of bugs: 38
+--------------------------------------------------------------------------------
+
+Summary for Bug: Mockito-1
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+4e9d7607825c3c668fd43f19507bfead566c528c
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2015-06-04 10:13:46 +0200
+--------------------------------------------------------------------------------
+Bug report id:
+188
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/mockito/mockito/issues/188
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.mockito.internal.invocation.InvocationMatcherTest::should_capture_arguments_when_args_count_does_NOT_match
+   --> java.lang.UnsupportedOperationException
+ - org.mockito.internal.util.reflection.FieldInitializerTest::can_instantiate_class_with_parameterized_constructor
+   --> java.lang.UnsupportedOperationException
+ - org.mockito.internal.util.reflection.ParameterizedConstructorInstantiatorTest::should_report_failure_if_constructor_throws_exception
+   --> java.lang.UnsupportedOperationException
+ - org.mockito.internal.util.reflection.ParameterizedConstructorInstantiatorTest::should_fail_if_an_argument_instance_type_do_not_match_wanted_type
+   --> java.lang.UnsupportedOperationException
+ - org.mockito.internal.util.reflection.ParameterizedConstructorInstantiatorTest::should_instantiate_type_with_vararg_constructor
+   --> java.lang.UnsupportedOperationException
+ - org.mockito.internal.util.reflection.ParameterizedConstructorInstantiatorTest::should_instantiate_type_if_resolver_provide_matching_types
+   --> java.lang.UnsupportedOperationException
+ - org.mockitousage.basicapi.ResetTest::shouldRemoveAllStubbing
+   --> java.lang.UnsupportedOperationException
+ - org.mockitousage.basicapi.UsingVarargsTest::shouldVerifyWithNullVarArgArray
+   --> java.lang.UnsupportedOperationException
+ - org.mockitousage.basicapi.UsingVarargsTest::shouldVerifyWithAnyObject
+   --> java.lang.UnsupportedOperationException
+ - org.mockitousage.basicapi.UsingVarargsTest::shouldStubBooleanVarargs
+   --> java.lang.UnsupportedOperationException
+ - org.mockitousage.basicapi.UsingVarargsTest::shouldMatchEasilyEmptyVararg
+   --> java.lang.UnsupportedOperationException
+ - org.mockitousage.basicapi.UsingVarargsTest::shouldVerifyBooleanVarargs
+   --> java.lang.UnsupportedOperationException
+ - org.mockitousage.basicapi.UsingVarargsTest::shouldStubCorrectlyWhenMixedVarargsUsed
+   --> java.lang.UnsupportedOperationException
+ - org.mockitousage.basicapi.UsingVarargsTest::shouldStubStringVarargs
+   --> java.lang.UnsupportedOperationException
+ - org.mockitousage.basicapi.UsingVarargsTest::shouldStubCorrectlyWhenDoubleStringAndMixedVarargsUsed
+   --> java.lang.UnsupportedOperationException
+ - org.mockitousage.basicapi.UsingVarargsTest::shouldVerifyStringVarargs
+   --> java.lang.UnsupportedOperationException
+ - org.mockitousage.basicapi.UsingVarargsTest::shouldVerifyObjectVarargs
+   --> java.lang.UnsupportedOperationException
+ - org.mockitousage.bugs.VarargsErrorWhenCallingRealMethodTest::shouldNotThrowAnyException
+   --> java.lang.UnsupportedOperationException
+ - org.mockitousage.bugs.varargs.VarargsAndAnyObjectPicksUpExtraInvocationsTest::shouldVerifyCorrectlyWithAnyVarargs
+   --> java.lang.UnsupportedOperationException
+ - org.mockitousage.bugs.varargs.VarargsAndAnyObjectPicksUpExtraInvocationsTest::shouldVerifyCorrectlyNumberOfInvocationsUsingAnyVarargAndEqualArgument
+   --> java.lang.UnsupportedOperationException
+ - org.mockitousage.bugs.varargs.VarargsNotPlayingWithAnyObjectTest::shouldStubUsingAnyVarargs
+   --> java.lang.UnsupportedOperationException
+ - org.mockitousage.matchers.VerificationAndStubbingUsingMatchersTest::shouldVerifyUsingMatchers
+   --> java.lang.UnsupportedOperationException
+ - org.mockitousage.stubbing.BasicStubbingTest::test_stub_only_not_verifiable
+   --> java.lang.UnsupportedOperationException
+ - org.mockitousage.stubbing.BasicStubbingTest::should_evaluate_latest_stubbing_first
+   --> java.lang.UnsupportedOperationException
+ - org.mockitousage.stubbing.DeprecatedStubbingTest::shouldEvaluateLatestStubbingFirst
+   --> java.lang.UnsupportedOperationException
+ - org.mockitousage.verification.VerificationInOrderMixedWithOrdiraryVerificationTest::shouldUseEqualsToVerifyMethodVarargs
+   --> java.lang.UnsupportedOperationException
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.mockito.internal.invocation.InvocationMatcher
+--------------------------------------------------------------------------------

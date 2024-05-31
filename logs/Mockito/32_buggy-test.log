@@ -1,0 +1,6 @@
+Compiling /home/tyd/defects4j/tmp/Mockito/32_buggy...
+
+Testing /home/tyd/defects4j/tmp/Mockito/32_buggy...
+Failing tests: 1
+  - org.mockitousage.bugs.SpyShouldHaveNiceNameTest::shouldPrintNiceName
+

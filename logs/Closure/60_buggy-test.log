@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Closure/60_buggy...
+
+Testing /home/tyd/defects4j/tmp/Closure/60_buggy...
+Failing tests: 2
+  - com.google.javascript.jscomp.CommandLineRunnerTest::testIssue504
+  - com.google.javascript.jscomp.NodeUtilTest::testGetBooleanValue
+

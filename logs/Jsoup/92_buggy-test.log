@@ -1,0 +1,8 @@
+Compiling /home/tyd/defects4j/tmp/Jsoup/92_buggy...
+
+Testing /home/tyd/defects4j/tmp/Jsoup/92_buggy...
+Failing tests: 3
+  - org.jsoup.parser.HtmlParserTest::retainsAttributesOfDifferentCaseIfSensitive
+  - org.jsoup.parser.HtmlParserTest::dropsDuplicateAttributes
+  - org.jsoup.parser.XmlTreeBuilderTest::dropsDuplicateAttributes
+

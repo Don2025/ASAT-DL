@@ -1,0 +1,8 @@
+Compiling /home/tyd/defects4j/tmp/Closure/41_buggy...
+
+Testing /home/tyd/defects4j/tmp/Closure/41_buggy...
+Failing tests: 3
+  - com.google.javascript.jscomp.LooseTypeCheckTest::testMethodInference6
+  - com.google.javascript.jscomp.TypeCheckTest::testIssue368
+  - com.google.javascript.jscomp.TypeCheckTest::testMethodInference6
+

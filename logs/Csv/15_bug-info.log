@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Csv
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Csv
+       Program: commons-csv
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Csv/Csv.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-csv.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Csv/active-bugs.csv
+Number of bugs: 16
+--------------------------------------------------------------------------------
+
+Summary for Bug: Csv-15
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+8b3de71fd99d0fa07cb6a3a35b583bbb170aab66
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2017-12-11 11:16:01 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+CSV-219
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/CSV-219
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.csv.CSVPrinterTest::testDontQuoteEuroFirstChar
+   --> junit.framework.AssertionFailedError: expected:<[€],Deux
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.csv.CSVFormat
+--------------------------------------------------------------------------------

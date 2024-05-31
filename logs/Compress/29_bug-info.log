@@ -1,0 +1,49 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Compress
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Compress
+       Program: commons-compress
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Compress/Compress.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-compress.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Compress/active-bugs.csv
+Number of bugs: 47
+--------------------------------------------------------------------------------
+
+Summary for Bug: Compress-29
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+d50feb67569fb5881b8a2ff5996f656c5f207c2e
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2015-02-16 23:13:01 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+COMPRESS-306
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/COMPRESS-306
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.compress.archivers.ArchiveStreamFactoryTest::testEncodingInputStream
+   --> junit.framework.AssertionFailedError: Tests failed: 20
+ - org.apache.commons.compress.archivers.ArchiveStreamFactoryTest::testEncodingInputStreamAutodetect
+   --> junit.framework.AssertionFailedError: Tests failed: 24
+ - org.apache.commons.compress.archivers.ArchiveStreamFactoryTest::testEncodingOutputStream
+   --> junit.framework.AssertionFailedError: Tests failed: 14
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.compress.archivers.ArchiveStreamFactory
+ - org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream
+ - org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream
+ - org.apache.commons.compress.archivers.dump.DumpArchiveInputStream
+ - org.apache.commons.compress.archivers.tar.TarArchiveInputStream
+ - org.apache.commons.compress.archivers.tar.TarArchiveOutputStream
+ - org.apache.commons.compress.archivers.zip.ZipArchiveInputStream
+--------------------------------------------------------------------------------

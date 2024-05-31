@@ -1,0 +1,6 @@
+Compiling /home/tyd/defects4j/tmp/Jsoup/37_buggy...
+
+Testing /home/tyd/defects4j/tmp/Jsoup/37_buggy...
+Failing tests: 1
+  - org.jsoup.nodes.ElementTest::testNotPretty
+

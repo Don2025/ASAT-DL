@@ -1,0 +1,44 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Jsoup
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Jsoup
+       Program: jsoup
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/Jsoup.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jsoup.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/active-bugs.csv
+Number of bugs: 93
+--------------------------------------------------------------------------------
+
+Summary for Bug: Jsoup-91
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+247c5d05f4529e55aa1fdbd333f99e323809b5e0
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2019-05-12 15:28:35 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+1192
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/jhy/jsoup/issues/1192
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jsoup.integration.ConnectTest::testBinaryThrowsExceptionWhenTypeIgnored
+   --> junit.framework.AssertionFailedError
+ - org.jsoup.integration.ConnectTest::testBinaryResultThrows
+   --> junit.framework.AssertionFailedError
+ - org.jsoup.integration.ParseTest::testBinaryThrowsException
+   --> junit.framework.AssertionFailedError
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jsoup.UncheckedIOException
+ - org.jsoup.parser.CharacterReader
+--------------------------------------------------------------------------------

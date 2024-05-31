@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Lang/8_buggy...
+
+Testing /home/tyd/defects4j/tmp/Lang/8_buggy...
+Failing tests: 2
+  - org.apache.commons.lang3.time.FastDateFormat_PrinterTest::testCalendarTimezoneRespected
+  - org.apache.commons.lang3.time.FastDatePrinterTest::testCalendarTimezoneRespected
+

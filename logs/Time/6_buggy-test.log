@@ -1,0 +1,10 @@
+Compiling /home/tyd/defects4j/tmp/Time/6_buggy...
+
+Testing /home/tyd/defects4j/tmp/Time/6_buggy...
+Failing tests: 5
+  - org.joda.time.chrono.TestGJDate::test_cutoverPreZero
+  - org.joda.time.chrono.TestGJDate::test_plusWeekyears_positiveToNegative_crossCutover
+  - org.joda.time.chrono.TestGJDate::test_plusYears_positiveToZero_crossCutover
+  - org.joda.time.chrono.TestGJDate::test_plusYears_positiveToNegative_crossCutover
+  - org.joda.time.chrono.TestGJDate::test_plusWeekyears_positiveToZero_crossCutover
+

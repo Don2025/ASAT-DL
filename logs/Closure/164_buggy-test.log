@@ -1,0 +1,8 @@
+Compiling /home/tyd/defects4j/tmp/Closure/164_buggy...
+
+Testing /home/tyd/defects4j/tmp/Closure/164_buggy...
+Failing tests: 3
+  - com.google.javascript.jscomp.LooseTypeCheckTest::testMethodInference7
+  - com.google.javascript.jscomp.TypeCheckTest::testMethodInference7
+  - com.google.javascript.rhino.jstype.FunctionTypeTest::testSupAndInfOfReturnTypesWithNumOfParams
+

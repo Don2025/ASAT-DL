@@ -1,0 +1,49 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Mockito
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Mockito
+       Program: mockito
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Mockito/Mockito.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/mockito.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Mockito/active-bugs.csv
+Number of bugs: 38
+--------------------------------------------------------------------------------
+
+Summary for Bug: Mockito-25
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+a6ccf070a267e0a165b8efaaefa8938e787bb6a0
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2012-10-25 21:49:58 +0200
+--------------------------------------------------------------------------------
+Bug report id:
+230
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/mockito/mockito/issues/230
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.mockito.internal.stubbing.defaultanswers.ReturnsGenericDeepStubsTest::will_return_default_value_on_non_mockable_nested_generic
+   --> java.lang.ClassCastException: org.mockito.internal.creation.jmock.ClassImposterizer$ClassWithSuperclassToWorkAroundCglibBug$$EnhancerByMockitoWithCGLIB$$2f702d3d cannot be cast to java.lang.String
+ - org.mockito.internal.stubbing.defaultanswers.ReturnsGenericDeepStubsTest::can_create_mock_from_multiple_type_variable_bounds_when_return_type_of_parameterized_method_is_a_typevar_that_is_referencing_a_typevar_on_class
+   --> java.lang.ClassCastException: $java.lang.Comparable$$EnhancerByMockitoWithCGLIB$$5139a9fd cannot be cast to java.lang.Cloneable
+ - org.mockito.internal.stubbing.defaultanswers.ReturnsGenericDeepStubsTest::can_create_mock_from_return_types_declared_with_a_bounded_wildcard
+   --> java.lang.ClassCastException: org.mockito.internal.creation.jmock.ClassImposterizer$ClassWithSuperclassToWorkAroundCglibBug$$EnhancerByMockitoWithCGLIB$$2f702d3d cannot be cast to java.lang.Number
+ - org.mockito.internal.stubbing.defaultanswers.ReturnsGenericDeepStubsTest::can_create_mock_from_multiple_type_variable_bounds_when_return_type_of_parameterized_method_is_a_parameterizedtype_that_is_referencing_a_typevar_on_class
+   --> java.lang.ClassCastException: org.mockito.internal.creation.jmock.ClassImposterizer$ClassWithSuperclassToWorkAroundCglibBug$$EnhancerByMockitoWithCGLIB$$2f702d3d cannot be cast to java.lang.Cloneable
+ - org.mockito.internal.stubbing.defaultanswers.ReturnsGenericDeepStubsTest::generic_deep_mock_frenzy__look_at_these_chained_calls
+   --> java.lang.ClassCastException: org.mockito.internal.creation.jmock.ClassImposterizer$ClassWithSuperclassToWorkAroundCglibBug$$EnhancerByMockitoWithCGLIB$$2f702d3d cannot be cast to java.util.Map$Entry
+ - org.mockito.internal.stubbing.defaultanswers.ReturnsGenericDeepStubsTest::can_create_mock_from_multiple_type_variable_bounds_when_method_return_type_is_referencing_a_typevar_on_class
+   --> java.lang.ClassCastException: $java.lang.Comparable$$EnhancerByMockitoWithCGLIB$$5139a9fd cannot be cast to java.lang.Cloneable
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs
+--------------------------------------------------------------------------------

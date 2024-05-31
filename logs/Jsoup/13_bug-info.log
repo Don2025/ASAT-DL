@@ -1,0 +1,45 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Jsoup
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Jsoup
+       Program: jsoup
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/Jsoup.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jsoup.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/active-bugs.csv
+Number of bugs: 93
+--------------------------------------------------------------------------------
+
+Summary for Bug: Jsoup-13
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+411c01ff53f56f0b84bee210ad75c8c2114efa55
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2011-07-02 21:12:08 +1000
+--------------------------------------------------------------------------------
+Bug report id:
+97
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/jhy/jsoup/issues/97
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jsoup.nodes.NodeTest::handlesAbsPrefixOnHasAttr
+   --> junit.framework.AssertionFailedError
+ - org.jsoup.nodes.NodeTest::handlesAbsPrefix
+   --> junit.framework.AssertionFailedError
+ - org.jsoup.select.ElementsTest::absAttr
+   --> junit.framework.AssertionFailedError: expected:<[http://jsoup.org]> but was:<[]>
+ - org.jsoup.select.ElementsTest::hasAbsAttr
+   --> junit.framework.AssertionFailedError
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jsoup.nodes.Node
+--------------------------------------------------------------------------------

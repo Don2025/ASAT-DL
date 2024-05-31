@@ -1,0 +1,8 @@
+"Warning Type","Code","Warning"
+"Dodgy code Warning","EI","org.jsoup.nodes.Element.classNames() may expose internal representation by returning Element.classNames"
+"Dodgy code Warning","EI","org.jsoup.nodes.Node.attributes() may expose internal representation by returning Node.attributes"
+"Dodgy code Warning","EI","org.jsoup.nodes.Node.parent() may expose internal representation by returning Node.parentNode"
+"Dodgy code Warning","EI2","new org.jsoup.select.Elements(List) may expose internal representation by storing an externally mutable object into Elements.contents"
+"Malicious code vulnerability Warning","RV","Return value of Element.appendElement(String) ignored, is this OK in org.jsoup.nodes.Document.createShell(String)"
+"Malicious code vulnerability Warning","RV","Return value of Element.appendElement(String) ignored, is this OK in org.jsoup.nodes.Document.normalise()"
+"Malicious code vulnerability Warning","RV","Return value of Element.prependElement(String) ignored, is this OK in org.jsoup.nodes.Document.normalise()"

@@ -1,0 +1,43 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Closure
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Closure
+       Program: closure-compiler
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Closure/Closure.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/closure-compiler.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Closure/active-bugs.csv
+Number of bugs: 174
+--------------------------------------------------------------------------------
+
+Summary for Bug: Closure-69
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+63df133d0850805818d1e280ba47dcefc9763c89
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2011-05-31 15:14:56 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+440
+--------------------------------------------------------------------------------
+Bug report url:
+https://storage.googleapis.com/google-code-archive/v2/code.google.com/closure-compiler/issues/issue-440.json
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.google.javascript.jscomp.TypeCheckTest::testThisTypeOfFunction2
+   --> junit.framework.AssertionFailedError: expected a warning
+ - com.google.javascript.jscomp.TypeCheckTest::testThisTypeOfFunction3
+   --> junit.framework.AssertionFailedError: expected a warning
+ - com.google.javascript.jscomp.TypeCheckTest::testThisTypeOfFunction4
+   --> junit.framework.AssertionFailedError: expected a warning
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.google.javascript.jscomp.TypeCheck
+--------------------------------------------------------------------------------

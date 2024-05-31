@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Jsoup/6_buggy...
+
+Testing /home/tyd/defects4j/tmp/Jsoup/6_buggy...
+Failing tests: 2
+  - org.jsoup.integration.ParseTest::testYahooArticle
+  - org.jsoup.nodes.EntitiesTest::quoteReplacements
+

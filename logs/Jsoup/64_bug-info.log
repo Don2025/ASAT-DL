@@ -1,0 +1,41 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Jsoup
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Jsoup
+       Program: jsoup
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/Jsoup.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jsoup.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/active-bugs.csv
+Number of bugs: 93
+--------------------------------------------------------------------------------
+
+Summary for Bug: Jsoup-64
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+195566fa6d4092c6983fbf497c37ae53a188fa90
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2017-06-29 15:24:05 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+906
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/jhy/jsoup/issues/906
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jsoup.parser.HtmlParserTest::handlesKnownEmptyStyle
+   --> junit.framework.AssertionFailedError: expected:<...ead><style></style><[meta name="foo"></head><body>One]</body></html>> but was:<...ead><style></style><[/head><body>&lt;meta name=foo&gt;&lt;/head&gt;&lt;body&gt;One&lt;/body&gt;&lt;/html&gt;]</body></html>>
+ - org.jsoup.parser.HtmlParserTest::handlesKnownEmptyNoFrames
+   --> junit.framework.AssertionFailedError: expected:<...oframes></noframes><[meta name="foo"></head><body>One]</body></html>> but was:<...oframes></noframes><[/head><body>&lt;meta name=foo&gt;&lt;/head&gt;&lt;body&gt;One&lt;/body&gt;&lt;/html&gt;]</body></html>>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jsoup.parser.HtmlTreeBuilderState
+--------------------------------------------------------------------------------

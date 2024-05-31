@@ -1,0 +1,6 @@
+Compiling /home/tyd/defects4j/tmp/Gson/11_buggy...
+
+Testing /home/tyd/defects4j/tmp/Gson/11_buggy...
+Failing tests: 1
+  - com.google.gson.functional.PrimitiveTest::testNumberAsStringDeserialization
+

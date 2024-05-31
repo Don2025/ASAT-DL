@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Lang/20_buggy...
+
+Testing /home/tyd/defects4j/tmp/Lang/20_buggy...
+Failing tests: 2
+  - org.apache.commons.lang3.StringUtilsTest::testJoin_ArrayChar
+  - org.apache.commons.lang3.StringUtilsTest::testJoin_Objectarray
+

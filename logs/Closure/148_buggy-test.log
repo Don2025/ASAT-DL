@@ -1,0 +1,11 @@
+Compiling /home/tyd/defects4j/tmp/Closure/148_buggy...
+
+Testing /home/tyd/defects4j/tmp/Closure/148_buggy...
+Failing tests: 6
+  - com.google.javascript.jscomp.PeepholeFoldConstantsTest::testFoldTypeof
+  - com.google.javascript.jscomp.SourceMapTest::testGoldenOutput0
+  - com.google.javascript.jscomp.SourceMapTest::testGoldenOutput1
+  - com.google.javascript.jscomp.SourceMapTest::testGoldenOutput2
+  - com.google.javascript.jscomp.SourceMapTest::testGoldenOutput3
+  - com.google.javascript.jscomp.SourceMapTest::testGoldenOutput4
+

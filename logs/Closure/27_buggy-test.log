@@ -1,0 +1,8 @@
+Compiling /home/tyd/defects4j/tmp/Closure/27_buggy...
+
+Testing /home/tyd/defects4j/tmp/Closure/27_buggy...
+Failing tests: 3
+  - com.google.javascript.rhino.IRTest::testIssue727_1
+  - com.google.javascript.rhino.IRTest::testIssue727_2
+  - com.google.javascript.rhino.IRTest::testIssue727_3
+

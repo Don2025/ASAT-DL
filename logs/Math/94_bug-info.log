@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Math
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Math
+       Program: commons-math
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Math/Math.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-math.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Math/active-bugs.csv
+Number of bugs: 106
+--------------------------------------------------------------------------------
+
+Summary for Bug: Math-94
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+a96e597894562c2cf01fc678f6c435d65ccc31c5
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2009-01-16 23:06:32 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+MATH-238
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/MATH-238
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.math.util.MathUtilsTest::testGcd
+   --> junit.framework.AssertionFailedError: expected:<98304> but was:<3440640>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.math.util.MathUtils
+--------------------------------------------------------------------------------

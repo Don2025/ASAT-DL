@@ -1,0 +1,43 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Math
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Math
+       Program: commons-math
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Math/Math.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-math.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Math/active-bugs.csv
+Number of bugs: 106
+--------------------------------------------------------------------------------
+
+Summary for Bug: Math-12
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+cc82d38aaf6ec24758a0a6df9535b8204e22ef12
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2013-01-04 12:28:44 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+MATH-927
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/MATH-927
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.math3.distribution.GammaDistributionTest::testDistributionClone
+   --> junit.framework.AssertionFailedError: expected:<10.688186123440644> but was:<13.675503685260901>
+ - org.apache.commons.math3.distribution.LogNormalDistributionTest::testDistributionClone
+   --> junit.framework.AssertionFailedError: expected:<23.951334711900845> but was:<1.9236285029185378>
+ - org.apache.commons.math3.distribution.NormalDistributionTest::testDistributionClone
+   --> junit.framework.AssertionFailedError: expected:<3.176024051402272> but was:<0.6542132477988758>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.math3.random.BitsStreamGenerator
+--------------------------------------------------------------------------------

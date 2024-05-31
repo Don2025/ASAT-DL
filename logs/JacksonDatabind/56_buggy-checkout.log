@@ -1,0 +1,13 @@
+Checking out 07b6d663 to /home/tyd/defects4j/tmp/JacksonDatabind/56_buggy.. OK
+Init local repository...................................................... OK
+Tag post-fix revision...................................................... OK
+Copy generated Ant build file.............................................. OK
+Run post-checkout hook..................................................... OK
+Excluding broken/flaky tests............................................... OK
+Initialize fixed program version........................................... OK
+Apply patch................................................................ OK
+Initialize buggy program version........................................... OK
+Diff 07b6d663:e979bc53..................................................... OK
+Apply patch................................................................ OK
+Tag pre-fix revision....................................................... OK
+Check out program version: JacksonDatabind-56b............................. OK

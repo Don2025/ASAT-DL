@@ -1,0 +1,54 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JacksonCore
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JacksonCore
+       Program: jackson-core
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JacksonCore/JacksonCore.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jackson-core.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JacksonCore/active-bugs.csv
+Number of bugs: 26
+--------------------------------------------------------------------------------
+
+Summary for Bug: JacksonCore-24
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+c4dd84e4d505baa90d8d1675c1f60f8d6ce90db8
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2019-01-16 20:42:31 -0800
+--------------------------------------------------------------------------------
+Bug report id:
+508
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/FasterXML/jackson-core/issues/508
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.fasterxml.jackson.core.json.async.AsyncNumberCoercionTest::testToLongFailing
+   --> com.fasterxml.jackson.core.JsonParseException: Numeric value (9223372036854775817) out of range of long (-9223372036854775808 - 9223372036854775807)
+ - com.fasterxml.jackson.core.json.async.AsyncNumberCoercionTest::testToIntFailing
+   --> com.fasterxml.jackson.core.JsonParseException: Numeric value (2147483648) out of range of int
+ - com.fasterxml.jackson.core.read.NumberCoercionTest::testToLongFailing
+   --> com.fasterxml.jackson.core.JsonParseException: Numeric value (9223372036854775817) out of range of long (-9223372036854775808 - 9223372036854775807)
+ - com.fasterxml.jackson.core.read.NumberCoercionTest::testToIntFailing
+   --> com.fasterxml.jackson.core.JsonParseException: Numeric value (2147483648) out of range of int
+ - com.fasterxml.jackson.core.read.NumberOverflowTest::testMaliciousLongOverflow
+   --> com.fasterxml.jackson.core.JsonParseException: Numeric value ([Integer with 199999 digits]) out of range of long
+ - com.fasterxml.jackson.core.read.NumberOverflowTest::testSimpleLongOverflow
+   --> com.fasterxml.jackson.core.JsonParseException: Numeric value (-9223372036854775809) out of range of long
+ - com.fasterxml.jackson.core.read.NumberOverflowTest::testMaliciousIntOverflow
+   --> com.fasterxml.jackson.core.JsonParseException: Numeric value ([Integer with 199999 digits]) out of range of int
+ - com.fasterxml.jackson.core.read.NumberParsingTest::testSimpleLong
+   --> com.fasterxml.jackson.core.JsonParseException: Numeric value (12345678907) out of range of int
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.fasterxml.jackson.core.base.ParserBase
+ - com.fasterxml.jackson.core.base.ParserMinimalBase
+--------------------------------------------------------------------------------

@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Mockito
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Mockito
+       Program: mockito
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Mockito/Mockito.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/mockito.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Mockito/active-bugs.csv
+Number of bugs: 38
+--------------------------------------------------------------------------------
+
+Summary for Bug: Mockito-22
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+d0c872e4b0837aef1e1635bf5f15d33c3d8d9698
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2014-04-12 16:09:33 +0200
+--------------------------------------------------------------------------------
+Bug report id:
+484
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/mockito/mockito/issues/484
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.mockito.internal.matchers.EqualityTest::shouldKnowIfObjectsAreEqual
+   --> java.lang.RuntimeException
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.mockito.internal.matchers.Equality
+--------------------------------------------------------------------------------

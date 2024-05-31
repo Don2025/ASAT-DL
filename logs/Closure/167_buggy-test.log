@@ -1,0 +1,8 @@
+Compiling /home/tyd/defects4j/tmp/Closure/167_buggy...
+
+Testing /home/tyd/defects4j/tmp/Closure/167_buggy...
+Failing tests: 3
+  - com.google.javascript.jscomp.TypeCheckTest::testIssue783
+  - com.google.javascript.jscomp.TypeCheckTest::testMissingProperty20
+  - com.google.javascript.rhino.jstype.JSTypeTest::testRestrictedTypeGivenToBoolean
+

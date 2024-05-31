@@ -1,0 +1,61 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Codec
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Codec
+       Program: commons-codec
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Codec/Codec.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-codec.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Codec/active-bugs.csv
+Number of bugs: 18
+--------------------------------------------------------------------------------
+
+Summary for Bug: Codec-12
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+1fc451c79779bdbf788e8bfbec6dc031a47495d8
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2012-03-19 18:33:42 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+CODEC-130
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/CODEC-130
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.codec.binary.Base32InputStreamTest::testSkipToEnd
+   --> junit.framework.AssertionFailedError: expected:<-1> but was:<183>
+ - org.apache.commons.codec.binary.Base32InputStreamTest::testCodec130
+   --> junit.framework.AssertionFailedError: expected:<[ello World]> but was:<[����
+ - org.apache.commons.codec.binary.Base32InputStreamTest::testSkipWrongArgument
+   --> junit.framework.AssertionFailedError: Expected exception: java.lang.IllegalArgumentException
+ - org.apache.commons.codec.binary.Base32InputStreamTest::testAvailable
+   --> junit.framework.AssertionFailedError: expected:<1> but was:<8>
+ - org.apache.commons.codec.binary.Base32InputStreamTest::testSkipPastEnd
+   --> junit.framework.AssertionFailedError: expected:<3> but was:<8>
+ - org.apache.commons.codec.binary.Base32InputStreamTest::testSkipBig
+   --> junit.framework.AssertionFailedError: expected:<3> but was:<8>
+ - org.apache.commons.codec.binary.Base64InputStreamTest::testSkipToEnd
+   --> junit.framework.AssertionFailedError: expected:<-1> but was:<255>
+ - org.apache.commons.codec.binary.Base64InputStreamTest::testCodec130
+   --> junit.framework.AssertionFailedError: expected:<[ello World]> but was:<[[��ܛ]>
+ - org.apache.commons.codec.binary.Base64InputStreamTest::testSkipWrongArgument
+   --> junit.framework.AssertionFailedError: Expected exception: java.lang.IllegalArgumentException
+ - org.apache.commons.codec.binary.Base64InputStreamTest::testAvailable
+   --> junit.framework.AssertionFailedError: expected:<1> but was:<8>
+ - org.apache.commons.codec.binary.Base64InputStreamTest::testSkipPastEnd
+   --> junit.framework.AssertionFailedError: expected:<6> but was:<8>
+ - org.apache.commons.codec.binary.Base64InputStreamTest::testSkipBig
+   --> junit.framework.AssertionFailedError: expected:<6> but was:<8>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.codec.binary.BaseNCodecInputStream
+--------------------------------------------------------------------------------

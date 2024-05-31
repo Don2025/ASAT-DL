@@ -1,0 +1,6 @@
+Error: Collections-24 is a deprecated bug
+ at /home/tyd/study/dataset/defects4j/framework/core/Utils.pm line 481.
+	Utils::ensure_valid_bid("Collections", 24) called at /home/tyd/study/dataset/defects4j/framework/core/Utils.pm line 502
+	Utils::ensure_valid_vid("Collections", "24b") called at /home/tyd/study/dataset/defects4j/framework/bin/d4j/d4j-checkout line 87
+	require /home/tyd/study/dataset/defects4j/framework/bin/d4j/d4j-checkout called at /home/tyd/study/dataset/defects4j/framework/bin/defects4j line 195
+Compilation failed in require at /home/tyd/study/dataset/defects4j/framework/bin/defects4j line 195.

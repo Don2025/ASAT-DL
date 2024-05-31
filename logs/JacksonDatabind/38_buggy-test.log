@@ -1,0 +1,9 @@
+Compiling /home/tyd/defects4j/tmp/JacksonDatabind/38_buggy...
+
+Testing /home/tyd/defects4j/tmp/JacksonDatabind/38_buggy...
+Failing tests: 4
+  - com.fasterxml.jackson.databind.interop.DeprecatedTypeHandling1102Test::testExplicitMapType
+  - com.fasterxml.jackson.databind.interop.DeprecatedTypeHandling1102Test::testExplicitCollectionType
+  - com.fasterxml.jackson.databind.interop.DeprecatedTypeHandling1102Test::testPOJOSubType
+  - com.fasterxml.jackson.databind.introspect.TestScalaLikeImplicitProperties::testGetterSetterProperty
+

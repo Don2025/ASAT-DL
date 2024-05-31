@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Jsoup/60_buggy...
+
+Testing /home/tyd/defects4j/tmp/Jsoup/60_buggy...
+Failing tests: 2
+  - org.jsoup.select.QueryParserTest::testParsesSingleQuoteInContains
+  - org.jsoup.select.QueryParserTest::exceptionOnUncloseAttribute
+

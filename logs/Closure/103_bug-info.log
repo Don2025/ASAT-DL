@@ -1,0 +1,44 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Closure
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Closure
+       Program: closure-compiler
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Closure/Closure.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/closure-compiler.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Closure/active-bugs.csv
+Number of bugs: 174
+--------------------------------------------------------------------------------
+
+Summary for Bug: Closure-103
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+2f5cb1622371de540fe20dcbe0411651ec89f952
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2010-02-23 01:07:42 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+113
+--------------------------------------------------------------------------------
+Bug report url:
+https://storage.googleapis.com/google-code-archive/v2/code.google.com/closure-compiler/issues/issue-113.json
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.google.javascript.jscomp.CheckUnreachableCodeTest::testInstanceOfThrowsException
+   --> junit.framework.AssertionFailedError: Unexpected error(s): JSC_UNREACHABLE_CODE. unreachable code at testcode line 1 expected:<0> but was:<1>
+ - com.google.javascript.jscomp.ControlFlowAnalysisTest::testInstanceOf
+   --> junit.framework.AssertionFailedError: No cross edges found
+ - com.google.javascript.jscomp.DisambiguatePropertiesTest::testSupertypeReferenceOfSubtypeProperty
+   --> junit.framework.AssertionFailedError: 
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.google.javascript.jscomp.ControlFlowAnalysis
+ - com.google.javascript.jscomp.DisambiguateProperties
+--------------------------------------------------------------------------------

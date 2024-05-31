@@ -1,0 +1,56 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Cli
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Cli
+       Program: commons-cli
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Cli/Cli.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-cli.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Cli/active-bugs.csv
+Number of bugs: 39
+--------------------------------------------------------------------------------
+
+Summary for Bug: Cli-30
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+324b7f901b91614927926a5bab1d9e0e2325f018
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2010-06-17 07:57:38 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+CLI-203
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/CLI-203
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.cli.BasicParserTest::testPropertyOptionGroup
+   --> org.apache.commons.cli.AlreadySelectedException: The option 'b' was specified but an option from this group has already been selected: 'a'
+ - org.apache.commons.cli.BasicParserTest::testPropertyOptionUnexpected
+   --> java.lang.NullPointerException
+ - org.apache.commons.cli.DefaultParserTest::testPropertyOptionGroup
+   --> org.apache.commons.cli.AlreadySelectedException: The option 'b' was specified but an option from this group has already been selected: 'a'
+ - org.apache.commons.cli.DefaultParserTest::testPropertyOptionUnexpected
+   --> java.lang.NullPointerException
+ - org.apache.commons.cli.GnuParserTest::testPropertyOptionGroup
+   --> org.apache.commons.cli.AlreadySelectedException: The option 'b' was specified but an option from this group has already been selected: 'a'
+ - org.apache.commons.cli.GnuParserTest::testPropertyOptionUnexpected
+   --> java.lang.NullPointerException
+ - org.apache.commons.cli.OptionGroupTest::testTwoOptionsFromGroupWithProperties
+   --> org.apache.commons.cli.AlreadySelectedException: The option 'd' was specified but an option from this group has already been selected: 'f'
+ - org.apache.commons.cli.PosixParserTest::testPropertyOptionGroup
+   --> org.apache.commons.cli.AlreadySelectedException: The option 'b' was specified but an option from this group has already been selected: 'a'
+ - org.apache.commons.cli.PosixParserTest::testPropertyOptionUnexpected
+   --> java.lang.NullPointerException
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.cli.DefaultParser
+ - org.apache.commons.cli.Parser
+--------------------------------------------------------------------------------

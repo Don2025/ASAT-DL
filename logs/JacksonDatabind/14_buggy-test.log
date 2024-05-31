@@ -1,0 +1,6 @@
+Compiling /home/tyd/defects4j/tmp/JacksonDatabind/14_buggy...
+
+Testing /home/tyd/defects4j/tmp/JacksonDatabind/14_buggy...
+Failing tests: 1
+  - com.fasterxml.jackson.databind.convert.TestUpdateValue::testIssue744
+

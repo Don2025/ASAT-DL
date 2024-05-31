@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/JacksonDatabind/83_buggy...
+
+Testing /home/tyd/defects4j/tmp/JacksonDatabind/83_buggy...
+Failing tests: 2
+  - com.fasterxml.jackson.databind.filter.ProblemHandlerTest::testWeirdStringHandling
+  - com.fasterxml.jackson.databind.introspect.TestScalaLikeImplicitProperties::testGetterSetterProperty
+

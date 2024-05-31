@@ -1,0 +1,8 @@
+Compiling /home/tyd/defects4j/tmp/Gson/7_buggy...
+
+Testing /home/tyd/defects4j/tmp/Gson/7_buggy...
+Failing tests: 3
+  - com.google.gson.functional.MapTest::testMapDeserializationWithUnquotedLongKeys
+  - com.google.gson.functional.MapTest::testMapDeserializationWithUnquotedIntegerKeys
+  - com.google.gson.stream.JsonReaderTest::testPeekingUnquotedStringsPrefixedWithIntegers
+

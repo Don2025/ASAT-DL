@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Closure/28_buggy...
+
+Testing /home/tyd/defects4j/tmp/Closure/28_buggy...
+Failing tests: 2
+  - com.google.javascript.jscomp.InlineCostEstimatorTest::testCost
+  - com.google.javascript.jscomp.InlineFunctionsTest::testIssue728
+

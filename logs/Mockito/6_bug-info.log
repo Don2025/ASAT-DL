@@ -1,0 +1,51 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Mockito
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Mockito
+       Program: mockito
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Mockito/Mockito.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/mockito.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Mockito/active-bugs.csv
+Number of bugs: 38
+--------------------------------------------------------------------------------
+
+Summary for Bug: Mockito-6
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+dc205824dbc289acbcde919e430176ad72da847f
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2015-01-02 14:51:26 +0100
+--------------------------------------------------------------------------------
+Bug report id:
+134
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/mockito/mockito/issues/134
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.mockitousage.matchers.AnyXMatchersAcceptNullsTest::shouldNotAcceptNullInAllAnyPrimitiveWrapperMatchers
+   --> junit.framework.ComparisonFailure: expected:<null> but was:<0>
+ - org.mockitousage.matchers.AnyXMatchersAcceptNullsTest::shouldNotAcceptNullInAnyXMatchers
+   --> junit.framework.ComparisonFailure: expected:<null> but was:<0>
+ - org.mockitousage.matchers.MatchersTest::anyStringMatcher
+   --> junit.framework.ComparisonFailure: expected:<null> but was:<matched>
+ - org.mockitousage.matchers.NewMatchersTest::shouldAllowAnyCollection
+   --> junit.framework.ComparisonFailure: expected:<null> but was:<matched>
+ - org.mockitousage.matchers.NewMatchersTest::shouldAllowAnyList
+   --> junit.framework.ComparisonFailure: expected:<null> but was:<matched>
+ - org.mockitousage.matchers.NewMatchersTest::shouldAllowAnyMap
+   --> junit.framework.ComparisonFailure: expected:<null> but was:<matched>
+ - org.mockitousage.matchers.NewMatchersTest::shouldAllowAnySet
+   --> junit.framework.ComparisonFailure: expected:<null> but was:<matched>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.mockito.Matchers
+--------------------------------------------------------------------------------

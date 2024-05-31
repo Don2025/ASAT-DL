@@ -1,0 +1,8 @@
+"Warning Type","Code","Warning"
+"Dodgy code Warning","EI","com.google.gson.FieldAttributes.getAnnotations() may expose internal representation by returning FieldAttributes.annotations"
+"Dodgy code Warning","EI2","new com.google.gson.stream.JsonWriter(Writer) may expose internal representation by storing an externally mutable object into JsonWriter.out"
+"Malicious code vulnerability Warning","DLS","Dead store to objectToVisit in com.google.gson.ObjectNavigator.accept(ObjectNavigator$Visitor)"
+"Malicious code vulnerability Warning","SF","Switch statement found in com.google.gson.stream.JsonReader.nextInArray(boolean) where one case falls through to the next case"
+"Malicious code vulnerability Warning","SF","Switch statement found in com.google.gson.stream.JsonReader.nextInObject(boolean) where one case falls through to the next case"
+"Malicious code vulnerability Warning","SF","Switch statement found in com.google.gson.stream.JsonReader.nextLiteral() where one case falls through to the next case"
+"Malicious code vulnerability Warning","SF","Switch statement found in com.google.gson.stream.JsonReader.nextValue() where one case falls through to the next case"

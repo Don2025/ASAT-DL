@@ -1,0 +1,53 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Time
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Time
+       Program: joda-time
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Time/Time.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/joda-time.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Time/active-bugs.csv
+Number of bugs: 26
+--------------------------------------------------------------------------------
+
+Summary for Bug: Time-14
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+2ea856328ed5710537778d755a5ff52a6831a2ee
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2012-05-23 12:45:41 +0100
+--------------------------------------------------------------------------------
+Bug report id:
+151
+--------------------------------------------------------------------------------
+Bug report url:
+https://sourceforge.net/p/joda-time/bugs/151
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.joda.time.TestMonthDay_Basics::testPlusMonths_int_negativeFromLeap
+   --> org.joda.time.IllegalFieldValueException: Value 29 for dayOfMonth must be in the range [1,28]
+ - org.joda.time.TestMonthDay_Basics::testMinusDays_int_negativeFromLeap
+   --> org.joda.time.IllegalFieldValueException: Value 29 for dayOfMonth must be in the range [1,28]
+ - org.joda.time.TestMonthDay_Basics::testPlusMonths_int_fromLeap
+   --> org.joda.time.IllegalFieldValueException: Value 29 for dayOfMonth must be in the range [1,28]
+ - org.joda.time.TestMonthDay_Basics::testPlusMonths_int_negativeEndOfMonthAdjust
+   --> junit.framework.AssertionFailedError: expected:<--02-29> but was:<--02-28>
+ - org.joda.time.TestMonthDay_Basics::testMinusMonths_int_endOfMonthAdjust
+   --> junit.framework.AssertionFailedError: expected:<--02-29> but was:<--02-28>
+ - org.joda.time.TestMonthDay_Basics::testMinusMonths_int_negativeFromLeap
+   --> org.joda.time.IllegalFieldValueException: Value 29 for dayOfMonth must be in the range [1,28]
+ - org.joda.time.TestMonthDay_Basics::testMinusMonths_int_fromLeap
+   --> org.joda.time.IllegalFieldValueException: Value 29 for dayOfMonth must be in the range [1,28]
+ - org.joda.time.TestMonthDay_Basics::testPlusDays_int_fromLeap
+   --> org.joda.time.IllegalFieldValueException: Value 29 for dayOfMonth must be in the range [1,28]
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.joda.time.chrono.BasicMonthOfYearDateTimeField
+--------------------------------------------------------------------------------

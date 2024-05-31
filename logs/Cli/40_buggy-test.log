@@ -1,0 +1,6 @@
+Compiling /home/tyd/defects4j/tmp/Cli/40_buggy...
+
+Testing /home/tyd/defects4j/tmp/Cli/40_buggy...
+Failing tests: 1
+  - org.apache.commons.cli.TypeHandlerTest::testCreateValueInteger_failure
+

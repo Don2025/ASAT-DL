@@ -1,0 +1,9 @@
+Compiling /home/tyd/defects4j/tmp/JacksonDatabind/96_buggy...
+
+Testing /home/tyd/defects4j/tmp/JacksonDatabind/96_buggy...
+Failing tests: 4
+  - com.fasterxml.jackson.databind.deser.creators.CreatorWithNamingStrategyTest::testSnakeCaseWithOneArg
+  - com.fasterxml.jackson.databind.introspect.TestScalaLikeImplicitProperties::testVarProperty
+  - com.fasterxml.jackson.databind.introspect.TestScalaLikeImplicitProperties::testGetterSetterProperty
+  - com.fasterxml.jackson.databind.introspect.TestScalaLikeImplicitProperties::testVarWithBeanProperty
+

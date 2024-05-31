@@ -1,0 +1,6 @@
+Compiling /home/tyd/defects4j/tmp/Lang/4_buggy...
+
+Testing /home/tyd/defects4j/tmp/Lang/4_buggy...
+Failing tests: 1
+  - org.apache.commons.lang3.text.translate.LookupTranslatorTest::testLang882
+

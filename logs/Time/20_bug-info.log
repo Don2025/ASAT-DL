@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Time
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Time
+       Program: joda-time
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Time/Time.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/joda-time.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Time/active-bugs.csv
+Number of bugs: 26
+--------------------------------------------------------------------------------
+
+Summary for Bug: Time-20
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+a92450e88df85d6b7a0fa53517da46286c24f53f
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2011-10-23 13:07:54 +0100
+--------------------------------------------------------------------------------
+Bug report id:
+126
+--------------------------------------------------------------------------------
+Bug report url:
+https://sourceforge.net/p/joda-time/bugs/126
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.joda.time.format.TestDateTimeFormatterBuilder::test_printParseZoneDawsonCreek
+   --> java.lang.IllegalArgumentException: Invalid format: "2007-03-04 12:30 America/Dawson_Creek" is malformed at "_Creek"
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.joda.time.format.DateTimeFormatterBuilder
+--------------------------------------------------------------------------------

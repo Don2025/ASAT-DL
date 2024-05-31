@@ -1,0 +1,42 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JxPath
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JxPath
+       Program: commons-jxpath
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JxPath/JxPath.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-jxpath.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JxPath/active-bugs.csv
+Number of bugs: 22
+--------------------------------------------------------------------------------
+
+Summary for Bug: JxPath-1
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+fab38abb27f2f92b9340cfc232eb5517434bf138
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2007-01-10 18:27:20 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+JXPATH-12
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/JXPATH-12
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.jxpath.ri.model.dom.DOMModelTest::testGetNode
+   --> java.lang.NullPointerException
+ - org.apache.commons.jxpath.ri.model.jdom.JDOMModelTest::testGetNode
+   --> java.lang.NullPointerException
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.jxpath.ri.model.dom.DOMNodePointer
+ - org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer
+--------------------------------------------------------------------------------

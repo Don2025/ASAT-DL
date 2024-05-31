@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Gson
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Gson
+       Program: gson
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Gson/Gson.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/gson.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Gson/active-bugs.csv
+Number of bugs: 18
+--------------------------------------------------------------------------------
+
+Summary for Bug: Gson-18
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+b1fb9ca9a1bea5440bc6a5b506ccf67236b08243
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2017-09-21 17:50:41 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+1107
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/google/gson/issues/1107
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.google.gson.functional.CollectionTest::testIssue1107
+   --> java.lang.ClassCastException: com.google.gson.internal.LinkedTreeMap cannot be cast to com.google.gson.functional.CollectionTest$SmallClass
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.google.gson.internal.$Gson$Types
+--------------------------------------------------------------------------------

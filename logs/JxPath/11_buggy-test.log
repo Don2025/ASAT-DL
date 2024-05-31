@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/JxPath/11_buggy...
+
+Testing /home/tyd/defects4j/tmp/JxPath/11_buggy...
+Failing tests: 2
+  - org.apache.commons.jxpath.ri.model.dom.DOMModelTest::testNamespaceMapping
+  - org.apache.commons.jxpath.ri.model.jdom.JDOMModelTest::testNamespaceMapping
+

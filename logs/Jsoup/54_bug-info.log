@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Jsoup
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Jsoup
+       Program: jsoup
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/Jsoup.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jsoup.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/active-bugs.csv
+Number of bugs: 93
+--------------------------------------------------------------------------------
+
+Summary for Bug: Jsoup-54
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+f148f88de365c50eea28d3e14093e13c33104483
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2016-08-05 16:41:40 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+721
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/jhy/jsoup/issues/721
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jsoup.helper.W3CDomTest::handlesInvalidAttributeNames
+   --> org.w3c.dom.DOMException: INVALID_CHARACTER_ERR: An invalid or illegal XML character is specified. 
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jsoup.helper.W3CDom
+--------------------------------------------------------------------------------

@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JacksonDatabind
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JacksonDatabind
+       Program: jackson-databind
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/JacksonDatabind.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jackson-databind.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/active-bugs.csv
+Number of bugs: 112
+--------------------------------------------------------------------------------
+
+Summary for Bug: JacksonDatabind-112
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+8bb7c9abca9a2e298a2436cb995ba1721e49de5c
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2019-05-10 22:48:16 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+2324
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/FasterXML/jackson-databind/issues/2324
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.fasterxml.jackson.databind.deser.creators.DelegatingArrayCreator2324Test::testDeserializeBagOfStrings
+   --> com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `com.fasterxml.jackson.databind.deser.creators.DelegatingArrayCreator2324Test$ImmutableBag` (although at least one Creator exists): no default no-arguments constructor found
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.fasterxml.jackson.databind.deser.std.StringCollectionDeserializer
+--------------------------------------------------------------------------------

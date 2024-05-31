@@ -1,0 +1,43 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Mockito
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Mockito
+       Program: mockito
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Mockito/Mockito.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/mockito.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Mockito/active-bugs.csv
+Number of bugs: 38
+--------------------------------------------------------------------------------
+
+Summary for Bug: Mockito-2
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+80452c7a42777513c35fd30c4e12bcd7ee438fb9
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2015-05-08 21:08:46 +0200
+--------------------------------------------------------------------------------
+Bug report id:
+197
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/mockito/mockito/issues/197
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.mockito.internal.util.TimerTest::should_throw_friendly_reminder_exception_when_duration_is_negative
+   --> junit.framework.AssertionFailedError: It is forbidden to create timer with negative value of timer's duration.
+ - org.mockito.verification.NegativeDurationTest::should_throw_exception_when_duration_is_negative_for_timeout_method
+   --> junit.framework.AssertionFailedError: It is forbidden to invoke Mockito.timeout() with negative value.
+ - org.mockito.verification.NegativeDurationTest::should_throw_exception_when_duration_is_negative_for_after_method
+   --> junit.framework.AssertionFailedError: It is forbidden to invoke Mockito.after() with negative value.
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.mockito.internal.util.Timer
+--------------------------------------------------------------------------------

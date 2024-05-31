@@ -1,0 +1,6 @@
+Compiling /home/tyd/defects4j/tmp/Compress/6_buggy...
+
+Testing /home/tyd/defects4j/tmp/Compress/6_buggy...
+Failing tests: 1
+  - org.apache.commons.compress.archivers.zip.ZipArchiveEntryTest::testNotEquals
+

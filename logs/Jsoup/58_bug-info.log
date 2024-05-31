@@ -1,0 +1,43 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Jsoup
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Jsoup
+       Program: jsoup
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/Jsoup.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jsoup.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/active-bugs.csv
+Number of bugs: 93
+--------------------------------------------------------------------------------
+
+Summary for Bug: Jsoup-58
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+f44d6e64ac97d4a5c119e3e22f22f4d87c94b7e1
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2016-11-24 14:36:13 -0800
+--------------------------------------------------------------------------------
+Bug report id:
+245
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/jhy/jsoup/issues/245
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jsoup.safety.CleanerTest::testIsValidBodyHtml
+   --> junit.framework.AssertionFailedError
+ - org.jsoup.safety.CleanerTest::testIsValidDocument
+   --> junit.framework.AssertionFailedError
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jsoup.Jsoup
+ - org.jsoup.parser.Parser
+ - org.jsoup.safety.Cleaner
+--------------------------------------------------------------------------------

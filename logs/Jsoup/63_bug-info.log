@@ -1,0 +1,44 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Jsoup
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Jsoup
+       Program: jsoup
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/Jsoup.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jsoup.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/active-bugs.csv
+Number of bugs: 93
+--------------------------------------------------------------------------------
+
+Summary for Bug: Jsoup-63
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+35bceca331e07938a9c4cd62d68e08740cd39575
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2017-06-25 10:44:55 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+868
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/jhy/jsoup/issues/868
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jsoup.parser.HtmlParserTest::selfClosingOnNonvoidIsError
+   --> junit.framework.AssertionFailedError: expected:<18: [Tag cannot be self closing; not a void tag]> but was:<18: [Self closing flag not acknowledged]>
+ - org.jsoup.parser.HtmlParserTest::selfClosingVoidIsNotAnError
+   --> junit.framework.AssertionFailedError: expected:<0> but was:<2>
+ - org.jsoup.parser.HtmlParserTest::tracksErrorsWhenRequested
+   --> junit.framework.AssertionFailedError: expected:<50: [Tag cannot be self closing; not a void tag]> but was:<50: [Self closing flag not acknowledged]>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jsoup.parser.HtmlTreeBuilder
+ - org.jsoup.parser.Tokeniser
+--------------------------------------------------------------------------------

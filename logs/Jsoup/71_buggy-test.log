@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Jsoup/71_buggy...
+
+Testing /home/tyd/defects4j/tmp/Jsoup/71_buggy...
+Failing tests: 2
+  - org.jsoup.select.SelectorTest::splitOnBr
+  - org.jsoup.select.SelectorTest::textAsElements
+

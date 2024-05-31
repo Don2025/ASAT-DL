@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Closure/166_buggy...
+
+Testing /home/tyd/defects4j/tmp/Closure/166_buggy...
+Failing tests: 2
+  - com.google.javascript.jscomp.TypeInferenceTest::testRecordInference
+  - com.google.javascript.jscomp.TypeInferenceTest::testIssue785
+

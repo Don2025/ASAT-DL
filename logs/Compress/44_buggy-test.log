@@ -1,0 +1,8 @@
+Compiling /home/tyd/defects4j/tmp/Compress/44_buggy...
+
+Testing /home/tyd/defects4j/tmp/Compress/44_buggy...
+Failing tests: 3
+  - org.apache.commons.compress.utils.ChecksumCalculatingInputStreamTest::testClassInstantiationWithParameterBeingNullThrowsNullPointerExceptionOne
+  - org.apache.commons.compress.utils.ChecksumCalculatingInputStreamTest::testClassInstantiationWithParameterBeingNullThrowsNullPointerExceptionTwo
+  - org.apache.commons.compress.utils.ChecksumCalculatingInputStreamTest::testClassInstantiationWithParameterBeingNullThrowsNullPointerExceptionThree
+

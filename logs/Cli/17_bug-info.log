@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Cli
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Cli
+       Program: commons-cli
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Cli/Cli.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-cli.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Cli/active-bugs.csv
+Number of bugs: 39
+--------------------------------------------------------------------------------
+
+Summary for Bug: Cli-17
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+9c5ce3501938cff01d78b7a1fff10a60abe9e0cf
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2008-07-27 23:38:21 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+CLI-163
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/CLI-163
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.cli.PosixParserTest::testStopBursting
+   --> junit.framework.AssertionFailedError: Confirm  1 extra arg: 2
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.cli.PosixParser
+--------------------------------------------------------------------------------

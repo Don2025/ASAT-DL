@@ -1,0 +1,42 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JxPath
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JxPath
+       Program: commons-jxpath
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JxPath/JxPath.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-jxpath.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JxPath/active-bugs.csv
+Number of bugs: 22
+--------------------------------------------------------------------------------
+
+Summary for Bug: JxPath-19
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+7b2847e882a9e4216dcf0f35d27101e363611532
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2010-02-27 18:34:39 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+JXPATH-125
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/JXPATH-125
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.jxpath.ri.model.AliasedNamespaceIterationTest::testIterateJDOM
+   --> junit.framework.AssertionFailedError: Evaluating pointer iterator </a:doc/a:elem> expected:<[/a:doc[1]/a:elem[1], /a:doc[1]/a:elem[2]]> but was:<[/a:doc[1]/a:elem[1], /a:doc[1]/a:elem[1]]>
+ - org.apache.commons.jxpath.ri.model.AliasedNamespaceIterationTest::testIterateDOM
+   --> junit.framework.AssertionFailedError: Evaluating pointer iterator </a:doc/a:elem> expected:<[/a:doc[1]/a:elem[1], /a:doc[1]/a:elem[2]]> but was:<[/a:doc[1]/a:elem[1], /a:doc[1]/a:elem[1]]>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.jxpath.ri.model.dom.DOMNodePointer
+ - org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer
+--------------------------------------------------------------------------------

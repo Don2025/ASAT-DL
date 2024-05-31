@@ -1,0 +1,8 @@
+Compiling /home/tyd/defects4j/tmp/Closure/174_buggy...
+
+Testing /home/tyd/defects4j/tmp/Closure/174_buggy...
+Failing tests: 3
+  - com.google.javascript.jscomp.ScopedAliasesTest::testIssue1103a
+  - com.google.javascript.jscomp.ScopedAliasesTest::testIssue1103b
+  - com.google.javascript.jscomp.ScopedAliasesTest::testIssue1103c
+

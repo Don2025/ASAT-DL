@@ -1,0 +1,8 @@
+Compiling /home/tyd/defects4j/tmp/Jsoup/3_buggy...
+
+Testing /home/tyd/defects4j/tmp/Jsoup/3_buggy...
+Failing tests: 3
+  - org.jsoup.nodes.ElementTest::testAppendRowToTable
+  - org.jsoup.nodes.ElementTest::testPrependRowToTable
+  - org.jsoup.parser.ParserTest::handlesNestedImplicitTable
+

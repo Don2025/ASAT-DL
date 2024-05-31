@@ -1,0 +1,45 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JacksonDatabind
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JacksonDatabind
+       Program: jackson-databind
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/JacksonDatabind.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jackson-databind.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/active-bugs.csv
+Number of bugs: 112
+--------------------------------------------------------------------------------
+
+Summary for Bug: JacksonDatabind-38
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+21a2e4b7d680bf796f07d5d3b6119a3cd3fc356c
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2016-01-28 17:39:14 -0800
+--------------------------------------------------------------------------------
+Bug report id:
+1102
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/FasterXML/jackson-databind/issues/1102
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.fasterxml.jackson.databind.interop.DeprecatedTypeHandling1102Test::testExplicitMapType
+   --> junit.framework.AssertionFailedError: expected:<class com.fasterxml.jackson.databind.interop.DeprecatedTypeHandling1102Test$Point> but was:<class java.util.LinkedHashMap>
+ - com.fasterxml.jackson.databind.interop.DeprecatedTypeHandling1102Test::testExplicitCollectionType
+   --> junit.framework.AssertionFailedError: expected:<class com.fasterxml.jackson.databind.interop.DeprecatedTypeHandling1102Test$Point> but was:<class java.util.LinkedHashMap>
+ - com.fasterxml.jackson.databind.interop.DeprecatedTypeHandling1102Test::testPOJOSubType
+   --> com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "x" (class com.fasterxml.jackson.databind.interop.DeprecatedTypeHandling1102Test$Point3D), not marked as ignorable (one known property: "z"])
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.fasterxml.jackson.databind.type.CollectionType
+ - com.fasterxml.jackson.databind.type.MapType
+ - com.fasterxml.jackson.databind.type.SimpleType
+--------------------------------------------------------------------------------

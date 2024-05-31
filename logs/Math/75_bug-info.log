@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Math
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Math
+       Program: commons-math
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Math/Math.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-math.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Math/active-bugs.csv
+Number of bugs: 106
+--------------------------------------------------------------------------------
+
+Summary for Bug: Math-75
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+523df0c13719150b1397a6094f410274bfaf1475
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2010-01-16 20:01:17 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+MATH-329
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/MATH-329
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.math.stat.FrequencyTest::testPcts
+   --> junit.framework.AssertionFailedError: three (Object) pct expected:<0.5> but was:<1.0>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.math.stat.Frequency
+--------------------------------------------------------------------------------

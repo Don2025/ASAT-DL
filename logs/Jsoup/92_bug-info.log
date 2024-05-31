@@ -1,0 +1,47 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Jsoup
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Jsoup
+       Program: jsoup
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/Jsoup.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jsoup.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/active-bugs.csv
+Number of bugs: 93
+--------------------------------------------------------------------------------
+
+Summary for Bug: Jsoup-92
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+0fc3d6728ae270fb38f9778ad7fa2663060b50c7
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2019-07-04 15:26:11 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+1219
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/jhy/jsoup/issues/1219
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jsoup.parser.HtmlParserTest::retainsAttributesOfDifferentCaseIfSensitive
+   --> junit.framework.AssertionFailedError: expected:<<p One="[One" one="Three" two="Four]" Two="Six">Text</p>> but was:<<p One="[Two" one="Three" two="Five]" Two="Six">Text</p>>
+ - org.jsoup.parser.HtmlParserTest::dropsDuplicateAttributes
+   --> junit.framework.AssertionFailedError: expected:<<p one="[One" two="two]">Text</p>> but was:<<p one="[Four" one="Two" two="two" one="Three" two="Five]">Text</p>>
+ - org.jsoup.parser.XmlTreeBuilderTest::dropsDuplicateAttributes
+   --> junit.framework.AssertionFailedError: expected:<<p One="[One" ONE="Two" one="Three" two="Six]" Two="Eight">Text</...> but was:<<p One="[Four" ONE="Five" one="Three" two="Seven]" Two="Eight">Text</...>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jsoup.nodes.Attributes
+ - org.jsoup.parser.HtmlTreeBuilder
+ - org.jsoup.parser.ParseSettings
+ - org.jsoup.parser.Token
+ - org.jsoup.parser.XmlTreeBuilder
+--------------------------------------------------------------------------------

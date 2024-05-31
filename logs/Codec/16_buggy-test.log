@@ -1,0 +1,6 @@
+Compiling /home/tyd/defects4j/tmp/Codec/16_buggy...
+
+Testing /home/tyd/defects4j/tmp/Codec/16_buggy...
+Failing tests: 1
+  - org.apache.commons.codec.binary.Base32Test::testCodec200
+

@@ -1,0 +1,9 @@
+Compiling /home/tyd/defects4j/tmp/JacksonDatabind/63_buggy...
+
+Testing /home/tyd/defects4j/tmp/JacksonDatabind/63_buggy...
+Failing tests: 4
+  - com.fasterxml.jackson.databind.deser.exc.ExceptionPathTest::testReferenceChainForInnerClass
+  - com.fasterxml.jackson.databind.deser.exc.TestExceptionHandlingWithDefaultDeserialization::testShouldThrowJsonMappingExceptionWithPathReference
+  - com.fasterxml.jackson.databind.deser.exc.TestExceptionHandlingWithJsonCreatorDeserialization::testShouldThrowJsonMappingExceptionWithPathReference
+  - com.fasterxml.jackson.databind.introspect.TestScalaLikeImplicitProperties::testGetterSetterProperty
+

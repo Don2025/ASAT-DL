@@ -1,0 +1,6 @@
+Compiling /home/tyd/defects4j/tmp/Collections/28_buggy...
+
+Testing /home/tyd/defects4j/tmp/Collections/28_buggy...
+Failing tests: 1
+  - org.apache.commons.collections4.trie.PatriciaTrieTest::testPrefixMapClear
+

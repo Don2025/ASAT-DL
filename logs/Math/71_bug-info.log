@@ -1,0 +1,42 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Math
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Math
+       Program: commons-math
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Math/Math.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-math.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Math/active-bugs.csv
+Number of bugs: 106
+--------------------------------------------------------------------------------
+
+Summary for Bug: Math-71
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+6537e18ad189603e19615226e6aa1a9cdd154b8f
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2010-03-24 22:11:51 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+MATH-358
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/MATH-358
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.math.ode.nonstiff.ClassicalRungeKuttaIntegratorTest::testMissedEndEvent
+   --> junit.framework.AssertionFailedError: expected:<1.8782503799999986E9> but was:<1.878250439999994E9>
+ - org.apache.commons.math.ode.nonstiff.DormandPrince853IntegratorTest::testMissedEndEvent
+   --> junit.framework.AssertionFailedError: expected:<1.8782503799999986E9> but was:<1.878250479999994E9>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator
+ - org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator
+--------------------------------------------------------------------------------

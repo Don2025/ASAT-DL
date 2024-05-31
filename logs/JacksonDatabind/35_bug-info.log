@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JacksonDatabind
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JacksonDatabind
+       Program: jackson-databind
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/JacksonDatabind.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jackson-databind.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/active-bugs.csv
+Number of bugs: 112
+--------------------------------------------------------------------------------
+
+Summary for Bug: JacksonDatabind-35
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+cecd409aa97693beb87c4e9ca34ea7f734676216
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2015-12-17 21:49:10 -0800
+--------------------------------------------------------------------------------
+Bug report id:
+1051
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/FasterXML/jackson-databind/issues/1051
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.fasterxml.jackson.databind.jsontype.WrapperObjectWithObjectIdTest::testSimple
+   --> com.fasterxml.jackson.databind.JsonMappingException: Unexpected token (FIELD_NAME), expected START_OBJECT: need JSON Object to contain As.WRAPPER_OBJECT type information for class com.fasterxml.jackson.databind.jsontype.WrapperObjectWithObjectIdTest$Computer
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.fasterxml.jackson.databind.jsontype.impl.AsWrapperTypeDeserializer
+--------------------------------------------------------------------------------

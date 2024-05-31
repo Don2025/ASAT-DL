@@ -1,0 +1,40 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JacksonCore
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JacksonCore
+       Program: jackson-core
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JacksonCore/JacksonCore.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jackson-core.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JacksonCore/active-bugs.csv
+Number of bugs: 26
+--------------------------------------------------------------------------------
+
+Summary for Bug: JacksonCore-1
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+b40ac81d4a81736e2b7536b14db4ad070b598d2e
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2013-08-28 21:04:32 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+98
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/FasterXML/jackson-core/issues/98
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.fasterxml.jackson.core.json.TestParserNonStandard::testAllowNaN
+   --> junit.framework.AssertionFailedError: Expected an exception with one of substrings ([can not be represented as BigDecimal]): got one with message "null"
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.fasterxml.jackson.core.io.NumberInput
+ - com.fasterxml.jackson.core.util.TextBuffer
+--------------------------------------------------------------------------------

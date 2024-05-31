@@ -1,0 +1,41 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Lang
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Lang
+       Program: commons-lang
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Lang/Lang.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-lang.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Lang/active-bugs.csv
+Number of bugs: 64
+--------------------------------------------------------------------------------
+
+Summary for Bug: Lang-22
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+0b2b82ad923b0455cde93286e3f504a1abd0863b
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2011-01-17 04:30:05 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+LANG-662
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/LANG-662
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.lang3.math.FractionTest::testReducedFactory_int_int
+   --> junit.framework.AssertionFailedError: expected:<-1073741824> but was:<-2147483648>
+ - org.apache.commons.lang3.math.FractionTest::testReduce
+   --> junit.framework.AssertionFailedError: expected:<-1073741824> but was:<-2147483648>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.lang3.math.Fraction
+--------------------------------------------------------------------------------

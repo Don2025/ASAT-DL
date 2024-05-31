@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Math
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Math
+       Program: commons-math
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Math/Math.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-math.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Math/active-bugs.csv
+Number of bugs: 106
+--------------------------------------------------------------------------------
+
+Summary for Bug: Math-82
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+4ece1884cc408e15c8f1db9010fec5cac43937b9
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2009-08-25 18:07:13 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+MATH-288
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/MATH-288
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.math.optimization.linear.SimplexSolverTest::testMath288
+   --> junit.framework.AssertionFailedError: expected:<10.0> but was:<11.5>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.math.optimization.linear.SimplexSolver
+--------------------------------------------------------------------------------

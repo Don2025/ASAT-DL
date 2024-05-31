@@ -1,0 +1,6 @@
+Compiling /home/tyd/defects4j/tmp/Math/61_buggy...
+
+Testing /home/tyd/defects4j/tmp/Math/61_buggy...
+Failing tests: 1
+  - org.apache.commons.math.distribution.PoissonDistributionTest::testMean
+

@@ -1,0 +1,6 @@
+Compiling /home/tyd/defects4j/tmp/Cli/13_buggy...
+
+Testing /home/tyd/defects4j/tmp/Cli/13_buggy...
+Failing tests: 1
+  - org.apache.commons.cli2.bug.BugLoopingOptionLookAlikeTest::testLoopingOptionLookAlike2
+

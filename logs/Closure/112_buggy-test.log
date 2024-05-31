@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Closure/112_buggy...
+
+Testing /home/tyd/defects4j/tmp/Closure/112_buggy...
+Failing tests: 2
+  - com.google.javascript.jscomp.TypeCheckTest::testIssue1058
+  - com.google.javascript.jscomp.TypeCheckTest::testTemplatized11
+

@@ -1,0 +1,6 @@
+Compiling /home/tyd/defects4j/tmp/Math/41_buggy...
+
+Testing /home/tyd/defects4j/tmp/Math/41_buggy...
+Failing tests: 1
+  - org.apache.commons.math.stat.descriptive.moment.VarianceTest::testEvaluateArraySegmentWeighted
+

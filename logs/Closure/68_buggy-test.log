@@ -1,0 +1,6 @@
+Compiling /home/tyd/defects4j/tmp/Closure/68_buggy...
+
+Testing /home/tyd/defects4j/tmp/Closure/68_buggy...
+Failing tests: 1
+  - com.google.javascript.jscomp.parsing.JsDocInfoParserTest::testIssue477
+

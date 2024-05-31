@@ -1,0 +1,11 @@
+Compiling /home/tyd/defects4j/tmp/Chart/22_buggy...
+
+Testing /home/tyd/defects4j/tmp/Chart/22_buggy...
+Failing tests: 6
+  - org.jfree.data.junit.KeyedObjects2DTests::testRemoveColumnByKey
+  - org.jfree.data.junit.KeyedObjects2DTests::testRemoveValue
+  - org.jfree.data.junit.KeyedObjects2DTests::testGetValueByKey
+  - org.jfree.data.junit.KeyedObjects2DTests::testRemoveColumnByIndex
+  - org.jfree.data.junit.KeyedObjects2DTests::testSetObject
+  - org.jfree.data.junit.KeyedObjects2DTests::testRemoveRowByKey
+

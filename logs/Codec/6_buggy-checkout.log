@@ -1,0 +1,11 @@
+Checking out d74fc316 to /home/tyd/defects4j/tmp/Codec/6_buggy............. OK
+Init local repository...................................................... OK
+Tag post-fix revision...................................................... OK
+Run post-checkout hook..................................................... OK
+Initialize fixed program version........................................... OK
+Apply patch................................................................ OK
+Initialize buggy program version........................................... OK
+Diff d74fc316:5a0d6b1d..................................................... OK
+Apply patch................................................................ OK
+Tag pre-fix revision....................................................... OK
+Check out program version: Codec-6b........................................ OK

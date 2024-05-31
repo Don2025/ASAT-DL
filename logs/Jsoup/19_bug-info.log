@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Jsoup
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Jsoup
+       Program: jsoup
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/Jsoup.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jsoup.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/active-bugs.csv
+Number of bugs: 93
+--------------------------------------------------------------------------------
+
+Summary for Bug: Jsoup-19
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+c98349a7fb5598f0cbac88130520171bd6f253c1
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2011-08-28 15:14:35 +1000
+--------------------------------------------------------------------------------
+Bug report id:
+127
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/jhy/jsoup/issues/127
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jsoup.safety.CleanerTest::handlesCustomProtocols
+   --> junit.framework.AssertionFailedError: expected:<<img [src="cid:12345" /> 
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jsoup.safety.Whitelist
+--------------------------------------------------------------------------------

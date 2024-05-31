@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Closure/66_buggy...
+
+Testing /home/tyd/defects4j/tmp/Closure/66_buggy...
+Failing tests: 2
+  - com.google.javascript.jscomp.TypeCheckTest::testGetTypedPercent5
+  - com.google.javascript.jscomp.TypeCheckTest::testGetTypedPercent6
+

@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Jsoup
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Jsoup
+       Program: jsoup
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/Jsoup.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jsoup.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/active-bugs.csv
+Number of bugs: 93
+--------------------------------------------------------------------------------
+
+Summary for Bug: Jsoup-9
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+2e4969497c5734d90d394103728bb517644f9157
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2011-07-02 21:12:02 +1000
+--------------------------------------------------------------------------------
+Bug report id:
+46
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/jhy/jsoup/issues/46
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jsoup.nodes.EntitiesTest::unescape
+   --> junit.framework.AssertionFailedError: expected:<...<> Å π π 新 there &! [¾]> but was:<...<> Å π π 新 there &! [&frac34;]>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jsoup.nodes.Entities
+--------------------------------------------------------------------------------

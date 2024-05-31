@@ -1,0 +1,55 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Mockito
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Mockito
+       Program: mockito
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Mockito/Mockito.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/mockito.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Mockito/active-bugs.csv
+Number of bugs: 38
+--------------------------------------------------------------------------------
+
+Summary for Bug: Mockito-3
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+3eec7451d6c83c280743c39b39c77a179abb30f9
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2015-06-04 10:19:14 +0200
+--------------------------------------------------------------------------------
+Bug report id:
+188
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/mockito/mockito/issues/188
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.mockito.internal.invocation.InvocationMatcherTest::should_capture_varargs_as_vararg
+   --> junit.framework.AssertionFailedError: expected:<[['a', 'b']]> but was:<[[1]]>
+ - org.mockitousage.bugs.varargs.VarargsAndAnyObjectPicksUpExtraInvocationsTest::shouldVerifyCorrectlyNumberOfInvocationsWithVarargs
+   --> java.lang.ArrayIndexOutOfBoundsException: 2
+ - org.mockitousage.bugs.varargs.VarargsNotPlayingWithAnyObjectTest::shouldMatchAnyVararg
+   --> java.lang.ArrayIndexOutOfBoundsException: 1
+ - org.mockitousage.matchers.CapturingArgumentsTest::should_capture_all_vararg
+   --> junit.framework.AssertionFailedError: expected:<[['a', 'b', 'c', 'again ?!']]> but was:<[[42, 42]]>
+ - org.mockitousage.matchers.CapturingArgumentsTest::captures_correctly_when_captor_used_multiple_times
+   --> java.lang.ArrayIndexOutOfBoundsException: 2
+ - org.mockitousage.matchers.CapturingArgumentsTest::should_capture_vararg
+   --> junit.framework.AssertionFailedError: expected:<[['a', 'b', 'c']]> but was:<[[42]]>
+ - org.mockitousage.matchers.CapturingArgumentsTest::captures_correctly_when_captor_used_on_pure_vararg_method
+   --> java.lang.ArrayIndexOutOfBoundsException: 1
+ - org.mockitousage.matchers.CapturingArgumentsTest::should_capture_byte_vararg_by_creating_captor_with_primitive_wrapper
+   --> java.lang.ClassCastException: [B cannot be cast to java.lang.Byte
+ - org.mockitousage.matchers.CapturingArgumentsTest::should_capture_byte_vararg_by_creating_captor_with_primitive
+   --> java.lang.ClassCastException: [B cannot be cast to java.lang.Byte
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.mockito.internal.invocation.InvocationMatcher
+--------------------------------------------------------------------------------

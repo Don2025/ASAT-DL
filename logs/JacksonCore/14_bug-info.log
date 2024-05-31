@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JacksonCore
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JacksonCore
+       Program: jackson-core
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JacksonCore/JacksonCore.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jackson-core.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JacksonCore/active-bugs.csv
+Number of bugs: 26
+--------------------------------------------------------------------------------
+
+Summary for Bug: JacksonCore-14
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+3c2c9610b6c76e2b348eb057d0a8268681d573a6
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2016-03-07 23:01:17 -0800
+--------------------------------------------------------------------------------
+Bug report id:
+255
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/FasterXML/jackson-core/issues/255
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.fasterxml.jackson.core.io.TestIOContext::testAllocations
+   --> junit.framework.AssertionFailedError: Expected an exception with one of substrings ([smaller than original]): got one with message "Trying to release buffer not owned by the context"
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.fasterxml.jackson.core.io.IOContext
+--------------------------------------------------------------------------------

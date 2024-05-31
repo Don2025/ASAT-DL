@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/JacksonDatabind/90_buggy...
+
+Testing /home/tyd/defects4j/tmp/JacksonDatabind/90_buggy...
+Failing tests: 2
+  - com.fasterxml.jackson.databind.creators.DelegatingArrayCreator1804Test::testDelegatingArray1804
+  - com.fasterxml.jackson.databind.introspect.TestScalaLikeImplicitProperties::testGetterSetterProperty
+

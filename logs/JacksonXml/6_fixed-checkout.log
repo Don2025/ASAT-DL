@@ -1,0 +1,12 @@
+Checking out 8fd9463d to /home/tyd/defects4j/tmp/JacksonXml/6_fixed........ OK
+Init local repository...................................................... OK
+Tag post-fix revision...................................................... OK
+Copy generated Ant build file.............................................. OK
+Run post-checkout hook..................................................... OK
+Initialize fixed program version........................................... OK
+Apply patch................................................................ OK
+Initialize buggy program version........................................... OK
+Diff 8fd9463d:17f39695..................................................... OK
+Apply patch................................................................ OK
+Tag pre-fix revision....................................................... OK
+Check out program version: JacksonXml-6f................................... OK

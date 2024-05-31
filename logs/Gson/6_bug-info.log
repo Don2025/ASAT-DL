@@ -1,0 +1,41 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Gson
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Gson
+       Program: gson
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Gson/Gson.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/gson.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Gson/active-bugs.csv
+Number of bugs: 18
+--------------------------------------------------------------------------------
+
+Summary for Bug: Gson-6
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+dea305503ad8827121e8212248c271f1f2f90048
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2016-02-26 13:35:59 -0500
+--------------------------------------------------------------------------------
+Bug report id:
+800
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/google/gson/pull/800
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.google.gson.regression.JsonAdapterNullSafeTest::testNullSafeBugDeserialize
+   --> java.lang.NullPointerException
+ - com.google.gson.regression.JsonAdapterNullSafeTest::testNullSafeBugSerialize
+   --> java.lang.NullPointerException
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.google.gson.internal.bind.JsonAdapterAnnotationTypeAdapterFactory
+--------------------------------------------------------------------------------

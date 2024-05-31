@@ -1,0 +1,8 @@
+Compiling /home/tyd/defects4j/tmp/Cli/27_buggy...
+
+Testing /home/tyd/defects4j/tmp/Cli/27_buggy...
+Failing tests: 3
+  - org.apache.commons.cli.BasicParserTest::testOptionGroupLong
+  - org.apache.commons.cli.GnuParserTest::testOptionGroupLong
+  - org.apache.commons.cli.PosixParserTest::testOptionGroupLong
+

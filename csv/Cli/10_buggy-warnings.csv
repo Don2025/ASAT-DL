@@ -1,0 +1,8 @@
+"Warning Type","Code","Warning"
+"Bad practice Warning","Se","org.apache.commons.cli.HelpFormatter$OptionComparator implements Comparator but not Serializable"
+"Dodgy code Warning","Dm","Found reliance on default encoding in org.apache.commons.cli.HelpFormatter.printHelp(int, String, String, Options, String, boolean): new java.io.PrintWriter(OutputStream)"
+"Internationalization Warning","EI","org.apache.commons.cli.CommandLine.getArgList() may expose internal representation by returning CommandLine.args"
+"Internationalization Warning","EI","org.apache.commons.cli.Option.getValuesList() may expose internal representation by returning Option.values"
+"Internationalization Warning","EI","org.apache.commons.cli.Options.getRequiredOptions() may expose internal representation by returning Options.requiredOpts"
+"Internationalization Warning","EI","org.apache.commons.cli.Parser.parse(Options, String[], Properties, boolean) may expose internal representation by returning Parser.cmd"
+"Malicious code vulnerability Warning","RCN","Redundant nullcheck of currentOption, which is known to be non-null in org.apache.commons.cli.GnuParser.flatten(Options, String[], boolean)"

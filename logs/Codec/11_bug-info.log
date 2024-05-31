@@ -1,0 +1,47 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Codec
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Codec
+       Program: commons-codec
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Codec/Codec.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-codec.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Codec/active-bugs.csv
+Number of bugs: 18
+--------------------------------------------------------------------------------
+
+Summary for Bug: Codec-11
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+7e8c20bd1b0593c3496a168be573aed40609a433
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2012-03-07 15:34:01 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+CODEC-121
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/CODEC-121
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.codec.net.QuotedPrintableCodecTest::testSkipNotEncodedCRLF
+   --> org.apache.commons.codec.DecoderException: Invalid URL encoding: not a valid digit (radix 16): 13
+ - org.apache.commons.codec.net.QuotedPrintableCodecTest::testSoftLineBreakDecode
+   --> org.apache.commons.codec.DecoderException: Invalid URL encoding: not a valid digit (radix 16): 13
+ - org.apache.commons.codec.net.QuotedPrintableCodecTest::testSoftLineBreakEncode
+   --> junit.framework.AssertionFailedError: expected:<...matics is the most b[=
+ - org.apache.commons.codec.net.QuotedPrintableCodecTest::testUltimateSoftBreak
+   --> junit.framework.AssertionFailedError: expected:<...There is no end to i[=
+ - org.apache.commons.codec.net.QuotedPrintableCodecTest::testTrailingSpecial
+   --> junit.framework.AssertionFailedError: expected:<... might contain sp=3D[=
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.codec.net.QuotedPrintableCodec
+--------------------------------------------------------------------------------

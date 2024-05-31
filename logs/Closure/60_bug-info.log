@@ -1,0 +1,41 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Closure
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Closure
+       Program: closure-compiler
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Closure/Closure.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/closure-compiler.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Closure/active-bugs.csv
+Number of bugs: 174
+--------------------------------------------------------------------------------
+
+Summary for Bug: Closure-60
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+fbaadc736f0031dd84bebea33abae497b47158cb
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2011-07-07 02:58:25 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+504
+--------------------------------------------------------------------------------
+Bug report url:
+https://storage.googleapis.com/google-code-archive/v2/code.google.com/closure-compiler/issues/issue-504.json
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.google.javascript.jscomp.CommandLineRunnerTest::testIssue504
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.NodeUtilTest::testGetBooleanValue
+   --> junit.framework.AssertionFailedError: expected:<unknown> but was:<false>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.google.javascript.jscomp.NodeUtil
+--------------------------------------------------------------------------------

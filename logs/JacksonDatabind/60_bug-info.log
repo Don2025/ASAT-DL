@@ -1,0 +1,41 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JacksonDatabind
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JacksonDatabind
+       Program: jackson-databind
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/JacksonDatabind.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jackson-databind.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/active-bugs.csv
+Number of bugs: 112
+--------------------------------------------------------------------------------
+
+Summary for Bug: JacksonDatabind-60
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+be114a9a286c4d194cd268ac8153173c52619a8d
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2016-09-28 15:49:01 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+1385
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/FasterXML/jackson-databind/issues/1385
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.fasterxml.jackson.databind.jsontype.TestDefaultWithCreators::testWithCreatorAndJsonValue
+   --> junit.framework.AssertionFailedError: expected:<class com.fasterxml.jackson.databind.jsontype.TestDefaultWithCreators$Bean1385> but was:<class [B>
+ - com.fasterxml.jackson.databind.jsontype.ext.ExternalTypeIdTest::testWithAsValue
+   --> junit.framework.ComparisonFailure: expected:<...alue":12345,"type":"[thingy]"}> but was:<...alue":12345,"type":"[date]"}>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.fasterxml.jackson.databind.ser.std.JsonValueSerializer
+--------------------------------------------------------------------------------

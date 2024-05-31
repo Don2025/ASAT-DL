@@ -1,0 +1,11 @@
+Compiling /home/tyd/defects4j/tmp/Math/43_buggy...
+
+Testing /home/tyd/defects4j/tmp/Math/43_buggy...
+Failing tests: 6
+  - org.apache.commons.math.stat.descriptive.SummaryStatisticsTest::testOverrideMeanWithMathClass
+  - org.apache.commons.math.stat.descriptive.SummaryStatisticsTest::testOverrideGeoMeanWithMathClass
+  - org.apache.commons.math.stat.descriptive.SummaryStatisticsTest::testOverrideVarianceWithMathClass
+  - org.apache.commons.math.stat.descriptive.SynchronizedSummaryStatisticsTest::testOverrideMeanWithMathClass
+  - org.apache.commons.math.stat.descriptive.SynchronizedSummaryStatisticsTest::testOverrideGeoMeanWithMathClass
+  - org.apache.commons.math.stat.descriptive.SynchronizedSummaryStatisticsTest::testOverrideVarianceWithMathClass
+

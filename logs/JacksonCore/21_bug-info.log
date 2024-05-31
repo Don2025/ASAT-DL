@@ -1,0 +1,43 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JacksonCore
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JacksonCore
+       Program: jackson-core
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JacksonCore/JacksonCore.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jackson-core.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JacksonCore/active-bugs.csv
+Number of bugs: 26
+--------------------------------------------------------------------------------
+
+Summary for Bug: JacksonCore-21
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+96faf2ecd985dfc838e2bf6f6ae4d9d4b310861b
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2017-05-23 16:08:31 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+330
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/FasterXML/jackson-core/issues/330
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.fasterxml.jackson.core.filter.TokenVerifyingParserFiltering330Test::testTokensSingleMatchWithPath
+   --> junit.framework.AssertionFailedError: Expected token END_OBJECT, current token null
+ - com.fasterxml.jackson.core.filter.TokenVerifyingParserFiltering330Test::testBasicSingleMatchFilteringWithPath
+   --> junit.framework.ComparisonFailure: expected:<{"ob":{"value":3}[}]> but was:<{"ob":{"value":3}[]>
+ - com.fasterxml.jackson.core.filter.TokenVerifyingParserFiltering330Test::testSkippingForSingleWithPath
+   --> junit.framework.AssertionFailedError: expected:<END_OBJECT> but was:<null>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.fasterxml.jackson.core.filter.FilteringParserDelegate
+--------------------------------------------------------------------------------

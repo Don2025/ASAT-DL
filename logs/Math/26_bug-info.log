@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Math
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Math
+       Program: commons-math
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Math/Math.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-math.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Math/active-bugs.csv
+Number of bugs: 106
+--------------------------------------------------------------------------------
+
+Summary for Bug: Math-26
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+1566dd339f6efc2347b0962fac7fce22adbc31ff
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2012-08-01 21:24:27 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+MATH-836
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/MATH-836
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.math3.fraction.FractionTest::testIntegerOverflow
+   --> junit.framework.AssertionFailedError: an exception should have been thrown
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.math3.fraction.Fraction
+--------------------------------------------------------------------------------

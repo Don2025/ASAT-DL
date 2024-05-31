@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Lang/19_buggy...
+
+Testing /home/tyd/defects4j/tmp/Lang/19_buggy...
+Failing tests: 2
+  - org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest::testUnfinishedEntity
+  - org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest::testOutOfBounds
+

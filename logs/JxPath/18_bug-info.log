@@ -1,0 +1,41 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JxPath
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JxPath
+       Program: commons-jxpath
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JxPath/JxPath.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-jxpath.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JxPath/active-bugs.csv
+Number of bugs: 22
+--------------------------------------------------------------------------------
+
+Summary for Bug: JxPath-18
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+4882e4423ae7bfb80c65da4aa547ef5aed16a007
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2008-02-03 03:36:01 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+JXPATH-115
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/JXPATH-115
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.jxpath.ri.model.dom.DOMModelTest::testAxisAttribute
+   --> junit.framework.AssertionFailedError: Evaluating value iterator <vendor/product/price:amount/attribute::node()> expected:<[10%, 20%]> but was:<[]>
+ - org.apache.commons.jxpath.ri.model.jdom.JDOMModelTest::testAxisAttribute
+   --> junit.framework.AssertionFailedError: Evaluating value iterator <vendor/product/price:amount/attribute::node()> expected:<[10%, 20%]> but was:<[]>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.jxpath.ri.axes.AttributeContext
+--------------------------------------------------------------------------------

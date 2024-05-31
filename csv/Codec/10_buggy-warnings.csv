@@ -1,0 +1,8 @@
+"Warning Type","Code","Warning"
+"Dodgy code Warning","EI2","new org.apache.commons.codec.language.DoubleMetaphone$DoubleMetaphoneResult(DoubleMetaphone, int) may expose internal representation by storing an externally mutable object into DoubleMetaphone$DoubleMetaphoneResult.this$0"
+"Malicious code vulnerability Warning","SS","Unread field: org.apache.commons.codec.binary.BaseNCodec.PAD; should this field be static?"
+"Performance Warning","SF","Switch statement found in org.apache.commons.codec.binary.Base32.decode(byte[], int, int) where default case is missing"
+"Performance Warning","SF","Switch statement found in org.apache.commons.codec.binary.Base32.encode(byte[], int, int) where default case is missing"
+"Performance Warning","SF","Switch statement found in org.apache.commons.codec.binary.Base64.decode(byte[], int, int) where default case is missing"
+"Performance Warning","SF","Switch statement found in org.apache.commons.codec.binary.Base64.encode(byte[], int, int) where default case is missing"
+"Performance Warning","SF","Switch statement found in org.apache.commons.codec.language.Metaphone.metaphone(String) where default case is missing"

@@ -1,0 +1,8 @@
+Compiling /home/tyd/defects4j/tmp/Closure/143_buggy...
+
+Testing /home/tyd/defects4j/tmp/Closure/143_buggy...
+Failing tests: 3
+  - com.google.javascript.jscomp.CommandLineRunnerTest::testDefineFlag3
+  - com.google.javascript.jscomp.RemoveConstantExpressionsTest::testCall1
+  - com.google.javascript.jscomp.RemoveConstantExpressionsTest::testNew1
+

@@ -1,0 +1,41 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Lang
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Lang
+       Program: commons-lang
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Lang/Lang.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-lang.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Lang/active-bugs.csv
+Number of bugs: 64
+--------------------------------------------------------------------------------
+
+Summary for Bug: Lang-15
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+8185a9e681d6de5f40b0ed07b40730c9761bad37
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2011-11-17 23:59:36 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+LANG-775
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/LANG-775
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.lang3.reflect.TypeUtilsTest::testGetTypeArguments
+   --> junit.framework.AssertionFailedError: expected:<2> but was:<0>
+ - org.apache.commons.lang3.reflect.TypeUtilsTest::testIsAssignable
+   --> junit.framework.AssertionFailedError: type class org.apache.commons.lang3.reflect.TypeUtilsTest$Thing not assignable to org.apache.commons.lang3.reflect.TypeUtilsTest$This<java.lang.String, java.lang.String>!
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.lang3.reflect.TypeUtils
+--------------------------------------------------------------------------------

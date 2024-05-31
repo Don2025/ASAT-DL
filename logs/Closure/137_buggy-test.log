@@ -1,0 +1,10 @@
+Compiling /home/tyd/defects4j/tmp/Closure/137_buggy...
+
+Testing /home/tyd/defects4j/tmp/Closure/137_buggy...
+Failing tests: 5
+  - com.google.javascript.jscomp.MakeDeclaredNamesUniqueTest::testOnlyInversion3
+  - com.google.javascript.jscomp.MakeDeclaredNamesUniqueTest::testOnlyInversion4
+  - com.google.javascript.jscomp.MakeDeclaredNamesUniqueTest::testArguments
+  - com.google.javascript.jscomp.MakeDeclaredNamesUniqueTest::testMakeLocalNamesUniqueWithContext1
+  - com.google.javascript.jscomp.NormalizeTest::testRemoveDuplicateVarDeclarations2
+

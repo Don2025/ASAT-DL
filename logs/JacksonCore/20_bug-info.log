@@ -1,0 +1,41 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JacksonCore
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JacksonCore
+       Program: jackson-core
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JacksonCore/JacksonCore.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jackson-core.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JacksonCore/active-bugs.csv
+Number of bugs: 26
+--------------------------------------------------------------------------------
+
+Summary for Bug: JacksonCore-20
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+fa64390b1bd5f1435daa9d2b17a58594cfb22817
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2016-09-01 15:32:46 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+318
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/FasterXML/jackson-core/issues/318
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.fasterxml.jackson.core.base64.Base64GenerationTest::testBinaryAsEmbeddedObject
+   --> com.fasterxml.jackson.core.JsonGenerationException: No native support for writing embedded objects
+ - com.fasterxml.jackson.core.main.TestGeneratorMisc::testAsEmbedded
+   --> com.fasterxml.jackson.core.JsonGenerationException: No native support for writing embedded objects
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.fasterxml.jackson.core.JsonGenerator
+--------------------------------------------------------------------------------

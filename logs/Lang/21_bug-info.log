@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Lang
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Lang
+       Program: commons-lang
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Lang/Lang.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-lang.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Lang/active-bugs.csv
+Number of bugs: 64
+--------------------------------------------------------------------------------
+
+Summary for Bug: Lang-21
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+55f642725742513824975af0e5e91cb1920b6d72
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2011-02-02 21:55:15 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+LANG-677
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/LANG-677
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.lang3.time.DateUtilsTest::testIsSameLocalTime_Cal
+   --> junit.framework.AssertionFailedError: LANG-677
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.lang3.time.DateUtils
+--------------------------------------------------------------------------------

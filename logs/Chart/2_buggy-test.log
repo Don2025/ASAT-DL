@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Chart/2_buggy...
+
+Testing /home/tyd/defects4j/tmp/Chart/2_buggy...
+Failing tests: 2
+  - org.jfree.data.general.junit.DatasetUtilitiesTests::testBug2849731_2
+  - org.jfree.data.general.junit.DatasetUtilitiesTests::testBug2849731_3
+

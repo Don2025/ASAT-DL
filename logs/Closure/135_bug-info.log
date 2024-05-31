@@ -1,0 +1,42 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Closure
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Closure
+       Program: closure-compiler
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Closure/Closure.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/closure-compiler.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Closure/active-bugs.csv
+Number of bugs: 174
+--------------------------------------------------------------------------------
+
+Summary for Bug: Closure-135
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+d1f25380b5d74c5303533491e36ae4b33a50e2da
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2010-02-05 18:31:28 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+59
+--------------------------------------------------------------------------------
+Bug report url:
+https://storage.googleapis.com/google-code-archive/v2/code.google.com/closure-compiler/issues/issue-59.json
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.google.javascript.jscomp.DevirtualizePrototypeMethodsTest::testRewritePrototypeMethods2
+   --> junit.framework.AssertionFailedError: expected:<[FUNCTION a = function (this:a): ?, NAME JSCompiler_StaticMethods_foo$self = a, FUNCTION JSCompiler_StaticMethods_foo = function (a): number, NAME JSCompiler_StaticMethods_bar$self = a, FUNCTION JSCompiler_StaticMethods_bar = function (a, number): number, FUNCTION JSCompiler_StaticMethods_baz = function (a): ?, NEW a = a, CALL JSCompiler_StaticMethods_foo = number, CALL JSCompiler_StaticMethods_bar = number, CALL JSCompiler_StaticMethods_baz = ?]> but was:<[FUNCTION a = function (this:a): ?, NAME JSCompiler_StaticMethods_foo$self = null, FUNCTION JSCompiler_StaticMethods_foo = function (a): number, NAME JSCompiler_StaticMethods_bar$self = null, FUNCTION JSCompiler_StaticMethods_bar = function (a, number): number, FUNCTION JSCompiler_StaticMethods_baz = function (a): ?, NEW a = a, CALL JSCompiler_StaticMethods_foo = number, CALL JSCompiler_StaticMethods_bar = number, CALL JSCompiler_StaticMethods_baz = ?]>
+ - com.google.javascript.jscomp.TypeCheckTest::testGoodExtends9
+   --> junit.framework.AssertionFailedError: unexpected warnings(s):
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.google.javascript.jscomp.DevirtualizePrototypeMethods
+ - com.google.javascript.rhino.jstype.FunctionType
+--------------------------------------------------------------------------------

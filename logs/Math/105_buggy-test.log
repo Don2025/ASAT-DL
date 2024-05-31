@@ -1,0 +1,6 @@
+Compiling /home/tyd/defects4j/tmp/Math/105_buggy...
+
+Testing /home/tyd/defects4j/tmp/Math/105_buggy...
+Failing tests: 1
+  - org.apache.commons.math.stat.regression.SimpleRegressionTest::testSSENonNegative
+

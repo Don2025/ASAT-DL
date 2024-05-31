@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Closure/11_buggy...
+
+Testing /home/tyd/defects4j/tmp/Closure/11_buggy...
+Failing tests: 2
+  - com.google.javascript.jscomp.TypeCheckTest::testGetprop4
+  - com.google.javascript.jscomp.TypeCheckTest::testIssue810
+

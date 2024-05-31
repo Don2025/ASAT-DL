@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Mockito
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Mockito
+       Program: mockito
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Mockito/Mockito.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/mockito.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Mockito/active-bugs.csv
+Number of bugs: 38
+--------------------------------------------------------------------------------
+
+Summary for Bug: Mockito-21
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+8912aa176ea8414c2fc57df0d9b030b918630e9f
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2014-11-17 00:42:03 +0100
+--------------------------------------------------------------------------------
+Bug report id:
+92
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/mockito/mockito/issues/92
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.mockito.internal.creation.instance.ConstructorInstantiatorTest::creates_instances_of_inner_classes
+   --> org.mockito.internal.creation.instance.InstantationException: Unable to create mock instance of 'SomeInnerClass'.
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.mockito.internal.creation.instance.ConstructorInstantiator
+--------------------------------------------------------------------------------

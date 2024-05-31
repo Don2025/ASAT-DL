@@ -1,0 +1,41 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Math
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Math
+       Program: commons-math
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Math/Math.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-math.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Math/active-bugs.csv
+Number of bugs: 106
+--------------------------------------------------------------------------------
+
+Summary for Bug: Math-68
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+615ca9a000c253575e6f62bed87db6110b750834
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2010-05-29 18:15:50 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+MATH-362
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/MATH-362
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.math.optimization.general.MinpackTest::testMinpackJennrichSampson
+   --> junit.framework.AssertionFailedError: expected:<0.2578330049> but was:<0.257819926636807>
+ - org.apache.commons.math.optimization.general.MinpackTest::testMinpackFreudensteinRoth
+   --> junit.framework.AssertionFailedError: expected:<11.4121122022341> but was:<11.41300466147456>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer
+--------------------------------------------------------------------------------

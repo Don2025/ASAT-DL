@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Lang
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Lang
+       Program: commons-lang
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Lang/Lang.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-lang.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Lang/active-bugs.csv
+Number of bugs: 64
+--------------------------------------------------------------------------------
+
+Summary for Bug: Lang-56
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+672e3a8ead2970181c32cf5fc70a3ea3d020c1fc
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2006-12-26 22:05:47 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+LANG-303
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/LANG-303
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.lang.time.FastDateFormatTest::testLang303
+   --> org.apache.commons.lang.SerializationException: java.io.NotSerializableException: org.apache.commons.lang.time.FastDateFormat$PaddedNumberField
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.lang.time.FastDateFormat
+--------------------------------------------------------------------------------

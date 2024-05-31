@@ -1,0 +1,8 @@
+Compiling /home/tyd/defects4j/tmp/Codec/6_buggy...
+
+Testing /home/tyd/defects4j/tmp/Codec/6_buggy...
+Failing tests: 3
+  - org.apache.commons.codec.binary.Base64InputStreamTest::testCodec101
+  - org.apache.commons.codec.language.SoundexTest::testUsMappingEWithAcute
+  - org.apache.commons.codec.language.SoundexTest::testUsMappingOWithDiaeresis
+

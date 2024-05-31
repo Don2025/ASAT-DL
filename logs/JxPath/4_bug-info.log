@@ -1,0 +1,50 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JxPath
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JxPath
+       Program: commons-jxpath
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JxPath/JxPath.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-jxpath.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JxPath/active-bugs.csv
+Number of bugs: 22
+--------------------------------------------------------------------------------
+
+Summary for Bug: JxPath-4
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+9f912437a14392f8d4c98aa811e9134fbf7b5a52
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2007-05-16 19:47:47 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+JXPATH-83
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/JXPATH-83
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.jxpath.ri.model.XMLSpaceTest::testPreserveDOM
+   --> junit.framework.AssertionFailedError: expected:<foo> but was:< foo >
+ - org.apache.commons.jxpath.ri.model.XMLSpaceTest::testNestedJDOM
+   --> junit.framework.AssertionFailedError: expected:<> but was:<foo;bar; baz >
+ - org.apache.commons.jxpath.ri.model.XMLSpaceTest::testNestedWithCommentsJDOM
+   --> junit.framework.AssertionFailedError: expected:<> but was:<foo;bar; baz >
+ - org.apache.commons.jxpath.ri.model.XMLSpaceTest::testPreserveJDOM
+   --> junit.framework.AssertionFailedError: expected:<foo> but was:< foo >
+ - org.apache.commons.jxpath.ri.model.XMLSpaceTest::testNestedDOM
+   --> junit.framework.AssertionFailedError: expected:<foo
+ - org.apache.commons.jxpath.ri.model.XMLSpaceTest::testNestedWithCommentsDOM
+   --> junit.framework.AssertionFailedError: expected:<foo
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.jxpath.ri.model.dom.DOMNodePointer
+ - org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer
+--------------------------------------------------------------------------------

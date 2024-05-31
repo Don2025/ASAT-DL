@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Mockito/9_buggy...
+
+Testing /home/tyd/defects4j/tmp/Mockito/9_buggy...
+Failing tests: 3
+  - org.mockitousage.constructor.CreatingMocksWithConstructorTest::abstractMethodStubbed
+  - org.mockitousage.constructor.CreatingMocksWithConstructorTest::testCallsRealInterfaceMethod
+  - org.mockitousage.constructor.CreatingMocksWithConstructorTest::abstractMethodReturnsDefault

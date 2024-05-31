@@ -1,0 +1,43 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Time
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Time
+       Program: joda-time
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Time/Time.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/joda-time.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Time/active-bugs.csv
+Number of bugs: 26
+--------------------------------------------------------------------------------
+
+Summary for Bug: Time-5
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+a6cb59ed2280ab0a32995fa8b5f1a7b0d47cb815
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2013-11-01 14:06:59 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+79
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/JodaOrg/joda-time/issues/79
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.joda.time.TestPeriod_Basics::testNormalizedStandard_periodType_months1
+   --> java.lang.UnsupportedOperationException: Field is not supported
+ - org.joda.time.TestPeriod_Basics::testNormalizedStandard_periodType_months2
+   --> java.lang.UnsupportedOperationException: Field is not supported
+ - org.joda.time.TestPeriod_Basics::testNormalizedStandard_periodType_monthsWeeks
+   --> java.lang.UnsupportedOperationException: Field is not supported
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.joda.time.Period
+--------------------------------------------------------------------------------

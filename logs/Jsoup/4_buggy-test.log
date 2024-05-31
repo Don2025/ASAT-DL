@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Jsoup/4_buggy...
+
+Testing /home/tyd/defects4j/tmp/Jsoup/4_buggy...
+Failing tests: 2
+  - org.jsoup.nodes.EntitiesTest::escape
+  - org.jsoup.nodes.EntitiesTest::caseSensitive
+

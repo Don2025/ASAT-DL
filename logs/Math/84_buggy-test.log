@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Math/84_buggy...
+
+Testing /home/tyd/defects4j/tmp/Math/84_buggy...
+Failing tests: 2
+  - org.apache.commons.math.optimization.direct.MultiDirectionalTest::testMinimizeMaximize
+  - org.apache.commons.math.optimization.direct.MultiDirectionalTest::testMath283
+

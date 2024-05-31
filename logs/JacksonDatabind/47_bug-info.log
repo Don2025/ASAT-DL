@@ -1,0 +1,41 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JacksonDatabind
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JacksonDatabind
+       Program: jackson-databind
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/JacksonDatabind.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jackson-databind.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/active-bugs.csv
+Number of bugs: 112
+--------------------------------------------------------------------------------
+
+Summary for Bug: JacksonDatabind-47
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+ebadfd25ed1244b170f7af2414c35673eb055a29
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2016-05-19 15:36:04 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+1231
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/FasterXML/jackson-databind/issues/1231
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.fasterxml.jackson.databind.ser.TestJsonSerialize::testBrokenAnnotation
+   --> junit.framework.AssertionFailedError: Expected an exception with one of substrings ([types not related]): got one with message "Failed to widen type [simple type, class java.lang.Long] with annotation (value java.lang.String), from 'getValue': Class java.lang.String not a super-type of [simple type, class java.lang.Long]"
+ - com.fasterxml.jackson.databind.ser.TestJsonSerializeAs::testSpecializedAsIntermediate
+   --> com.fasterxml.jackson.databind.JsonMappingException: Failed to widen type [simple type, class com.fasterxml.jackson.databind.ser.TestJsonSerializeAs$Bean1178Base] with annotation (value com.fasterxml.jackson.databind.ser.TestJsonSerializeAs$Bean1178Abstract), from 'value': Class com.fasterxml.jackson.databind.ser.TestJsonSerializeAs$Bean1178Abstract not a super-type of [simple type, class com.fasterxml.jackson.databind.ser.TestJsonSerializeAs$Bean1178Base]
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.fasterxml.jackson.databind.AnnotationIntrospector
+--------------------------------------------------------------------------------

@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Cli/23_buggy...
+
+Testing /home/tyd/defects4j/tmp/Cli/23_buggy...
+Failing tests: 2
+  - org.apache.commons.cli.bug.BugCLI162Test::testInfiniteLoop
+  - org.apache.commons.cli.bug.BugCLI162Test::testPrintHelpLongLines
+

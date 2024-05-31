@@ -1,0 +1,41 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Mockito
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Mockito
+       Program: mockito
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Mockito/Mockito.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/mockito.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Mockito/active-bugs.csv
+Number of bugs: 38
+--------------------------------------------------------------------------------
+
+Summary for Bug: Mockito-36
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+84c142f56fe971ed52ecfe42b42bc0aa7bef8354
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2009-11-08 20:07:50 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+140
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/mockito/mockito/issues/140
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.mockito.internal.invocation.InvocationTest::shouldScreamWhenCallingRealMethodOnInterface
+   --> java.lang.NullPointerException
+ - org.mockitousage.spies.SpyingOnInterfacesTest::shouldFailInRuntimeWhenCallingRealMethodOnInterface
+   --> java.lang.NoSuchMethodError: java.lang.Object.get(I)Ljava/lang/Object;
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.mockito.internal.invocation.Invocation
+--------------------------------------------------------------------------------

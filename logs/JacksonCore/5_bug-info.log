@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JacksonCore
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JacksonCore
+       Program: jackson-core
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JacksonCore/JacksonCore.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jackson-core.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JacksonCore/active-bugs.csv
+Number of bugs: 26
+--------------------------------------------------------------------------------
+
+Summary for Bug: JacksonCore-5
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+0d9cd9fa434c0070638332b7f2243af0277461eb
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2014-12-07 10:16:55 -0800
+--------------------------------------------------------------------------------
+Bug report id:
+173
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/FasterXML/jackson-core/issues/173
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.fasterxml.jackson.core.TestJsonPointer::testWonkyNumber173
+   --> java.lang.NumberFormatException: For input string: "1e0"
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.fasterxml.jackson.core.JsonPointer
+--------------------------------------------------------------------------------

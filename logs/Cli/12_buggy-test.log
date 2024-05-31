@@ -1,0 +1,8 @@
+Compiling /home/tyd/defects4j/tmp/Cli/12_buggy...
+
+Testing /home/tyd/defects4j/tmp/Cli/12_buggy...
+Failing tests: 3
+  - org.apache.commons.cli.GnuParserTest::testShortWithEqual
+  - org.apache.commons.cli.GnuParserTest::testLongWithEqualSingleDash
+  - org.apache.commons.cli.GnuParserTest::testLongWithEqual
+

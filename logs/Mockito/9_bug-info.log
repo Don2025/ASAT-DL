@@ -1,0 +1,43 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Mockito
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Mockito
+       Program: mockito
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Mockito/Mockito.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/mockito.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Mockito/active-bugs.csv
+Number of bugs: 38
+--------------------------------------------------------------------------------
+
+Summary for Bug: Mockito-9
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+31f908029b8cd9b1f32bed3a41651b30ebb47b9f
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2014-11-22 22:13:29 +0100
+--------------------------------------------------------------------------------
+Bug report id:
+122
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/mockito/mockito/issues/122
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.mockitousage.constructor.CreatingMocksWithConstructorTest::abstractMethodStubbed
+   --> org.mockito.exceptions.base.MockitoException: 
+ - org.mockitousage.constructor.CreatingMocksWithConstructorTest::testCallsRealInterfaceMethod
+   --> org.mockito.exceptions.base.MockitoException: 
+ - org.mockitousage.constructor.CreatingMocksWithConstructorTest::abstractMethodReturnsDefault
+   --> org.mockito.exceptions.base.MockitoException: 
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.mockito.internal.stubbing.answers.CallsRealMethods
+--------------------------------------------------------------------------------

@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Math
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Math
+       Program: commons-math
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Math/Math.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-math.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Math/active-bugs.csv
+Number of bugs: 106
+--------------------------------------------------------------------------------
+
+Summary for Bug: Math-100
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+876d133334e8dde309cc11f884c0dd4cc9ce530e
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2008-03-28 20:06:54 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+MATH-200
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/MATH-200
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.math.estimation.GaussNewtonEstimatorTest::testBoundParameters
+   --> java.lang.ArrayIndexOutOfBoundsException: 6
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.math.estimation.AbstractEstimator
+--------------------------------------------------------------------------------

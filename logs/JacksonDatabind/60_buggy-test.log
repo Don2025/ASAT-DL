@@ -1,0 +1,8 @@
+Compiling /home/tyd/defects4j/tmp/JacksonDatabind/60_buggy...
+
+Testing /home/tyd/defects4j/tmp/JacksonDatabind/60_buggy...
+Failing tests: 3
+  - com.fasterxml.jackson.databind.introspect.TestScalaLikeImplicitProperties::testGetterSetterProperty
+  - com.fasterxml.jackson.databind.jsontype.TestDefaultWithCreators::testWithCreatorAndJsonValue
+  - com.fasterxml.jackson.databind.jsontype.ext.ExternalTypeIdTest::testWithAsValue
+

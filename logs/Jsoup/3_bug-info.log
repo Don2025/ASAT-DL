@@ -1,0 +1,45 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Jsoup
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Jsoup
+       Program: jsoup
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/Jsoup.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jsoup.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/active-bugs.csv
+Number of bugs: 93
+--------------------------------------------------------------------------------
+
+Summary for Bug: Jsoup-3
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+0081d162cca8ad23b500b53799195fec644f261b
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2011-07-02 21:11:53 +1000
+--------------------------------------------------------------------------------
+Bug report id:
+21
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/jhy/jsoup/issues/21
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jsoup.nodes.ElementTest::testAppendRowToTable
+   --> junit.framework.AssertionFailedError: expected:<...tr><td>1</td></tr><t[r><td>2</td></tr]></table>> but was:<...tr><td>1</td></tr><t[able><tr><td>2</td></tr></table]></table>>
+ - org.jsoup.nodes.ElementTest::testPrependRowToTable
+   --> junit.framework.AssertionFailedError: expected:<<table><t[r><td>2</td></tr]><tr><td>1</td></tr>...> but was:<<table><t[able><tr><td>2</td></tr></table]><tr><td>1</td></tr>...>
+ - org.jsoup.parser.ParserTest::handlesNestedImplicitTable
+   --> junit.framework.AssertionFailedError: expected:<...> <tr><td> <table><t[r><td>3</td> <td>4</td></tr></table> </td></tr><tr><td>5]</td></tr></table>> but was:<...> <tr><td> <table><t[d>3</td> <td>4</td></table> <tr><td>5</td></tr>]</td></tr></table>>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jsoup.nodes.Element
+ - org.jsoup.parser.Parser
+ - org.jsoup.parser.Tag
+--------------------------------------------------------------------------------

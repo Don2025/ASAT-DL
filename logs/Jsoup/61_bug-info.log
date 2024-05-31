@@ -1,0 +1,41 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Jsoup
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Jsoup
+       Program: jsoup
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/Jsoup.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jsoup.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/active-bugs.csv
+Number of bugs: 93
+--------------------------------------------------------------------------------
+
+Summary for Bug: Jsoup-61
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+83f01fd864e59fa69c894da06f4a15489222d401
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2017-01-21 15:26:56 -0800
+--------------------------------------------------------------------------------
+Bug report id:
+814
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/jhy/jsoup/issues/814
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jsoup.select.ElementsTest::hasClassCaseInsensitive
+   --> junit.framework.AssertionFailedError
+ - org.jsoup.select.SelectorTest::testByClassCaseInsensitive
+   --> junit.framework.AssertionFailedError: expected:<3> but was:<1>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jsoup.nodes.Element
+--------------------------------------------------------------------------------

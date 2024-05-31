@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Lang
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Lang
+       Program: commons-lang
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Lang/Lang.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-lang.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Lang/active-bugs.csv
+Number of bugs: 64
+--------------------------------------------------------------------------------
+
+Summary for Bug: Lang-45
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+d95fcd8e24568b4f9d3cb9da922a4029e293c793
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2008-05-11 05:18:02 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+LANG-419
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/LANG-419
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.lang.WordUtilsTest::testAbbreviate
+   --> java.lang.StringIndexOutOfBoundsException: String index out of range: 15
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.lang.WordUtils
+--------------------------------------------------------------------------------

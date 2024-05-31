@@ -1,0 +1,16 @@
+Summary of configuration for Project: Collections
+--------------------------------------------------------------------------------
+    Script dir: /home/artifact/defects4j/framework
+      Base dir: /home/artifact/defects4j
+    Major root: /home/artifact/defects4j/major
+      Repo dir: /home/artifact/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Collections
+       Program: commons-collections
+    Build file: /home/artifact/defects4j/framework/projects/Collections/Collections.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/artifact/defects4j/project_repos/commons-collections.git
+     Commit db: /home/artifact/defects4j/framework/projects/Collections/active-bugs.csv
+Number of bugs: 4
+--------------------------------------------------------------------------------

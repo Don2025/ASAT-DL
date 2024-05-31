@@ -1,0 +1,41 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Jsoup
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Jsoup
+       Program: jsoup
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/Jsoup.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jsoup.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/active-bugs.csv
+Number of bugs: 93
+--------------------------------------------------------------------------------
+
+Summary for Bug: Jsoup-42
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+c01fcd338d73dc039e6a3a6cd2c449d9c9d41304
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2015-04-02 19:14:23 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+489
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/jhy/jsoup/issues/489
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jsoup.nodes.FormElementTest::createsFormData
+   --> junit.framework.AssertionFailedError: expected:<6> but was:<7>
+ - org.jsoup.nodes.FormElementTest::usesOnForCheckboxValueIfNoValueSet
+   --> junit.framework.AssertionFailedError: expected:<[on]> but was:<[]>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jsoup.nodes.FormElement
+--------------------------------------------------------------------------------

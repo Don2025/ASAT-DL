@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Lang/61_buggy...
+
+Testing /home/tyd/defects4j/tmp/Lang/61_buggy...
+Failing tests: 2
+  - org.apache.commons.lang.text.StrBuilderTest::testIndexOfLang294
+  - org.apache.commons.lang.text.StrBuilderTest::testLang294
+

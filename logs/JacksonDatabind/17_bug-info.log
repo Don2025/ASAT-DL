@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JacksonDatabind
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JacksonDatabind
+       Program: jackson-databind
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/JacksonDatabind.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jackson-databind.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/active-bugs.csv
+Number of bugs: 112
+--------------------------------------------------------------------------------
+
+Summary for Bug: JacksonDatabind-17
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+a143c05db7a911f98f8bf59beb13cfcb7689395d
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2015-05-14 20:56:50 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+793
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/FasterXML/jackson-databind/issues/793
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.fasterxml.jackson.databind.node.TestJsonNode::testArrayWithDefaultTyping
+   --> com.fasterxml.jackson.databind.JsonMappingException: Unexpected token (VALUE_NUMBER_INT), expected VALUE_STRING: need JSON String that contains type id (for subtype of com.fasterxml.jackson.databind.JsonNode)
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.fasterxml.jackson.databind.ObjectMapper
+--------------------------------------------------------------------------------

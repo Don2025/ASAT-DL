@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Math
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Math
+       Program: commons-math
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Math/Math.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-math.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Math/active-bugs.csv
+Number of bugs: 106
+--------------------------------------------------------------------------------
+
+Summary for Bug: Math-97
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+ed492bd0c5c5c3a0258a65cb31cc8723d8f011fd
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2008-06-23 13:46:46 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+MATH-204
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/MATH-204
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.math.analysis.BrentSolverTest::testRootEndpoints
+   --> java.lang.IllegalArgumentException: Function values at endpoints do not have different signs.  Endpoints: [3.0,3.141592653589793]  Values: [0.1411200080598672,1.2246467991473532E-16]
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.math.analysis.BrentSolver
+--------------------------------------------------------------------------------

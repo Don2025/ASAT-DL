@@ -1,0 +1,9 @@
+Compiling /home/tyd/defects4j/tmp/Chart/25_buggy...
+
+Testing /home/tyd/defects4j/tmp/Chart/25_buggy...
+Failing tests: 4
+  - org.jfree.chart.renderer.category.junit.StatisticalBarRendererTests::testDrawWithNullMeanVertical
+  - org.jfree.chart.renderer.category.junit.StatisticalBarRendererTests::testDrawWithNullDeviationVertical
+  - org.jfree.chart.renderer.category.junit.StatisticalBarRendererTests::testDrawWithNullMeanHorizontal
+  - org.jfree.chart.renderer.category.junit.StatisticalBarRendererTests::testDrawWithNullDeviationHorizontal
+

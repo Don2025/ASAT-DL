@@ -1,0 +1,6 @@
+Compiling /home/tyd/defects4j/tmp/Mockito/28_buggy...
+
+Testing /home/tyd/defects4j/tmp/Mockito/28_buggy...
+Failing tests: 1
+  - org.mockitousage.bugs.InjectionByTypeShouldFirstLookForExactTypeThenAncestorTest::mock_should_be_injected_once_and_in_the_best_matching_type
+

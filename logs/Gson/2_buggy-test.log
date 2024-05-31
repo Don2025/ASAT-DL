@@ -1,0 +1,6 @@
+Compiling /home/tyd/defects4j/tmp/Gson/2_buggy...
+
+Testing /home/tyd/defects4j/tmp/Gson/2_buggy...
+Failing tests: 1
+  - com.google.gson.functional.DefaultTypeAdaptersTest::testJsonElementTypeMismatch
+

@@ -1,0 +1,47 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JacksonXml
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JacksonXml
+       Program: jackson-dataformat-xml
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JacksonXml/JacksonXml.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jackson-dataformat-xml.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JacksonXml/active-bugs.csv
+Number of bugs: 6
+--------------------------------------------------------------------------------
+
+Summary for Bug: JacksonXml-6
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+8fd9463dad8d2232c1e947403ead465d6a3e5f73
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2018-12-05 22:08:44 -0800
+--------------------------------------------------------------------------------
+Bug report id:
+270
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/FasterXML/jackson-dataformat-xml/issues/270
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.fasterxml.jackson.dataformat.xml.ser.TestBinaryStreamToXMLSerialization::testWith0Bytes
+   --> com.fasterxml.jackson.databind.JsonMappingException: Operation not supported by generator of type com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator (through reference chain: com.fasterxml.jackson.dataformat.xml.ser.TestBinaryStreamToXMLSerialization$TestPojo["field"])
+ - com.fasterxml.jackson.dataformat.xml.ser.TestBinaryStreamToXMLSerialization::testWith2Bytes
+   --> com.fasterxml.jackson.databind.JsonMappingException: Operation not supported by generator of type com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator (through reference chain: com.fasterxml.jackson.dataformat.xml.ser.TestBinaryStreamToXMLSerialization$TestPojo["field"])
+ - com.fasterxml.jackson.dataformat.xml.ser.TestBinaryStreamToXMLSerialization::testWith3Bytes
+   --> com.fasterxml.jackson.databind.JsonMappingException: Operation not supported by generator of type com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator (through reference chain: com.fasterxml.jackson.dataformat.xml.ser.TestBinaryStreamToXMLSerialization$TestPojo["field"])
+ - com.fasterxml.jackson.dataformat.xml.ser.TestBinaryStreamToXMLSerialization::testWith4Bytes
+   --> com.fasterxml.jackson.databind.JsonMappingException: Operation not supported by generator of type com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator (through reference chain: com.fasterxml.jackson.dataformat.xml.ser.TestBinaryStreamToXMLSerialization$TestPojo["field"])
+ - com.fasterxml.jackson.dataformat.xml.ser.TestBinaryStreamToXMLSerialization::testWith1Byte
+   --> com.fasterxml.jackson.databind.JsonMappingException: Operation not supported by generator of type com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator (through reference chain: com.fasterxml.jackson.dataformat.xml.ser.TestBinaryStreamToXMLSerialization$TestPojo["field"])
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator
+--------------------------------------------------------------------------------

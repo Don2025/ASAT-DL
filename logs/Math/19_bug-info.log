@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Math
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Math
+       Program: commons-math
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Math/Math.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-math.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Math/active-bugs.csv
+Number of bugs: 106
+--------------------------------------------------------------------------------
+
+Summary for Bug: Math-19
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+c73fad0a0d42103b5e13a68317ea95b1090263ba
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2012-09-21 15:32:18 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+MATH-865
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/MATH-865
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.math3.optimization.direct.CMAESOptimizerTest::testBoundaryRangeTooLarge
+   --> java.lang.Exception: Unexpected exception, expected<org.apache.commons.math3.exception.NumberIsTooLargeException> but was<org.apache.commons.math3.exception.MathIllegalStateException>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.math3.optimization.direct.CMAESOptimizer
+--------------------------------------------------------------------------------

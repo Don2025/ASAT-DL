@@ -1,0 +1,6 @@
+Compiling /home/tyd/defects4j/tmp/Closure/104_buggy...
+
+Testing /home/tyd/defects4j/tmp/Closure/104_buggy...
+Failing tests: 1
+  - com.google.javascript.rhino.jstype.UnionTypeTest::testGreatestSubtypeUnionTypes5
+

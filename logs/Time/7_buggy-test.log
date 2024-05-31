@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Time/7_buggy...
+
+Testing /home/tyd/defects4j/tmp/Time/7_buggy...
+Failing tests: 2
+  - org.joda.time.format.TestDateTimeFormatter::testParseInto_monthDay_feb29_newYork_startOfYear
+  - org.joda.time.format.TestDateTimeFormatter::testParseInto_monthDay_feb29_tokyo_endOfYear
+

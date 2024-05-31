@@ -1,0 +1,43 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JacksonDatabind
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JacksonDatabind
+       Program: jackson-databind
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/JacksonDatabind.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jackson-databind.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/active-bugs.csv
+Number of bugs: 112
+--------------------------------------------------------------------------------
+
+Summary for Bug: JacksonDatabind-18
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+2abf5a321405a82ed4e0d3a7c876c82bb05188f9
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2015-05-21 15:28:03 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+734
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/FasterXML/jackson-databind/issues/734
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.fasterxml.jackson.databind.seq.ReadRecoveryTest::testSimpleRootRecovery
+   --> com.fasterxml.jackson.databind.JsonMappingException: Can not instantiate value of type [simple type, class com.fasterxml.jackson.databind.seq.ReadRecoveryTest$Bean] from Integral number (1); no single-int-arg constructor/factory method
+ - com.fasterxml.jackson.databind.seq.ReadRecoveryTest::testRootBeans
+   --> junit.framework.AssertionFailedError
+ - com.fasterxml.jackson.databind.seq.ReadRecoveryTest::testSimpleArrayRecovery
+   --> com.fasterxml.jackson.databind.JsonMappingException: Can not instantiate value of type [simple type, class com.fasterxml.jackson.databind.seq.ReadRecoveryTest$Bean] from Integral number (1); no single-int-arg constructor/factory method
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.fasterxml.jackson.databind.MappingIterator
+--------------------------------------------------------------------------------

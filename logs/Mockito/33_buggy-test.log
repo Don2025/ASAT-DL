@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Mockito/33_buggy...
+
+Testing /home/tyd/defects4j/tmp/Mockito/33_buggy...
+Failing tests: 2
+  - org.mockitousage.bugs.InheritedGenericsPolimorphicCallTest::shouldStubbingWork
+  - org.mockitousage.bugs.InheritedGenericsPolimorphicCallTest::shouldVerificationWorks
+

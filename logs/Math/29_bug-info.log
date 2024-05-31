@@ -1,0 +1,43 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Math
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Math
+       Program: commons-math
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Math/Math.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-math.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Math/active-bugs.csv
+Number of bugs: 106
+--------------------------------------------------------------------------------
+
+Summary for Bug: Math-29
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+7bbddc2203bed78fafe7739a97df1f53e767341a
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2012-06-11 05:52:16 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+MATH-803
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/MATH-803
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.math3.linear.SparseRealVectorTest::testEbeDivideMixedTypes
+   --> junit.framework.AssertionFailedError: entry #0, left = 0.0, right = 0.0 expected:<NaN> but was:<0.0>
+ - org.apache.commons.math3.linear.SparseRealVectorTest::testEbeMultiplyMixedTypes
+   --> junit.framework.AssertionFailedError: entry #5, left = 0.0, right = Infinity expected:<NaN> but was:<0.0>
+ - org.apache.commons.math3.linear.SparseRealVectorTest::testEbeMultiplySameType
+   --> junit.framework.AssertionFailedError: entry #5, left = 0.0, right = Infinity expected:<NaN> but was:<0.0>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.math3.linear.OpenMapRealVector
+--------------------------------------------------------------------------------

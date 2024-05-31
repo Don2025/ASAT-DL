@@ -1,0 +1,6 @@
+Compiling /home/tyd/defects4j/tmp/JxPath/10_buggy...
+
+Testing /home/tyd/defects4j/tmp/JxPath/10_buggy...
+Failing tests: 1
+  - org.apache.commons.jxpath.ri.compiler.CoreOperationTest::testEmptyNodeSetOperations
+

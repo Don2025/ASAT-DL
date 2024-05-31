@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Math
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Math
+       Program: commons-math
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Math/Math.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-math.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Math/active-bugs.csv
+Number of bugs: 106
+--------------------------------------------------------------------------------
+
+Summary for Bug: Math-89
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+62b3877f953dd47c4d301be35c77446e2cf55311
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2009-04-17 13:44:46 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+MATH-259
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/MATH-259
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.math.stat.FrequencyTest::testAddNonComparable
+   --> java.lang.ClassCastException: java.lang.Object cannot be cast to java.lang.Comparable
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.math.stat.Frequency
+--------------------------------------------------------------------------------

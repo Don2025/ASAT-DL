@@ -1,0 +1,40 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JacksonDatabind
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JacksonDatabind
+       Program: jackson-databind
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/JacksonDatabind.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jackson-databind.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/active-bugs.csv
+Number of bugs: 112
+--------------------------------------------------------------------------------
+
+Summary for Bug: JacksonDatabind-90
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+a1404d5684783ccf28dc1b0a2791ce7c0c311907
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2017-10-23 20:02:43 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+1804
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/FasterXML/jackson-databind/issues/1804
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.fasterxml.jackson.databind.creators.DelegatingArrayCreator1804Test::testDelegatingArray1804
+   --> com.fasterxml.jackson.databind.JsonMappingException: Can not construct instance of com.fasterxml.jackson.databind.creators.DelegatingArrayCreator1804Test$MyType: abstract types either need to be mapped to concrete types, have custom deserializer, or contain additional type information
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.fasterxml.jackson.databind.deser.ValueInstantiator
+ - com.fasterxml.jackson.databind.deser.std.StdValueInstantiator
+--------------------------------------------------------------------------------

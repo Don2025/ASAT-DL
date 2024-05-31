@@ -1,0 +1,45 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Math
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Math
+       Program: commons-math
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Math/Math.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-math.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Math/active-bugs.csv
+Number of bugs: 106
+--------------------------------------------------------------------------------
+
+Summary for Bug: Math-35
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+a5d8d115cb85149c62059a23e8f4d318cac0e903
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2012-04-02 18:46:42 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+MATH-776
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/MATH-776
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.math3.genetics.ElitisticListPopulationTest::testChromosomeListConstructorTooLow
+   --> junit.framework.AssertionFailedError: Expected exception: org.apache.commons.math3.exception.OutOfRangeException
+ - org.apache.commons.math3.genetics.ElitisticListPopulationTest::testConstructorTooHigh
+   --> junit.framework.AssertionFailedError: Expected exception: org.apache.commons.math3.exception.OutOfRangeException
+ - org.apache.commons.math3.genetics.ElitisticListPopulationTest::testConstructorTooLow
+   --> junit.framework.AssertionFailedError: Expected exception: org.apache.commons.math3.exception.OutOfRangeException
+ - org.apache.commons.math3.genetics.ElitisticListPopulationTest::testChromosomeListConstructorTooHigh
+   --> junit.framework.AssertionFailedError: Expected exception: org.apache.commons.math3.exception.OutOfRangeException
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.math3.genetics.ElitisticListPopulation
+--------------------------------------------------------------------------------

@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JacksonDatabind
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JacksonDatabind
+       Program: jackson-databind
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/JacksonDatabind.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jackson-databind.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/active-bugs.csv
+Number of bugs: 112
+--------------------------------------------------------------------------------
+
+Summary for Bug: JacksonDatabind-87
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+5a0ce57b5d3a6d30420267b56b3d2282c76df581
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2017-06-13 21:25:31 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+1657
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/FasterXML/jackson-databind/issues/1657
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.fasterxml.jackson.databind.deser.TestDateDeserialization::testDateUtilISO8601NoTimezoneNonDefault
+   --> junit.framework.AssertionFailedError: expected:<Wed Dec 31 16:00:00 PST 1969> but was:<Wed Dec 31 18:00:00 PST 1969>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.fasterxml.jackson.databind.util.StdDateFormat
+--------------------------------------------------------------------------------

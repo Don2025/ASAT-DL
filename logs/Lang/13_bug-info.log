@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Lang
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Lang
+       Program: commons-lang
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Lang/Lang.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-lang.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Lang/active-bugs.csv
+Number of bugs: 64
+--------------------------------------------------------------------------------
+
+Summary for Bug: Lang-13
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+bd59a1908a1df3364918be7b07782500616b15ac
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2012-02-29 14:39:01 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+LANG-788
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/LANG-788
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.lang3.SerializationUtilsTest::testPrimitiveTypeClassSerialization
+   --> org.apache.commons.lang3.SerializationException: ClassNotFoundException while reading cloned object data
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.lang3.SerializationUtils
+--------------------------------------------------------------------------------

@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Time
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Time
+       Program: joda-time
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Time/Time.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/joda-time.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Time/active-bugs.csv
+Number of bugs: 26
+--------------------------------------------------------------------------------
+
+Summary for Bug: Time-27
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+e0559c503f65641b9546c37e7c84c866caf37e66
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2010-10-27 23:15:42 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+64
+--------------------------------------------------------------------------------
+Bug report url:
+https://sourceforge.net/p/joda-time/bugs/64
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.joda.time.format.TestPeriodFormatterBuilder::testBug2495455
+   --> java.lang.IllegalArgumentException: Invalid format: "PT1003199059S" is malformed at "1003199059S"
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.joda.time.format.PeriodFormatterBuilder
+--------------------------------------------------------------------------------

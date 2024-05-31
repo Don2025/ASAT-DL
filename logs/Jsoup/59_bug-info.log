@@ -1,0 +1,41 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Jsoup
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Jsoup
+       Program: jsoup
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/Jsoup.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jsoup.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/active-bugs.csv
+Number of bugs: 93
+--------------------------------------------------------------------------------
+
+Summary for Bug: Jsoup-59
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+a623db776696c0e03f68e849147f6a0c57063c02
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2017-01-05 15:07:29 -0800
+--------------------------------------------------------------------------------
+Bug report id:
+793
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/jhy/jsoup/issues/793
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jsoup.parser.HtmlParserTest::handlesControlCodeInAttributeName
+   --> java.lang.IllegalArgumentException: String must not be empty
+ - org.jsoup.safety.CleanerTest::handlesControlCharactersAfterTagName
+   --> java.lang.IllegalArgumentException: String must not be empty
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jsoup.parser.Token
+--------------------------------------------------------------------------------

@@ -1,0 +1,41 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Mockito
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Mockito
+       Program: mockito
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Mockito/Mockito.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/mockito.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Mockito/active-bugs.csv
+Number of bugs: 38
+--------------------------------------------------------------------------------
+
+Summary for Bug: Mockito-34
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+e8cebe01abae49a09aadd6a26c6f7e2f90e5e772
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2009-12-11 20:30:44 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+157
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/mockito/mockito/issues/157
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.mockito.internal.invocation.InvocationMatcherTest::shouldMatchCaptureArgumentsWhenArgsCountDoesNOTMatch
+   --> java.lang.ArrayIndexOutOfBoundsException: 0
+ - org.mockitousage.basicapi.UsingVarargsTest::shouldMatchEasilyEmptyVararg
+   --> java.lang.ArrayIndexOutOfBoundsException: 0
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.mockito.internal.invocation.InvocationMatcher
+--------------------------------------------------------------------------------

@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Math
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Math
+       Program: commons-math
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Math/Math.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-math.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Math/active-bugs.csv
+Number of bugs: 106
+--------------------------------------------------------------------------------
+
+Summary for Bug: Math-11
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+aa2bd1d0656b0001192aa2b2ef779cfd1f3b7e4d
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2013-01-15 12:15:50 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+MATH-929
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/MATH-929
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.math3.distribution.MultivariateNormalDistributionTest::testUnivariateDistribution
+   --> junit.framework.AssertionFailedError: expected:<0.23644016090654427> but was:<0.5926675925866471>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.math3.distribution.MultivariateNormalDistribution
+--------------------------------------------------------------------------------

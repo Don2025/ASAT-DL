@@ -1,0 +1,8 @@
+Compiling /home/tyd/defects4j/tmp/Closure/4_buggy...
+
+Testing /home/tyd/defects4j/tmp/Closure/4_buggy...
+Failing tests: 3
+  - com.google.javascript.jscomp.TypeCheckTest::testImplementsExtendsLoop
+  - com.google.javascript.jscomp.TypeCheckTest::testImplementsLoop
+  - com.google.javascript.jscomp.TypeCheckTest::testConversionFromInterfaceToRecursiveConstructor
+

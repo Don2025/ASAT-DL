@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Mockito
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Mockito
+       Program: mockito
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Mockito/Mockito.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/mockito.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Mockito/active-bugs.csv
+Number of bugs: 38
+--------------------------------------------------------------------------------
+
+Summary for Bug: Mockito-28
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+0464f5657dc8c76a4ff209a2cf7fd6312885cdc3
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2010-12-20 20:11:06 +0100
+--------------------------------------------------------------------------------
+Bug report id:
+236
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/mockito/mockito/issues/236
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.mockitousage.bugs.InjectionByTypeShouldFirstLookForExactTypeThenAncestorTest::mock_should_be_injected_once_and_in_the_best_matching_type
+   --> junit.framework.AssertionFailedError: expected same:<java.lang.Object@1a6aecec> was not:<mockedBean>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.mockito.internal.configuration.DefaultInjectionEngine
+--------------------------------------------------------------------------------

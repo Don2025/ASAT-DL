@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JacksonDatabind
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JacksonDatabind
+       Program: jackson-databind
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/JacksonDatabind.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jackson-databind.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/active-bugs.csv
+Number of bugs: 112
+--------------------------------------------------------------------------------
+
+Summary for Bug: JacksonDatabind-67
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+d906a34178f27803a08e824e3c2474fc0863edc4
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2016-11-09 20:39:22 -0800
+--------------------------------------------------------------------------------
+Bug report id:
+1445
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/FasterXML/jackson-databind/issues/1445
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.fasterxml.jackson.databind.module.TestCustomEnumKeyDeserializer::testCustomEnumValueAndKeyViaModifier
+   --> com.fasterxml.jackson.databind.exc.InvalidFormatException: Can not deserialize Map key of type com.fasterxml.jackson.databind.module.TestCustomEnumKeyDeserializer$KeyEnum from String "REPlaceMENTS": not a valid representation, problem: (com.fasterxml.jackson.databind.exc.InvalidFormatException) Can not deserialize Map key of type com.fasterxml.jackson.databind.module.TestCustomEnumKeyDeserializer$KeyEnum from String "REPlaceMENTS": not one of values excepted for Enum class: [rootDirectory, replacements, licenseString]
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.fasterxml.jackson.databind.deser.BasicDeserializerFactory
+--------------------------------------------------------------------------------

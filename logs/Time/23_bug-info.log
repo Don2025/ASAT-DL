@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Time
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Time
+       Program: joda-time
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Time/Time.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/joda-time.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Time/active-bugs.csv
+Number of bugs: 26
+--------------------------------------------------------------------------------
+
+Summary for Bug: Time-23
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+14dedcbc04682c1b1b6c5ebe91bc930b79eeb572
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2011-03-31 23:46:38 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+112
+--------------------------------------------------------------------------------
+Bug report url:
+https://sourceforge.net/p/joda-time/bugs/112
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.joda.time.TestDateTimeZone::testForID_String_old
+   --> junit.framework.ComparisonFailure: expected:<[WET]> but was:<[Europe/London]>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.joda.time.DateTimeZone
+--------------------------------------------------------------------------------

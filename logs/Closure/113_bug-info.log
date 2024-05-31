@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Closure
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Closure
+       Program: closure-compiler
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Closure/Closure.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/closure-compiler.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Closure/active-bugs.csv
+Number of bugs: 174
+--------------------------------------------------------------------------------
+
+Summary for Bug: Closure-113
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+0fb76a81bbdd8ab84a00b8be2099abfb83c88668
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2013-10-04 16:50:10 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+1079
+--------------------------------------------------------------------------------
+Bug report url:
+https://storage.googleapis.com/google-code-archive/v2/code.google.com/closure-compiler/issues/issue-1079.json
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.google.javascript.jscomp.VarCheckTest::testNoUndeclaredVarWhenUsingClosurePass
+   --> junit.framework.AssertionFailedError: There should be one error. required "namespace.Class1" namespace never provided
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.google.javascript.jscomp.ProcessClosurePrimitives
+--------------------------------------------------------------------------------

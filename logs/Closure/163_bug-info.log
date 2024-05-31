@@ -1,0 +1,44 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Closure
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Closure
+       Program: closure-compiler
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Closure/Closure.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/closure-compiler.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Closure/active-bugs.csv
+Number of bugs: 174
+--------------------------------------------------------------------------------
+
+Summary for Bug: Closure-163
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+f5bcee992bf149fa39f9eafc870ea2046d5809b4
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2011-12-06 19:03:54 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+600
+--------------------------------------------------------------------------------
+Bug report url:
+https://storage.googleapis.com/google-code-archive/v2/code.google.com/closure-compiler/issues/issue-600.json
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.google.javascript.jscomp.CrossModuleMethodMotionTest::testIssue600b
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.CrossModuleMethodMotionTest::testIssue600e
+   --> junit.framework.AssertionFailedError: 
+ - com.google.javascript.jscomp.CrossModuleMethodMotionTest::testIssue600
+   --> junit.framework.AssertionFailedError: 
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.google.javascript.jscomp.AnalyzePrototypeProperties
+ - com.google.javascript.jscomp.CrossModuleMethodMotion
+--------------------------------------------------------------------------------

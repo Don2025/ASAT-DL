@@ -1,0 +1,8 @@
+Compiling /home/tyd/defects4j/tmp/JacksonDatabind/73_buggy...
+
+Testing /home/tyd/defects4j/tmp/JacksonDatabind/73_buggy...
+Failing tests: 3
+  - com.fasterxml.jackson.databind.deser.ReadOrWriteOnlyTest::testReadOnlyAndWriteOnly
+  - com.fasterxml.jackson.databind.deser.ReadOrWriteOnlyTest::testReadOnly935
+  - com.fasterxml.jackson.databind.introspect.TestScalaLikeImplicitProperties::testGetterSetterProperty
+

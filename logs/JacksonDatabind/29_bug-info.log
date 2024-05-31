@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JacksonDatabind
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JacksonDatabind
+       Program: jackson-databind
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/JacksonDatabind.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jackson-databind.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/active-bugs.csv
+Number of bugs: 112
+--------------------------------------------------------------------------------
+
+Summary for Bug: JacksonDatabind-29
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+30b5469753686548ca7a590dd1bc5114181e68a9
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2015-09-29 21:10:19 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+942
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/FasterXML/jackson-databind/pull/942
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.fasterxml.jackson.databind.jsontype.TestExternalId::testExternalTypeIdWithNull
+   --> com.fasterxml.jackson.databind.JsonMappingException: Can not deserialize instance of com.fasterxml.jackson.databind.jsontype.TestExternalId$ValueBean out of VALUE_STRING token
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler
+--------------------------------------------------------------------------------

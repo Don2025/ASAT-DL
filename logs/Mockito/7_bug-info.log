@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Mockito
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Mockito
+       Program: mockito
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Mockito/Mockito.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/mockito.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Mockito/active-bugs.csv
+Number of bugs: 38
+--------------------------------------------------------------------------------
+
+Summary for Bug: Mockito-7
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+0aaa36ce6924ca87f88e3723771413b42b80dc5a
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2014-12-31 17:39:04 +0100
+--------------------------------------------------------------------------------
+Bug report id:
+128
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/mockito/mockito/issues/128
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.mockitousage.bugs.deepstubs.DeepStubFailingWhenGenricNestedAsRawTypeTest::discoverDeepMockingOfGenerics
+   --> org.mockito.exceptions.base.MockitoException: Raw extraction not supported for : 'null'
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.mockito.internal.util.reflection.GenericMetadataSupport
+--------------------------------------------------------------------------------

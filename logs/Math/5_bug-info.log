@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Math
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Math
+       Program: commons-math
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Math/Math.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-math.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Math/active-bugs.csv
+Number of bugs: 106
+--------------------------------------------------------------------------------
+
+Summary for Bug: Math-5
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+e54a1c92302f3167b06bc04859b87ac0681bcdf3
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2013-03-22 18:55:58 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+MATH-934
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/MATH-934
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.math3.complex.ComplexTest::testReciprocalZero
+   --> junit.framework.AssertionFailedError: expected:<(NaN, NaN)> but was:<(Infinity, Infinity)>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.math3.complex.Complex
+--------------------------------------------------------------------------------

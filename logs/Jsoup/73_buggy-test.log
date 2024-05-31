@@ -1,0 +1,6 @@
+Compiling /home/tyd/defects4j/tmp/Jsoup/73_buggy...
+
+Testing /home/tyd/defects4j/tmp/Jsoup/73_buggy...
+Failing tests: 1
+  - org.jsoup.helper.W3CDomTest::namespacePreservation
+

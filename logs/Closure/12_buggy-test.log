@@ -1,0 +1,6 @@
+Compiling /home/tyd/defects4j/tmp/Closure/12_buggy...
+
+Testing /home/tyd/defects4j/tmp/Closure/12_buggy...
+Failing tests: 1
+  - com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest::testIssue794b
+

@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Math/69_buggy...
+
+Testing /home/tyd/defects4j/tmp/Math/69_buggy...
+Failing tests: 2
+  - org.apache.commons.math.stat.correlation.PearsonsCorrelationTest::testPValueNearZero
+  - org.apache.commons.math.stat.correlation.SpearmansRankCorrelationTest::testPValueNearZero
+

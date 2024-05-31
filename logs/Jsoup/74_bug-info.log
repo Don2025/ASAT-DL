@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Jsoup
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Jsoup
+       Program: jsoup
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/Jsoup.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jsoup.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/active-bugs.csv
+Number of bugs: 93
+--------------------------------------------------------------------------------
+
+Summary for Bug: Jsoup-74
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+c3f8caa7c16c08b803b0f34bfffdf9777c7e382c
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2017-11-18 13:38:01 -0800
+--------------------------------------------------------------------------------
+Bug report id:
+978
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/jhy/jsoup/issues/978
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jsoup.nodes.ElementTest::testNormalizesInvisiblesInText
+   --> junit.framework.AssertionFailedError: expected:<This[isonelong]word> but was:<This[­is​one‌long‍]word>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jsoup.helper.StringUtil
+--------------------------------------------------------------------------------

@@ -1,0 +1,41 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Closure
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Closure
+       Program: closure-compiler
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Closure/Closure.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/closure-compiler.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Closure/active-bugs.csv
+Number of bugs: 174
+--------------------------------------------------------------------------------
+
+Summary for Bug: Closure-80
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+58786c3f717fa506280127265cd68fedf17de0a9
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2011-03-01 18:30:56 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+364
+--------------------------------------------------------------------------------
+Bug report url:
+https://storage.googleapis.com/google-code-archive/v2/code.google.com/closure-compiler/issues/issue-364.json
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.google.javascript.jscomp.NodeUtilTest::testIsBooleanResult
+   --> junit.framework.AssertionFailedError
+ - com.google.javascript.jscomp.NodeUtilTest::testLocalValue1
+   --> java.lang.IllegalStateException: Unexpected expression nodeDELPROP 1 [sourcename:  [testcode] ] [parenthesized: true]
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.google.javascript.jscomp.NodeUtil
+--------------------------------------------------------------------------------

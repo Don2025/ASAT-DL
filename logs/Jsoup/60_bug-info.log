@@ -1,0 +1,42 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Jsoup
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Jsoup
+       Program: jsoup
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/Jsoup.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jsoup.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/active-bugs.csv
+Number of bugs: 93
+--------------------------------------------------------------------------------
+
+Summary for Bug: Jsoup-60
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+8fecf72da0c9d1d6da7ec1aab0214ff68588da88
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2017-01-05 19:48:35 -0800
+--------------------------------------------------------------------------------
+Bug report id:
+803
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/jhy/jsoup/issues/803
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jsoup.select.QueryParserTest::testParsesSingleQuoteInContains
+   --> junit.framework.AssertionFailedError: Expected exception: org.jsoup.select.Selector$SelectorParseException
+ - org.jsoup.select.QueryParserTest::exceptionOnUncloseAttribute
+   --> java.lang.Exception: Unexpected exception, expected<org.jsoup.select.Selector$SelectorParseException> but was<java.lang.IllegalArgumentException>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jsoup.parser.TokenQueue
+ - org.jsoup.select.QueryParser
+--------------------------------------------------------------------------------

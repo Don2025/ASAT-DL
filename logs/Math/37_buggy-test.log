@@ -1,0 +1,9 @@
+Compiling /home/tyd/defects4j/tmp/Math/37_buggy...
+
+Testing /home/tyd/defects4j/tmp/Math/37_buggy...
+Failing tests: 4
+  - org.apache.commons.math.complex.ComplexTest::testTanhInf
+  - org.apache.commons.math.complex.ComplexTest::testTan
+  - org.apache.commons.math.complex.ComplexTest::testTanh
+  - org.apache.commons.math.complex.ComplexTest::testTanInf
+

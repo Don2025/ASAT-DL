@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Jsoup
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Jsoup
+       Program: jsoup
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/Jsoup.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jsoup.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/active-bugs.csv
+Number of bugs: 93
+--------------------------------------------------------------------------------
+
+Summary for Bug: Jsoup-49
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+b2e37fca64877104cfdad3f56cdc2c8b98cb6be1
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2016-04-03 20:19:13 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+689
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/jhy/jsoup/issues/689
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jsoup.nodes.ElementTest::appendMustCorrectlyMoveChildrenInsideOneParentElement
+   --> junit.framework.AssertionFailedError: expected:<...><div3>Check</div3><[div4></div4><div1></div1><div2></div2><]/body>> but was:<...><div3>Check</div3><[]/body>>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jsoup.nodes.Node
+--------------------------------------------------------------------------------

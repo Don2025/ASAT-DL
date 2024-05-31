@@ -1,0 +1,45 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JacksonCore
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JacksonCore
+       Program: jackson-core
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JacksonCore/JacksonCore.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jackson-core.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JacksonCore/active-bugs.csv
+Number of bugs: 26
+--------------------------------------------------------------------------------
+
+Summary for Bug: JacksonCore-10
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+c2823b4de28120d86aeba9215f0231d990a8eb47
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2015-07-31 19:43:48 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+207
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/FasterXML/jackson-core/issues/207
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.fasterxml.jackson.core.sym.TestByteBasedSymbols::testIssue207
+   --> java.lang.ArrayIndexOutOfBoundsException: 256
+ - com.fasterxml.jackson.core.sym.TestSymbolTables::testCollisionsWithBytesNew187b
+   --> junit.framework.AssertionFailedError: expected:<16384> but was:<32768>
+ - com.fasterxml.jackson.core.sym.TestSymbolTables::testSyntheticWithBytesNew
+   --> junit.framework.AssertionFailedError: expected:<8534> but was:<8524>
+ - com.fasterxml.jackson.core.sym.TestSymbolTables::testShortNameCollisionsDirectNew
+   --> junit.framework.AssertionFailedError: expected:<1024> but was:<2048>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer
+--------------------------------------------------------------------------------

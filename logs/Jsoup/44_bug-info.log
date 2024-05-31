@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Jsoup
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Jsoup
+       Program: jsoup
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/Jsoup.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jsoup.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/active-bugs.csv
+Number of bugs: 93
+--------------------------------------------------------------------------------
+
+Summary for Bug: Jsoup-44
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+3a7f39c507ed2b6809dc3a8bcc0a28ad19aab2f3
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2015-07-05 14:58:53 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+552
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/jhy/jsoup/issues/552
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jsoup.parser.HtmlParserTest::testInvalidTableContents
+   --> junit.framework.AssertionFailedError: Search text did not come after comment
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jsoup.parser.TreeBuilder
+--------------------------------------------------------------------------------

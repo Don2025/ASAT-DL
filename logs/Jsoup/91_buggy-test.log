@@ -1,0 +1,8 @@
+Compiling /home/tyd/defects4j/tmp/Jsoup/91_buggy...
+
+Testing /home/tyd/defects4j/tmp/Jsoup/91_buggy...
+Failing tests: 3
+  - org.jsoup.integration.ConnectTest::testBinaryThrowsExceptionWhenTypeIgnored
+  - org.jsoup.integration.ConnectTest::testBinaryResultThrows
+  - org.jsoup.integration.ParseTest::testBinaryThrowsException
+

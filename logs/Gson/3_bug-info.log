@@ -1,0 +1,41 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Gson
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Gson
+       Program: gson
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Gson/Gson.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/gson.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Gson/active-bugs.csv
+Number of bugs: 18
+--------------------------------------------------------------------------------
+
+Summary for Bug: Gson-3
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+64107353a37e623ed1f8fecb4422c24212cf6fe1
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2015-11-05 07:25:34 -0500
+--------------------------------------------------------------------------------
+Bug report id:
+624
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/google/gson/issues/624
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.google.gson.functional.MapTest::testConcurrentMap
+   --> java.lang.ClassCastException: java.util.LinkedHashMap cannot be cast to java.util.concurrent.ConcurrentMap
+ - com.google.gson.functional.MapTest::testConcurrentNavigableMap
+   --> java.lang.ClassCastException: java.util.TreeMap cannot be cast to java.util.concurrent.ConcurrentNavigableMap
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.google.gson.internal.ConstructorConstructor
+--------------------------------------------------------------------------------

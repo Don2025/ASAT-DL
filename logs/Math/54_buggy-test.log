@@ -1,0 +1,6 @@
+Compiling /home/tyd/defects4j/tmp/Math/54_buggy...
+
+Testing /home/tyd/defects4j/tmp/Math/54_buggy...
+Failing tests: 1
+  - org.apache.commons.math.dfp.DfpTest::testIssue567
+

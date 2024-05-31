@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Closure/7_buggy...
+
+Testing /home/tyd/defects4j/tmp/Closure/7_buggy...
+Failing tests: 2
+  - com.google.javascript.jscomp.ClosureReverseAbstractInterpreterTest::testGoogIsFunction2
+  - com.google.javascript.jscomp.SemanticReverseAbstractInterpreterTest::testTypeof3
+

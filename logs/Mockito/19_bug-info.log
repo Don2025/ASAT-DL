@@ -1,0 +1,43 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Mockito
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Mockito
+       Program: mockito
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Mockito/Mockito.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/mockito.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Mockito/active-bugs.csv
+Number of bugs: 38
+--------------------------------------------------------------------------------
+
+Summary for Bug: Mockito-19
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+110ffa80070bf54ab8efabdaaa27b193a93d6128
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2015-06-03 00:52:12 +0200
+--------------------------------------------------------------------------------
+Bug report id:
+205
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/mockito/mockito/issues/205
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.mockitousage.annotation.MockInjectionUsingSetterOrPropertyTest::shouldInsertFieldWithCorrectNameWhenMultipleTypesAvailable
+   --> junit.framework.AssertionFailedError: Expected: <null> but was: candidate2
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.mockito.internal.configuration.injection.filter.FinalMockCandidateFilter
+ - org.mockito.internal.configuration.injection.filter.MockCandidateFilter
+ - org.mockito.internal.configuration.injection.filter.NameBasedCandidateFilter
+ - org.mockito.internal.configuration.injection.filter.TypeBasedCandidateFilter
+ - org.mockito.internal.configuration.injection.PropertyAndSetterInjection
+--------------------------------------------------------------------------------

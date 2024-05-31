@@ -1,0 +1,12 @@
+Compiling /home/tyd/defects4j/tmp/Cli/16_buggy...
+
+Testing /home/tyd/defects4j/tmp/Cli/16_buggy...
+Failing tests: 7
+  - org.apache.commons.cli2.bug.BugCLI123Test::testMultipleChildOptions
+  - org.apache.commons.cli2.bug.BugCLI123Test::testParentOptionAndChildOption
+  - org.apache.commons.cli2.bug.BugCLI123Test::testSingleChildOption
+  - org.apache.commons.cli2.commandline.DefaultingCommandLineTest::testGetOptions_Order
+  - org.apache.commons.cli2.commandline.PreferencesCommandLineTest::testGetOptions_Order
+  - org.apache.commons.cli2.commandline.PropertiesCommandLineTest::testGetOptions_Order
+  - org.apache.commons.cli2.commandline.WriteableCommandLineImplTest::testGetOptions_Order
+

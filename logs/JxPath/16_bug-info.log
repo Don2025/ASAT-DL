@@ -1,0 +1,46 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JxPath
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JxPath
+       Program: commons-jxpath
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JxPath/JxPath.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/commons-jxpath.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JxPath/active-bugs.csv
+Number of bugs: 22
+--------------------------------------------------------------------------------
+
+Summary for Bug: JxPath-16
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+6cf7092809515b6add5f0e83fd837b8e013c5256
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2008-02-02 23:16:01 +0000
+--------------------------------------------------------------------------------
+Bug report id:
+JXPATH-114
+--------------------------------------------------------------------------------
+Bug report url:
+https://issues.apache.org/jira/browse/JXPATH-114
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.apache.commons.jxpath.ri.model.dom.DOMModelTest::testAxisFollowing
+   --> junit.framework.ComparisonFailure: Evaluating pointer <//location[2]/following::node()[2]> expected:<...vendor[1]/product[1][]> but was:<...vendor[1]/product[1][/product:name[1]]>
+ - org.apache.commons.jxpath.ri.model.dom.DOMModelTest::testAxisPreceding
+   --> junit.framework.ComparisonFailure: Evaluating pointer <//location[2]/preceding::node()[3]> expected:<...ndor[1]/location[1]/[employeeCount[1]/text()][1]> but was:<...ndor[1]/location[1]/[address][1]>
+ - org.apache.commons.jxpath.ri.model.jdom.JDOMModelTest::testAxisFollowing
+   --> junit.framework.ComparisonFailure: Evaluating pointer <//location[2]/following::node()[2]> expected:<...vendor[1]/product[1][]> but was:<...vendor[1]/product[1][/product:name[1]]>
+ - org.apache.commons.jxpath.ri.model.jdom.JDOMModelTest::testAxisPreceding
+   --> junit.framework.ComparisonFailure: Evaluating pointer <//location[2]/preceding::node()[3]> expected:<...ndor[1]/location[1]/[employeeCount[1]/text()][1]> but was:<...ndor[1]/location[1]/[address][1]>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.apache.commons.jxpath.ri.model.dom.DOMNodePointer
+ - org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer
+--------------------------------------------------------------------------------

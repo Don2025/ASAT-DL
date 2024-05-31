@@ -1,0 +1,6 @@
+Compiling /home/tyd/defects4j/tmp/Compress/7_buggy...
+
+Testing /home/tyd/defects4j/tmp/Compress/7_buggy...
+Failing tests: 1
+  - org.apache.commons.compress.archivers.tar.TarUtilsTest::testRoundTripNames
+

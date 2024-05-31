@@ -1,0 +1,5 @@
+Error: Collections-23 is a deprecated bug
+ at /home/tyd/study/dataset/defects4j/framework/core/Utils.pm line 481.
+	Utils::ensure_valid_bid("Collections", 23) called at /home/tyd/study/dataset/defects4j/framework/bin/d4j/d4j-info line 87
+	require /home/tyd/study/dataset/defects4j/framework/bin/d4j/d4j-info called at /home/tyd/study/dataset/defects4j/framework/bin/defects4j line 195
+Compilation failed in require at /home/tyd/study/dataset/defects4j/framework/bin/defects4j line 195.

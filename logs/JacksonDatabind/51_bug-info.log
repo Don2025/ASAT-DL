@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: JacksonDatabind
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: JacksonDatabind
+       Program: jackson-databind
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/JacksonDatabind.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jackson-databind.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/JacksonDatabind/active-bugs.csv
+Number of bugs: 112
+--------------------------------------------------------------------------------
+
+Summary for Bug: JacksonDatabind-51
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+36631a98a1199be01b9fbbcc66ac2afa4ad82dfc
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2016-06-19 22:49:28 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+1270
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/FasterXML/jackson-databind/issues/1270
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.fasterxml.jackson.databind.jsontype.TestCustomTypeIdResolver::testPolymorphicTypeViaCustom
+   --> com.fasterxml.jackson.databind.JsonMappingException: Problem deserializing property 'options' (expected type: [simple type, class java.lang.Object]; actual type: java.util.LinkedHashMap), problem: Can not set com.fasterxml.jackson.databind.jsontype.TestCustomTypeIdResolver$Poly1Base field com.fasterxml.jackson.databind.jsontype.TestCustomTypeIdResolver$Base1270.options to java.util.LinkedHashMap
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.fasterxml.jackson.databind.jsontype.impl.TypeDeserializerBase
+--------------------------------------------------------------------------------

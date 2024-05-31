@@ -1,0 +1,41 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Gson
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Gson
+       Program: gson
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Gson/Gson.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/gson.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Gson/active-bugs.csv
+Number of bugs: 18
+--------------------------------------------------------------------------------
+
+Summary for Bug: Gson-8
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+0f66f4fac441f7d7d7bc4afc907454f3fe4c0faa
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2016-04-22 06:47:08 -1000
+--------------------------------------------------------------------------------
+Bug report id:
+817
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/google/gson/issues/817
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.google.gson.internal.UnsafeAllocatorInstantiationTest::testInterfaceInstantiation
+   --> junit.framework.AssertionFailedError: expected:<class java.lang.reflect.InvocationTargetException> but was:<class java.lang.UnsupportedOperationException>
+ - com.google.gson.internal.UnsafeAllocatorInstantiationTest::testAbstractClassInstantiation
+   --> junit.framework.AssertionFailedError: expected:<class java.lang.reflect.InvocationTargetException> but was:<class java.lang.UnsupportedOperationException>
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.google.gson.internal.UnsafeAllocator
+--------------------------------------------------------------------------------

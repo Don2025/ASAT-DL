@@ -1,0 +1,7 @@
+Compiling /home/tyd/defects4j/tmp/Math/47_buggy...
+
+Testing /home/tyd/defects4j/tmp/Math/47_buggy...
+Failing tests: 2
+  - org.apache.commons.math.complex.ComplexTest::testAtanI
+  - org.apache.commons.math.complex.ComplexTest::testDivideZero
+

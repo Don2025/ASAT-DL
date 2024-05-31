@@ -1,0 +1,10 @@
+Compiling /home/tyd/defects4j/tmp/Closure/175_buggy...
+
+Testing /home/tyd/defects4j/tmp/Closure/175_buggy...
+Failing tests: 5
+  - com.google.javascript.jscomp.FunctionInjectorTest::testIssue1101a
+  - com.google.javascript.jscomp.FunctionInjectorTest::testIssue1101b
+  - com.google.javascript.jscomp.InlineFunctionsTest::testCostBasedInlining10
+  - com.google.javascript.jscomp.InlineFunctionsTest::testIssue1101
+  - com.google.javascript.jscomp.InlineFunctionsTest::testInlineMutableArgsReferencedOnce
+

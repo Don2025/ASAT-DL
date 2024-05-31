@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Jsoup
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Jsoup
+       Program: jsoup
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/Jsoup.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/jsoup.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Jsoup/active-bugs.csv
+Number of bugs: 93
+--------------------------------------------------------------------------------
+
+Summary for Bug: Jsoup-90
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+7de614ffd01161d8718d7458bab9d9690ad2334f
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2019-05-12 11:37:10 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+1172
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/jhy/jsoup/issues/1172
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - org.jsoup.helper.HttpConnectionTest::handlesHeaderEncodingOnRequest
+   --> java.lang.ArrayIndexOutOfBoundsException: 1
+--------------------------------------------------------------------------------
+List of modified sources:
+ - org.jsoup.helper.HttpConnection
+--------------------------------------------------------------------------------

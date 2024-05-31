@@ -1,0 +1,39 @@
+Determine revision date.................................................... OK
+Summary of configuration for Project: Gson
+--------------------------------------------------------------------------------
+    Script dir: /home/tyd/study/dataset/defects4j/framework
+      Base dir: /home/tyd/study/dataset/defects4j
+    Major root: /home/tyd/study/dataset/defects4j/major
+      Repo dir: /home/tyd/study/dataset/defects4j/project_repos
+--------------------------------------------------------------------------------
+    Project ID: Gson
+       Program: gson
+    Build file: /home/tyd/study/dataset/defects4j/framework/projects/Gson/Gson.build.xml
+--------------------------------------------------------------------------------
+           Vcs: Vcs::Git
+    Repository: /home/tyd/study/dataset/defects4j/project_repos/gson.git
+     Commit db: /home/tyd/study/dataset/defects4j/framework/projects/Gson/active-bugs.csv
+Number of bugs: 18
+--------------------------------------------------------------------------------
+
+Summary for Bug: Gson-2
+--------------------------------------------------------------------------------
+Revision ID (fixed version):
+fe101c10bc3597d8e715a31d94d2cc0cc54b660f
+--------------------------------------------------------------------------------
+Revision date (fixed version):
+2015-10-22 09:29:01 -0700
+--------------------------------------------------------------------------------
+Bug report id:
+719
+--------------------------------------------------------------------------------
+Bug report url:
+https://github.com/google/gson/pull/719
+--------------------------------------------------------------------------------
+Root cause in triggering tests:
+ - com.google.gson.functional.DefaultTypeAdaptersTest::testJsonElementTypeMismatch
+   --> java.lang.ClassCastException: Cannot cast com.google.gson.JsonPrimitive to com.google.gson.JsonObject
+--------------------------------------------------------------------------------
+List of modified sources:
+ - com.google.gson.internal.bind.TypeAdapters
+--------------------------------------------------------------------------------
