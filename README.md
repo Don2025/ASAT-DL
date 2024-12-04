@@ -1,5 +1,6 @@
 # ASAT-DL
-A Method for Processing Static Analysis Alarms Based on Deep Learning.
+
+发表论文：Tan Yaodan, and Junfeng Tian. "A Method for Processing Static Analysis Alarms Based on Deep Learning." Applied Sciences 14.13 (2024): 5542.
 
 首先需要部署好Defects4J数据集，然后下载静态分析工具SpotBugs，接着就能运行所有的Python脚本啦。部分脚本的说明如下：
 
